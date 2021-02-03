@@ -230,6 +230,9 @@ include(INCLUDE_PATH . '/head.php');
 
 ?>
 
+<!-- Include sign-up.js and related code -->
+<script src="../scripts/sign-up.js" defer></script>
+
 </head>
 <body>
 
@@ -243,7 +246,7 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Main -->
 <main>
-    <form action="" method="post">
+    <form id="form" action="" method="post">
         <label for="first_name">First Name *</label>
         <input id="first_name" name="first_name" type="text" value="<?= $first_name; ?>" placeholder="First Name">
         <label for="last_name">Last Name *</label>
@@ -256,7 +259,8 @@ include(INCLUDE_PATH . '/header.php');
         <input id="password" name="password" type="password" value="<?= $password; ?>" placeholder="Password">
         <label for="confirm_password">Confirm Password *</label>
         <input id="confirm_password" name="confirm_password" type="password" value="<?= $confirm_password; ?>" placeholder="Confirm Password">
-        <p>Shows Password</p>
+        <label for="show_password">Show Password</label>
+        <input id="show_password" name="show_password" type="checkbox">
         <input name="submit" type="Submit" value="Create new account">
     </form>
 </main>
