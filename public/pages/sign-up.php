@@ -114,7 +114,7 @@ if (isset($_POST['submit'])) {
     * Email must be a valid email address
     * To achieve this task I used built-in function filter_var()
     */
-    if (isset($_POST['eamil'])) {
+    if (isset($_POST['email'])) {
         $email_input = trim($_POST['email']);
         $email_input = htmlentities($email_input);
 
@@ -205,12 +205,12 @@ if (isset($_POST['submit'])) {
     */
     if (isset($_POST['confirm_password'])) {
         $conifrm_password_input = trim($_POST['confirm_password']);
-        $confirm_email_input = htmlentities($conifrm_password_input);
+        $conifrm_password_input = htmlentities($conifrm_password_input);
 
-        if ($confirm_email_input !== '') {
+        if ($conifrm_password_input !== '') {
 
             if ($conifrm_password_input === $password) {
-                $conifrm_password = $conifrm_password_input;
+                $confirm_password = $conifrm_password_input;
             } else {
                 $errors_output['Confirm Password'] = "Password and Confirm password are not equal";
             }
@@ -221,6 +221,35 @@ if (isset($_POST['submit'])) {
     }
 
 }
+
+/*
+* Save the form inside a variable which name is output
+* If the users creates a valid account
+* or
+* if the user has been logged
+* output savas a btn that allows user to enter into the menu section
+*/
+$output = "
+    <main>
+        <form id='form' action='./sign-up.php' method='post'>
+            <label for='first_name'>First Name *</label>
+            <input id='first_name' name='first_name' type='text' value='${first_name}' placeholder='First Name'>
+            <label for='last_name'>Last Name *</label>
+            <input id='last_name' name='last_name' type='text' value='${last_name}' placeholder='Last Name'>
+            <label for='email'>Email *</label>
+            <input id='email' name='email' type='email' value='${email}' placeholder='Email'>
+            <label for='confirm_email'>Confirm email *</label>
+            <input id='confirm_email' name='confirm_email' type='email' value='${confirm_email}' placeholder='Confirm Email'>
+            <label for='password'>Password *</label>
+            <input id='password' name='password' type='password' value='${password}' placeholder='Password'>
+            <label for='confirm_password'>Confirm Password *</label>
+            <input id='confirm_password' name='confirm_password' type='password' value='${confirm_password}' placeholder='Confirm Password'>
+            <label for='show_password'>Show Password</label>
+            <input id='show_password' name='show_password' type='checkbox'>
+            <input name='submit' type='Submit' value='Create new account'>
+        </form>
+    </main>
+    ";
 
 // Define a variable that gives the title to the page
 $page_title = 'Sign Up';
@@ -245,8 +274,11 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-<main>
-    <form id="form" action="" method="post">
+
+<!-- Output -->
+<?= $output; ?>
+<!-- <main>
+    <form id="form" action="./sign-up.php" method="post">
         <label for="first_name">First Name *</label>
         <input id="first_name" name="first_name" type="text" value="<?= $first_name; ?>" placeholder="First Name">
         <label for="last_name">Last Name *</label>
@@ -263,7 +295,7 @@ include(INCLUDE_PATH . '/header.php');
         <input id="show_password" name="show_password" type="checkbox">
         <input name="submit" type="Submit" value="Create new account">
     </form>
-</main>
+</main> -->
 <section>
     <!-- Show errors if they exist -->
     <ul>
@@ -273,6 +305,17 @@ include(INCLUDE_PATH . '/header.php');
             <li><?= "${key}: ${value}"; ?></li>
     <?php
         }
+    ?>
+</section>
+<!-- Test -->
+<section>
+    <?php
+        echo $first_name . "<br />";
+        echo $last_name . "<br />";
+        echo $email . "<br />";
+        echo $confirm_email . "<br />";
+        echo $password . "<br />";
+        echo $confirm_password . "<br />";
     ?>
 </section>
 </body>
