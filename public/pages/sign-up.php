@@ -7,6 +7,9 @@ require_once('../../private/initialize.php');
 * Validation form for create new account
 */
 
+/// Create a boolean variable with false value
+$valid_user = false;
+
 // Create an empty array where saving the errors if they exist
 $errors_output = [];
 
@@ -44,24 +47,30 @@ if (isset($_POST['submit'])) {
 
                         if (!preg_match($invalid_character, $first_name_input)) {
                             $first_name = $first_name_input;
+                            $valid_user = true;
                         } else {
                             $errors_output['First Name'] = "can not contain special characters";
+                            $valid_user = false;
                         }
 
                     } else {
                         $errors_output['First Name'] = "can not contain numbers";
+                        $valid_user = false;
                     }
     
                 } else {
                     $errors_output['First Name'] = "should be shorter than 20 characters";
+                    $valid_user = false;
                 }
     
             } else {
                 $errors_output['First Name'] = "should be longer than 1 character";
+                $valid_user = false;
             }
 
         } else {
             $errors_output['First Name'] = "is required";
+            $valid_user = false;
         }
     }
 
@@ -88,24 +97,30 @@ if (isset($_POST['submit'])) {
 
                         if (!preg_match($invalid_character, $last_name_input)) {
                             $last_name = $last_name_input;
+                            $valid_user = true;
                         } else {
                             $errors_output['Last Name'] = "can not contain special characters";
+                            $valid_user = false;
                         }
 
                     } else {
                         $errors_output['Last Name'] = "can not contain numbers";
+                        $valid_user = false;
                     }
     
                 } else {
                     $errors_output['Last Name'] = "should be shorter than 20 characters";
+                    $valid_user = false;
                 }
     
             } else {
                 $errors_output['Last Name'] = "should be longer than 1 character";
+                $valid_user = false;
             }
 
         } else {
             $errors_output['Last Name'] = "is required";
+            $valid_user = false;
         }
     }
 
@@ -122,12 +137,15 @@ if (isset($_POST['submit'])) {
 
             if (filter_var($email_input, FILTER_VALIDATE_EMAIL)) {
                 $email = $email_input;
+                $valid_user = true;
             } else {
                 $errors_output['Email'] = "should be a valid email address";
+                $valid_user = false;
             }
 
         } else {
             $errors_output['Email'] = "is required";
+            $valid_user = false;
         }
 
     }
@@ -144,12 +162,15 @@ if (isset($_POST['submit'])) {
 
             if ($confirm_email_input === $email) {
                 $confirm_email = $confirm_email_input;
+                $valid_user = true;
             } else {
                 $errors_output['Confirm Email'] = "Email and Confirm email are not equal";
+                $valid_user = false;
             }
 
         } else {
             $errors_output['Confirm Email'] = "is required";
+            $valid_user = false;
         }
     }
 
@@ -177,24 +198,30 @@ if (isset($_POST['submit'])) {
 
                         if (preg_match($required_character, $password_input)) {
                             $password = $password_input;
+                            $valid_user = true;
                         } else {
                             $errors_output['Password'] = "should contain at least one number";
+                            $valid_user = false;
                         }
 
                     } else {
                         $errors_output['Password'] = "should contain at least one lowercase character";
+                        $valid_user = false;
                     }
 
                 } else {
                     $errors_output['Password'] = "should contain at least one uppercase character";
+                    $valid_user = false;
                 }
 
             } else {
                 $errors_output['Password'] = "should be at least longer 8 characters";
+                $valid_user = false;
             }
 
         } else {
             $errors_output['Password'] = "is required";
+            $valid_user = false;
         }
 
     }
@@ -211,12 +238,15 @@ if (isset($_POST['submit'])) {
 
             if ($conifrm_password_input === $password) {
                 $confirm_password = $conifrm_password_input;
+                $valid_user = true;
             } else {
                 $errors_output['Confirm Password'] = "Password and Confirm password are not equal";
+                $valid_user = false;
             }
 
         } else {
             $errors_output['Confirm Password'] = "is required";
+            $valid_user = false;
         }
     }
 
@@ -229,7 +259,10 @@ if (isset($_POST['submit'])) {
 * if the user has been logged
 * output savas a btn that allows user to enter into the menu section
 */
-$output = "
+if ($valid_user && count($errors_output) === 0) {
+    $output = "New user has been registered<br />Please login<br /><button>Login</button>";
+} else {
+    $output = "
     <main>
         <form id='form' action='./sign-up.php' method='post'>
             <label for='first_name'>First Name *</label>
@@ -250,6 +283,8 @@ $output = "
         </form>
     </main>
     ";
+}
+
 
 // Define a variable that gives the title to the page
 $page_title = 'Sign Up';
@@ -277,25 +312,7 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Output -->
 <?= $output; ?>
-<!-- <main>
-    <form id="form" action="./sign-up.php" method="post">
-        <label for="first_name">First Name *</label>
-        <input id="first_name" name="first_name" type="text" value="<?= $first_name; ?>" placeholder="First Name">
-        <label for="last_name">Last Name *</label>
-        <input id="last_name" name="last_name" type="text" value="<?= $last_name; ?>" placeholder="Last Name">
-        <label for="email">Email *</label>
-        <input id="email" name="email" type="email" value="<?= $email; ?>" placeholder="Email">
-        <label for="confirm_email">Confirm email *</label>
-        <input id="confirm_email" name="confirm_email" type="email" value="<?= $confirm_email; ?>" placeholder="Confirm Email">
-        <label for="password">Password *</label>
-        <input id="password" name="password" type="password" value="<?= $password; ?>" placeholder="Password">
-        <label for="confirm_password">Confirm Password *</label>
-        <input id="confirm_password" name="confirm_password" type="password" value="<?= $confirm_password; ?>" placeholder="Confirm Password">
-        <label for="show_password">Show Password</label>
-        <input id="show_password" name="show_password" type="checkbox">
-        <input name="submit" type="Submit" value="Create new account">
-    </form>
-</main> -->
+
 <section>
     <!-- Show errors if they exist -->
     <ul>
@@ -318,5 +335,12 @@ include(INCLUDE_PATH . '/header.php');
         echo $confirm_password . "<br />";
     ?>
 </section>
+
+<!-- Footer -->
+<?php
+// Include footer.php and related code
+include(INCLUDE_PATH . '/footer.php');
+?>
+
 </body>
 </html>
