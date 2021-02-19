@@ -260,7 +260,13 @@ if (isset($_POST['submit'])) {
 * output savas a btn that allows user to enter into the menu section
 */
 if ($valid_user && count($errors_output) === 0) {
-    $output = "New user has been registered<br />Please login<br /><button>Login</button>";
+
+    is_new_user($db, $email);
+    $output = "test mode";
+
+    // add_new_user($db, $first_name, $last_name, $email, $password);
+    // $output = "New user has been registered<br />Please login<br /><button>Login</button>";
+
 } else {
     $output = "
     <main>
