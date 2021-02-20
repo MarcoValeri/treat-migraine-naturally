@@ -7,7 +7,7 @@ require_once('../../private/initialize.php');
 * Validation form for create new account
 */
 
-/// Create a boolean variable with false value
+// Create a boolean variable with false value
 $valid_user = false;
 
 // Create an empty array where saving the errors if they exist
@@ -261,11 +261,15 @@ if (isset($_POST['submit'])) {
 */
 if ($valid_user && count($errors_output) === 0) {
 
-    is_new_user($db, $email);
-    $output = "test mode";
+    if (is_new_user($db, $email)) {
+        add_new_user($db, $first_name, $last_name, $email, $password);
+        $redirect = url_for('pages/login.php');
+        $output = "New user has been registered<br />Please login<br />";
+        $output .= "<button><a href='${redirect}'>Login</a></button>";
+    } else {
+        $output = "There is already an user registered with this email: " . $email;
+    }
 
-    // add_new_user($db, $first_name, $last_name, $email, $password);
-    // $output = "New user has been registered<br />Please login<br /><button>Login</button>";
 
 } else {
     $output = "
@@ -328,17 +332,6 @@ include(INCLUDE_PATH . '/header.php');
             <li><?= "${key}: ${value}"; ?></li>
     <?php
         }
-    ?>
-</section>
-<!-- Test -->
-<section>
-    <?php
-        echo $first_name . "<br />";
-        echo $last_name . "<br />";
-        echo $email . "<br />";
-        echo $confirm_email . "<br />";
-        echo $password . "<br />";
-        echo $confirm_password . "<br />";
     ?>
 </section>
 

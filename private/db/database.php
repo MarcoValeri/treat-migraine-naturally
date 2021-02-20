@@ -26,8 +26,8 @@
     * Create a function that checks into the db
     *  if an user is already registered
     * by his/her email
-    * The functions gets a 
-    * @parameter $connection that connect to the db and a
+    * The function gets a 
+    * @parameter $connection that connects to the db and a
     * @parameter $email string that is the user's email and 
     * @return true if the user does not exist
     * otherwise return false
@@ -41,12 +41,43 @@
             $row = $result->fetch_assoc();
 
             if ($row['email'] === $email) {
-                echo $email . " already registered";
+                return FALSE;
             } else {
-                echo $email . " is new";
+                return TRUE;
             }
         } else {
-            echo $email . " is new";
+            return TRUE;
+        }
+
+    }
+
+    /*
+    * Create a function that check if email and password are associated
+    * to an user
+    * The function gets 
+    * @parameter $connection that connects to the db
+    * @parameter $email 
+    * @parameter $password 
+    * @return boolean true if $email and $password are
+    * associated to the user
+    * Otherwise return false
+    */
+    function check_user($connection, $email, $password) {
+
+        $query ="SELECT * FROM users WHERE email='$email' AND password='$password'";
+        $result = $connection->query($query);
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+
+            if (($row['email'] === $email) && ($row['password'] === $password)) {
+                return TRUE;
+            } else {
+                return FALSE;
+            }
+
+        } else {
+            return FALSE;
         }
 
     }
