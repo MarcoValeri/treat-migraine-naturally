@@ -64,7 +64,7 @@
     */
     function check_user($connection, $email, $password) {
 
-        $query ="SELECT * FROM users WHERE email='$email' AND password='$password'";
+        $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -78,6 +78,27 @@
 
         } else {
             return FALSE;
+        }
+
+    }
+
+    /*
+    * Create a function that gets
+    * @parameter $connection that connects to the db
+    * @parameter $email of the user and
+    * @return string his/her name gitting it into db
+    * This function allows to have the user name and stores
+    * it on the session
+    */
+    function get_name($connection, $email) {
+
+        $query = "SELECT * FROM users WHERE email='$email'";
+        $result = $connection->query($query);
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $first_name = $row['first_name'];
+            return $first_name;
         }
 
     }

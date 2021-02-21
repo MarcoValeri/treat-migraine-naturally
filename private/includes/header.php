@@ -14,6 +14,7 @@
             <li><a href="<?= url_for('/index.php') ?>">Home</a></li>
             <li><a href="<?= url_for('/pages/sign-up.php'); ?>">Sign Up</a></li>
             <li><a href="<?= url_for('/pages/login.php'); ?>">Login</a></li>
+            <li><a href="<?= url_for('/pages/menu.php'); ?>">Menu</a></li>
         </ul>
     </nav>
     <section>
