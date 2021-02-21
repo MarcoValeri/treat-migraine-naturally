@@ -1,30 +1,31 @@
-<?php 
+<?php
 
-// Require initialize.php and related code
+// Require initialize.php and relatd code
 require_once('../../private/initialize.php');
 
-// Called redirect_user($value, $url); that redirects to the login page 
-// an authorized user
-redirect_user($_SESSION['first_name'], url_for('/pages/login.php'));
+// Called function destroy_current_session() that destroys the session
+destroy_current_session();
 
 // Define a variable that gives the title to the page
-$page_title = 'Menu';
+$page_title = 'Logout';
 
 // Include head.php and related code
 include(INCLUDE_PATH . '/head.php');
-
-
 ?>
+
 </head>
 <body>
 
 <!-- Headers -->
-<?php 
+<?php
 // Give value to $header_sub_title to have a right sub title in the header menu
-$header_sub_title = 'Menu';
+$header_sub_title = "Logout";
 // Include header.php and related code
 include(INCLUDE_PATH . '/header.php');
 ?>
+
+<!-- Main -->
+<h4>User has been logout</h4>
 
 <!-- Footer -->
 <?php

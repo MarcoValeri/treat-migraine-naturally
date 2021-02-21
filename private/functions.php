@@ -16,26 +16,18 @@
     }
 
     /*
-    * Create a function that with session technology give
-    * an id to the users that has been loggin
-    * This allows to keep user loggin if it has
-    * been logged begore
+    * Create a function that redirects to a specific page
+    * if a $value is false
+    * @parameter $value that when is false user must be redirect
+    * @url url where the user will be redirect
+    * return exit so the following code will note executed
     */
-    function create_session() {
-        session_start();
-        echo session_id();
-    }
+    function redirect_user($value, $url) {
 
-    /*
-    * Create a function that save the first_name of the user
-    * into $_SESSION superglobal array
-    * @parameter string $first_name of the user
-    * @return saves name into $_SESSION['first_name']
-    */
-    function create_session_name($first_name) {
-        $_SESSION['first_name'] = $first_name;
-        
-        $test_name = $_SESSION['first_name'];
-        echo $test_name;
+        if (!$value) {
+            header("Location: " . $url);
+            exit;
+        }
+
     }
 ?>

@@ -4,7 +4,7 @@
 require_once('../../private/initialize.php');
 
 /*
-* Validation form for login
+* Validation form for admin login
 */
 
 // Create a boolean variable with false value
@@ -69,17 +69,17 @@ if (isset($_POST['submit'])) {
 
 /*
 * Save the form inside a variable which name is output
-* If the users login with a valid email and password
+* If the admin login with a valid email and password
 * and
-* if the user has been already logged
+* if the admin has been already logged
 * output savas a btn that allows user to enter into the menu section
 */
 if ($valid_user && count($errors_output) === 0) {
 
     if (check_user($db, $email, $password)) {
-        $redirect = url_for('pages/menu.php');
+        $redirect = url_for('pages/admin-menu.php');
         $output = "Hi " . $email . "<br />";
-        $output .= "<button><a href='${redirect}'>Menu</a></button>";
+        $output .= "<button><a href='${redirect}'>Admin Menu</a></button>";
         echo "<br />";
         create_session_name(get_name($db, $email));
     } else {
@@ -88,7 +88,7 @@ if ($valid_user && count($errors_output) === 0) {
 
 } else {
     $output = "
-        <form action='./login.php' method='post'>
+        <form action='./admin.php' method='post'>
             <label for='email'>Email *</label>
             <input id='email' name='email' type='email' value='' placeholder='Email'>
             <label for='password'>Password *</label>
@@ -99,11 +99,13 @@ if ($valid_user && count($errors_output) === 0) {
 }
 
 // Define a variable that gives the title to the page
-$page_title = 'Login';
+$page_title = 'Admin';
 
 // Include head.php and related code
 include(INCLUDE_PATH . '/head.php');
+
 ?>
+
 
 </head>
 <body>
@@ -111,7 +113,7 @@ include(INCLUDE_PATH . '/head.php');
 <!-- Headers -->
 <?php
 // Give value to $header_sub_title to have a right sub title in the header menu
-$header_sub_title = "Login";
+$header_sub_title = "Admin";
 // Include header.php and related code
 include(INCLUDE_PATH . '/header.php');
 ?>

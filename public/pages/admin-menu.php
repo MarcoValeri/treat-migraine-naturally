@@ -5,10 +5,10 @@ require_once('../../private/initialize.php');
 
 // Called redirect_user($value, $url); that redirects to the login page 
 // an authorized user
-redirect_user($_SESSION['first_name'], url_for('/pages/login.php'));
+redirect_user($_SESSION['first_name'], url_for('/pages/admin.php'));
 
 // Define a variable that gives the title to the page
-$page_title = 'Menu';
+$page_title = 'Admin Menu';
 
 // Include head.php and related code
 include(INCLUDE_PATH . '/head.php');
@@ -21,7 +21,7 @@ include(INCLUDE_PATH . '/head.php');
 <!-- Headers -->
 <?php 
 // Give value to $header_sub_title to have a right sub title in the header menu
-$header_sub_title = 'Menu';
+$header_sub_title = 'Admin Menu';
 // Include header.php and related code
 include(INCLUDE_PATH . '/header.php');
 ?>

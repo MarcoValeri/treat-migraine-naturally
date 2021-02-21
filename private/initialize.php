@@ -38,5 +38,13 @@
     */
     require_once(DB_PATH . '/database.php');
     $db = db_connect();
+
+    /*
+    * Require sessions.php and related code
+    * I called function create_session(); that start the session
+    * throughout all the page of the web application
+    */
+    require_once('sessions.php');
+    create_session();
     
 ?>
