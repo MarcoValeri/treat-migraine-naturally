@@ -30,4 +30,24 @@
         }
 
     }
+
+    /*
+    * Create a function that redirects to a specific page
+    * if a $value is false and $admin is false too
+    * @parameter $value that when is false admin must be redirect
+    * @parameter $admin that when is false admin must be redirect
+    * @url url where the user will be redirect
+    * return exit so the following code will note executed
+    */
+    function redirect_admin($value, $admin, $url) {
+
+        if (!$value && !$admin) {
+            header("Location: " . $url);
+            exit;
+        } else if ($admin === "0") {
+            header("Location: " . $url);
+            exit;
+        }
+
+    }
 ?>

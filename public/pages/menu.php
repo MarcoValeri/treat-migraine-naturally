@@ -5,7 +5,7 @@ require_once('../../private/initialize.php');
 
 // Called redirect_user($value, $url); that redirects to the login page 
 // an authorized user
-redirect_user($_SESSION['first_name'], url_for('/pages/login.php'));
+redirect_user($_SESSION['email'], url_for('/pages/login.php'));
 
 // Define a variable that gives the title to the page
 $page_title = 'Menu';

@@ -9,19 +9,23 @@
     function create_session() {
         session_start();
         echo session_id();
+        echo "<br />";
+        echo $_SESSION['email'] ?? '';
+        echo "<br />";
+        echo $_SESSION['admin'] ?? '';
     }
 
     /*
-    * Create a function that save the first_name of the user
+    * Create a function that saves the data of the user
     * into $_SESSION superglobal array
-    * @parameter string $first_name of the user
+    * @parameter string $first_name, $last_name, $email of the user
     * @return saves name into $_SESSION['first_name']
     */
-    function create_session_name($first_name) {
+    function create_session_data($first_name, $last_name, $email, $admin) {
         $_SESSION['first_name'] = $first_name;
-        
-        $test_name = $_SESSION['first_name'];
-        echo $test_name;
+        $_SESSION['last_name'] = $last_name;
+        $_SESSION['email'] = $email;
+        $_SESSION['admin'] = $admin;
     }
 
     /*
