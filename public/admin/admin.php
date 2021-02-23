@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
 if ($valid_user && count($errors_output) === 0) {
 
     if (check_admin($db, $email, $password)) {
-        $redirect = url_for('pages/admin-menu.php');
+        $redirect = url_for('admin/admin-menu.php');
         $output = "Hi " . $email . "<br />";
         $output .= "<button><a href='${redirect}'>Admin Menu</a></button>";
         echo "<br />";

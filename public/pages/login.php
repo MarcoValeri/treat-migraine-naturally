@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
 if ($valid_user && count($errors_output) === 0) {
 
     if (check_user($db, $email, $password)) {
-        $redirect = url_for('pages/menu.php');
+        $redirect = url_for('menu/menu.php');
         $output = "Hi " . $email . "<br />";
         $output .= "<button><a href='${redirect}'>Menu</a></button>";
         echo "<br />";

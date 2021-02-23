@@ -14,9 +14,9 @@
             <li><a href="<?= url_for('/index.php') ?>">Home</a></li>
             <li><a href="<?= url_for('/pages/sign-up.php'); ?>">Sign Up</a></li>
             <li><a href="<?= url_for('/pages/login.php'); ?>">Login</a></li>
-            <li><a href="<?= url_for('/pages/menu.php'); ?>">Menu</a></li>
-            <li><a href="<?= url_for('/pages/admin.php'); ?>">Admin</a></li>
-            <li><a href="<?= url_for('/pages/admin-menu.php'); ?>">Admin Menu</a></li>
+            <li><a href="<?= url_for('/menu/menu.php'); ?>">Menu</a></li>
+            <li><a href="<?= url_for('/admin/admin.php'); ?>">Admin</a></li>
+            <li><a href="<?= url_for('/admin/admin-menu.php'); ?>">Admin Menu</a></li>
         </ul>
         <nav>
             <ul>

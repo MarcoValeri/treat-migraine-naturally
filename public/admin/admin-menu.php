@@ -5,7 +5,7 @@ require_once('../../private/initialize.php');
 
 // Called redirect_user($value, $url); that redirects to the login page 
 // an authorized user
-redirect_admin($_SESSION['email'], $_SESSION['admin'], url_for('/pages/admin.php'));
+redirect_admin($_SESSION['email'], $_SESSION['admin'], url_for('/admin/admin.php'));
 
 // Define a variable that gives the title to the page
 $page_title = 'Admin Menu';
@@ -25,6 +25,13 @@ $header_sub_title = 'Admin Menu';
 // Include header.php and related code
 include(INCLUDE_PATH . '/header.php');
 ?>
+
+<!-- Main -->
+<section>
+    <a href="<?= url_for('/admin/users.php'); ?>">
+        Users
+    </a>
+</section>
 
 <!-- Footer -->
 <?php

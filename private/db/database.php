@@ -5,7 +5,19 @@
     // Create a function that connects web application to the database
     function db_connect() {
         $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+        confirm_db_connect();
         return $connection;
+    }
+
+    // Create a function that checks if the web application is connects to the db
+    // If there is not a connect the function returns an error message
+    function confirm_db_connect() {
+        if (mysqli_connect_errno()) {
+            $output = "Database connection failed: ";
+            $output .= mysqli_connect_error();
+            $output .= " (" . mysqli_connect_errno() . ")";
+            exit($output);
+        }
     }
 
     // Create a function that add new user to the database
@@ -197,6 +209,20 @@
             $admin = $row['admin'];
             return $admin;
         }
+
+    }
+
+    /*
+    * Create a function that gets the users data from the db and 
+    * saves it into a variable
+    * @parameter $connection that connects to the db
+    * @return $result data by the db
+    */
+    function find_users($connection) {
+
+        $query = "SELECT * FROM users";
+        $result = mysqli_query($connection, $query);
+        return $result;
 
     }
 
