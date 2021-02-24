@@ -23,11 +23,32 @@
     // Create a function that add new user to the database
     function add_new_user($connection, $first_name, $last_name, $email, $password) {
 
-        $query = "INSERT INTO users (first_name, last_name, email, password) ";
-        $query .= "VALUE ('$first_name', '$last_name', '$email', '$password')";
+        $query = "INSERT INTO users (first_name, last_name, email, password, admin) ";
+        $query .= "VALUE ('$first_name', '$last_name', '$email', '$password', '0')";
 
         if ($connection->query($query) === TRUE) {
             echo "New user created successfully";
+        } else {
+            echo "Error: " . $query . "<br>" . $connection->error;
+        }
+
+    }
+
+    /*
+    * Create a function that modifies a user into the db
+    */
+    function edit_user($connection, $id, $first_name, $last_name, $email, $password, $admin) {
+
+        $query = "UPDATE users SET ";
+        $query .= "first_name='$first_name',";
+        $query .= "last_name='$last_name',";
+        $query .= "email='$email',";
+        $query .= "password='$password',";
+        $query .= "admin='$admin' ";
+        $query .= "WHERE id='$id'";
+
+        if ($connection->query($query) === TRUE) {
+            echo "User updated successfully";
         } else {
             echo "Error: " . $query . "<br>" . $connection->error;
         }
@@ -223,6 +244,22 @@
         $query = "SELECT * FROM users";
         $result = mysqli_query($connection, $query);
         return $result;
+
+    }
+
+    /*
+    * Create a function that gets single user data from the db and 
+    * saves it into a variable
+    * @parameter $connection that connects to the db
+    * @parameter $id that is the id of the user into the db
+    * @return $user as an assoc array
+    */
+    function find_single_user($connection, $id) {
+
+        $query = "SELECT * FROM users WHERE id='" . $id . "'";
+        $result = mysqli_query($connection, $query);
+        $user = mysqli_fetch_assoc($result);
+        return $user;
 
     }
 

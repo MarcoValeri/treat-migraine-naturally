@@ -1,7 +1,7 @@
 <?php
 
 // Require initialize.php and related code
-require_once('../../private/initialize.php');
+require_once('../../../private/initialize.php');
 
 // Called redirect_user(); that redirects to the login page 
 // an authorized user
@@ -28,6 +28,7 @@ include(INCLUDE_PATH . '/header.php');
 <!-- Main -->
 <section>
     <h2>Add a new user</h2>
+    <a href="<?= url_for('/admin/users/add.php'); ?>">New User</a>
 </sction>
 
 <section>
@@ -40,6 +41,8 @@ include(INCLUDE_PATH . '/header.php');
             <th>Email</th>
             <th>Password</th>
             <th>Admin</th>
+            <th>View</th>
+            <th>Edit</th>
         </tr>
         <?php 
             /*
@@ -56,6 +59,8 @@ include(INCLUDE_PATH . '/header.php');
             <td><?= $user['email'] ?></td>
             <td><?= $user['password'] ?></td>
             <td><?= $user['admin'] ?></td>
+            <td><a href="<?= url_for('/admin/users/show.php?id=' . $user['id']); ?>">View</a><td>
+            <td><a href="<?= url_for('/admin/users/edit.php?id=' . $user['id']); ?>">Edit</a><td>
         </tr>
         <?php } ?>
     </table>

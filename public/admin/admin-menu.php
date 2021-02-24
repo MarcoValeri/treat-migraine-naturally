@@ -28,7 +28,7 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Main -->
 <section>
-    <a href="<?= url_for('/admin/users.php'); ?>">
+    <a href="<?= url_for('/admin/users/users.php'); ?>">
         Users
     </a>
 </section>
