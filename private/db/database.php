@@ -56,6 +56,22 @@
     }
 
     /*
+    * Create a function that delete a user from the db
+    */
+    function delete_user($connection, $id) {
+
+        $query = "DELETE FROM users WHERE id='$id'";
+
+        if ($connection->query($query) === TRUE) {
+            echo "User deleted successfully";
+        } else {
+            echo "Error deleteing record: " . $conn->error;
+        }
+
+    }
+
+
+    /*
     * Create a function that checks into the db
     *  if an user is already registered
     * by his/her email

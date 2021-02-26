@@ -13,7 +13,7 @@ $id = $_GET['id'] ?? '1';
 $user = find_single_user($db, $id);
 
 /*
-* Validation form for create new account
+* Validation form for edit existing user
 */
 
 // Create a boolean variable with FALSE value
