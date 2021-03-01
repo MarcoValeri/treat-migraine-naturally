@@ -1,0 +1,27 @@
+.admin-main {
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+    .admin-main-form {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        input {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .admin-main-error {
+        
+        ul {
+
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+
+}

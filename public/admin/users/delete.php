@@ -65,33 +65,35 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-<section>
-    <h2>User: <?= $user['email'] ?></h2>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Admin</th>
-            <th>Delete</th>
-        </tr>
-        <tr>    
-            <td><?= $user['id'] ?></td>
-            <td><?= $user['first_name'] ?></td>
-            <td><?= $user['last_name'] ?></td>
-            <td><?= $user['email'] ?></td>
-            <td><?= $user['password'] ?></td>
-            <td><?= $user['admin'] ?></td>
-            <td><?= $output_delete ?><td>
-        </tr>
-    </table>
-    <br />
-    <?= $output_confirm ?>
-    <br />
-    <a href="<?= url_for('/admin/users/users.php'); ?>">&laquo; Back to Users List</a>
-</section>
+<main class="delete-main">
+    <section class="delete-main-user">
+        <h2>User: <?= $user['email'] ?></h2>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Admin</th>
+                <th>Delete</th>
+            </tr>
+            <tr>    
+                <td><?= $user['id'] ?></td>
+                <td><?= $user['first_name'] ?></td>
+                <td><?= $user['last_name'] ?></td>
+                <td><?= $user['email'] ?></td>
+                <td><?= $user['password'] ?></td>
+                <td><?= $user['admin'] ?></td>
+                <td><?= $output_delete ?></td>
+            </tr>
+        </table>
+        <br />
+        <?= $output_confirm ?>
+        <br />
+        <a href="<?= url_for('/admin/users/users.php'); ?>">&laquo; Back to Users List</a>
+    </section>
+<main>
 
 
 <!-- Footer -->

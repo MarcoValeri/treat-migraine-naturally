@@ -1,0 +1,73 @@
+.signup-main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+    .signup-main-form-gridcontainer {
+        margin: auto;
+        display: grid;
+        width: 50%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname"
+        "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm"
+        "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm"
+        "signup-main-form-gridcontainer-password-show signup-main-form-gridcontainer-password-show"
+        "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit";
+
+        .signup-main-form-gridcontainer-firstname {
+            grid-area: signup-main-form-gridcontainer-firstname;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-lastname {
+            grid-area: signup-main-form-gridcontainer-lastname;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-email {
+            grid-area: signup-main-form-gridcontainer-email;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-email-confirm {
+            grid-area: signup-main-form-gridcontainer-email-confirm;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-password {
+            grid-area: signup-main-form-gridcontainer-password;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-password-confirm {
+            grid-area: signup-main-form-gridcontainer-password-confirm;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-password-show {
+            grid-area: signup-main-form-gridcontainer-password-show;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-firstname {
+            grid-area: signup-main-form-gridcontainer-firstname;
+            margin: 1rem;
+        }
+
+        .signup-main-form-gridcontainer-submit {
+            grid-area: signup-main-form-gridcontainer-submit;
+            margin: 1rem;
+        }
+    }
+
+    .signup-main-error {
+        
+        ul {
+
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}

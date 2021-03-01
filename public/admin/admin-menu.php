@@ -27,11 +27,13 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-<section>
-    <a href="<?= url_for('/admin/users/users.php'); ?>">
-        Users
-    </a>
-</section>
+<main class='admin-menu-main'>
+    <section class="admin-menu-main-menu">
+        <a href="<?= url_for('/admin/users/users.php'); ?>">
+            Users
+        </a>
+    </section>
+</main>
 
 <!-- Footer -->
 <?php

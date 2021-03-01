@@ -88,12 +88,14 @@ if ($valid_user && count($errors_output) === 0) {
 
 } else {
     $output = "
-        <form action='./admin.php' method='post'>
+        <form class='admin-main-form' action='./admin.php' method='post'>
             <label for='email'>Email *</label>
             <input id='email' name='email' type='email' value='' placeholder='Email'>
+            <br />
             <label for='password'>Password *</label>
             <input id='password' name='password' type='password' value='' placeholder='Password'>
-            <input name='submit' type='Submit' value='Create new account'>
+            <br />
+            <input name='submit' type='Submit' value='Login'>
         </form>
 ";
 }
@@ -119,21 +121,22 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
+<main class="admin-main">
+    <!-- Output -->
+    <?= $output; ?>
 
-<!-- Output -->
-<?= $output; ?>
-
-<section>
-    <!-- Show errors if they exist -->
-    <ul>
-    <?php
-        foreach($errors_output as $key => $value) {
-    ?>
-            <li><?= "${key}: ${value}"; ?></li>
-    <?php
-        }
-    ?>
-</section>
+    <section class="admin-main-error">
+        <!-- Show errors if they exist -->
+        <ul>
+        <?php
+            foreach($errors_output as $key => $value) {
+        ?>
+                <li><?= "${key}: ${value}"; ?></li>
+        <?php
+            }
+        ?>
+    </section>
+</main>
 
 <!-- Footer -->
 <?php

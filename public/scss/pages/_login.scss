@@ -1,0 +1,27 @@
+.login-main {
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+    .login-main-form {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        input {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .login-main-error {
+        
+        ul {
+
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+
+}

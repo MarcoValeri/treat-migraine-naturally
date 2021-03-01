@@ -8,11 +8,6 @@
     */
     function create_session() {
         session_start();
-        echo session_id();
-        echo "<br />";
-        echo $_SESSION['email'] ?? '';
-        echo "<br />";
-        echo $_SESSION['admin'] ?? '';
     }
 
     /*

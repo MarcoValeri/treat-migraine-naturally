@@ -32,30 +32,30 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-<section>
-    <h2>User: <?= $user['email'] ?></h2>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Admin</th>
-            <th>View</th>
-        </tr>
-        <tr>    
-            <td><?= $user['id'] ?></td>
-            <td><?= $user['first_name'] ?></td>
-            <td><?= $user['last_name'] ?></td>
-            <td><?= $user['email'] ?></td>
-            <td><?= $user['password'] ?></td>
-            <td><?= $user['admin'] ?></td>
-            <td><a href="<?= url_for('/admin/users/show.php?id=' . $user['id']); ?>">View</a><td>
-        </tr>
-    </table>
-    <a href="<?= url_for('/admin/users/users.php'); ?>">&laquo; Back to Users List</a>
-</section>
+<main class="show-main">
+    <section class="show-main-user">
+        <h2>User: <?= $user['email'] ?></h2>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Admin</th>
+            </tr>
+            <tr>    
+                <td><?= $user['id'] ?></td>
+                <td><?= $user['first_name'] ?></td>
+                <td><?= $user['last_name'] ?></td>
+                <td><?= $user['email'] ?></td>
+                <td><?= $user['password'] ?></td>
+                <td><?= $user['admin'] ?></td>
+            </tr>
+        </table>
+        <a href="<?= url_for('/admin/users/users.php'); ?>">&laquo; Back to Users List</a>
+    </section>
+</main>
 
 
 <!-- Footer -->

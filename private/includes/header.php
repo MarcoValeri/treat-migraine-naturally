@@ -9,7 +9,7 @@
 ?>
 
 <header>
-    <nav>
+    <nav class="header-navbar-one">
         <ul>
             <li><a href="<?= url_for('/index.php') ?>">Home</a></li>
             <li><a href="<?= url_for('/pages/sign-up.php'); ?>">Sign Up</a></li>
@@ -18,7 +18,7 @@
             <li><a href="<?= url_for('/admin/admin.php'); ?>">Admin</a></li>
             <li><a href="<?= url_for('/admin/admin-menu.php'); ?>">Admin Menu</a></li>
         </ul>
-        <nav>
+        <nav class="header-navbar-two">
             <ul>
                 <?php
                     if (is_user_logged()) {
@@ -32,7 +32,7 @@
                 ?>
         </nav>
     </nav>
-    <section>
+    <section class="header-headline">
         <h1>Treat Migraine Naturally</h1>
         <h2><?= $header_sub_title; ?></h2>
     </section>

@@ -1,0 +1,30 @@
+.users-main {
+    width: 80%;
+    margin: auto;
+
+    .users-main-newuser {
+        margin: 0rem auto 2rem auto;
+        border: 1px solid #000;
+    }
+
+    .users-main-list {
+        margin: auto;
+        padding: 2rem;
+
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th,
+            td {
+                padding: 1rem;
+            }            
+        }
+    }
+}

@@ -273,25 +273,39 @@ if ($valid_user && count($errors_output) === 0) {
 
 } else {
     $output = "
-    <main>
-        <form id='form' action='./sign-up.php' method='post'>
-            <label for='first_name'>First Name *</label>
-            <input id='first_name' name='first_name' type='text' value='${first_name}' placeholder='First Name'>
-            <label for='last_name'>Last Name *</label>
-            <input id='last_name' name='last_name' type='text' value='${last_name}' placeholder='Last Name'>
-            <label for='email'>Email *</label>
-            <input id='email' name='email' type='email' value='${email}' placeholder='Email'>
-            <label for='confirm_email'>Confirm email *</label>
-            <input id='confirm_email' name='confirm_email' type='email' value='${confirm_email}' placeholder='Confirm Email'>
-            <label for='password'>Password *</label>
-            <input id='password' name='password' type='password' value='${password}' placeholder='Password'>
-            <label for='confirm_password'>Confirm Password *</label>
-            <input id='confirm_password' name='confirm_password' type='password' value='${confirm_password}' placeholder='Confirm Password'>
-            <label for='show_password'>Show Password</label>
-            <input id='show_password' name='show_password' type='checkbox'>
-            <input name='submit' type='Submit' value='Create new account'>
+    <form id='form' class='signup-main-form-gridcontainer' action='./sign-up.php' method='post'>
+            <section class='signup-main-form-gridcontainer-firstname'>
+                <label for='first_name'>First Name *</label>
+                <input id='first_name' name='first_name' type='text' value='${first_name}' placeholder='First Name'>
+            </section>
+            <section class='signup-main-form-gridcontainer-lastname'>
+                <label for='last_name'>Last Name *</label>
+                <input id='last_name' name='last_name' type='text' value='${last_name}' placeholder='Last Name'>
+            </section>
+            <section class='signup-main-form-gridcontainer-email'>
+                <label for='email'>Email *</label>
+                <input id='email' name='email' type='email' value='${email}' placeholder='Email'>
+            </section>
+            <section class='signup-main-form-gridcontainer-email-confirm'>
+                <label for='confirm_email'>Confirm email *</label>
+                <input id='confirm_email' name='confirm_email' type='email' value='${confirm_email}' placeholder='Confirm Email'>
+            </section>
+            <section class='signup-main-form-gridcontainer-password'>
+                <label for='password'>Password *</label>
+                <input id='password' name='password' type='password' value='${password}' placeholder='Password'>
+            </section>
+            <section class='signup-main-form-gridcontainer-password-confirm'>
+                <label for='confirm_password'>Confirm Password *</label>
+                <input id='confirm_password' name='confirm_password' type='password' value='${confirm_password}' placeholder='Confirm Password'>
+            </section>
+            <section class='signup-main-form-gridcontainer-password-show'>
+                <label for='show_password'>Show Password</label>
+                <input id='show_password' name='show_password' type='checkbox'>
+            </section>
+            <section class='signup-main-form-gridcontainer-submit'>
+                <input name='submit' type='Submit' value='Create new account'>
+            </section>
         </form>
-    </main>
     ";
 }
 
@@ -319,21 +333,23 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
+<main class="signup-main">
+    <!-- Output -->
+    <?= $output; ?>
 
-<!-- Output -->
-<?= $output; ?>
+    <section class="signup-main-error">
+        <!-- Show errors if they exist -->
+        <ul>
+        <?php
+            foreach($errors_output as $key => $value) {
+        ?>
+                <li><?= "${key}: ${value}"; ?></li>
+        <?php
+            }
+        ?>
+    </section>
 
-<section>
-    <!-- Show errors if they exist -->
-    <ul>
-    <?php
-        foreach($errors_output as $key => $value) {
-    ?>
-            <li><?= "${key}: ${value}"; ?></li>
-    <?php
-        }
-    ?>
-</section>
+</main>
 
 <!-- Footer -->
 <?php

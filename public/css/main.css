@@ -1,0 +1,171 @@
+header {
+  height: 50vh; }
+  header nav li {
+    display: inline;
+    font-size: 1.2rem;
+    padding: 1rem; }
+  header .header-navbar-two ul {
+    text-align: right;
+    margin: 0rem 2rem 0rem 0rem; }
+    header .header-navbar-two ul button {
+      padding: .5rem; }
+  header .header-headline {
+    text-align: center; }
+
+footer {
+  margin: 20rem auto 0rem auto;
+  text-align: center; }
+  footer span {
+    color: #ff0000;
+    font-size: 1.5rem; }
+
+.signup-main {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+  .signup-main .signup-main-form-gridcontainer {
+    margin: auto;
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname" "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm" "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm" "signup-main-form-gridcontainer-password-show signup-main-form-gridcontainer-password-show" "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit"; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
+      grid-area: signup-main-form-gridcontainer-firstname;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-lastname {
+      grid-area: signup-main-form-gridcontainer-lastname;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-email {
+      grid-area: signup-main-form-gridcontainer-email;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-email-confirm {
+      grid-area: signup-main-form-gridcontainer-email-confirm;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password {
+      grid-area: signup-main-form-gridcontainer-password;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password-confirm {
+      grid-area: signup-main-form-gridcontainer-password-confirm;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password-show {
+      grid-area: signup-main-form-gridcontainer-password-show;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
+      grid-area: signup-main-form-gridcontainer-firstname;
+      margin: 1rem; }
+    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit {
+      grid-area: signup-main-form-gridcontainer-submit;
+      margin: 1rem; }
+  .signup-main .signup-main-error ul li {
+    list-style-type: none; }
+
+.login-main {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+  .login-main .login-main-form {
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+    .login-main .login-main-form input {
+      margin-bottom: 1rem; }
+  .login-main .login-main-error ul li {
+    list-style-type: none; }
+
+.admin-main {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+  .admin-main .admin-main-form {
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+    .admin-main .admin-main-form input {
+      margin-bottom: 1rem; }
+  .admin-main .admin-main-error ul li {
+    list-style-type: none; }
+
+.admin-menu-main {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+  .admin-menu-main .admin-menu-main-menu {
+    width: 20%;
+    margin: auto;
+    padding: 1rem;
+    font-size: 2rem;
+    border: 1px solid #000; }
+
+.users-main {
+  width: 80%;
+  margin: auto; }
+  .users-main .users-main-newuser {
+    margin: 0rem auto 2rem auto;
+    border: 1px solid #000; }
+  .users-main .users-main-list {
+    margin: auto;
+    padding: 2rem; }
+    .users-main .users-main-list table,
+    .users-main .users-main-list th,
+    .users-main .users-main-list td {
+      border: 1px solid #000; }
+    .users-main .users-main-list table {
+      width: 100%;
+      border-collapse: collapse; }
+      .users-main .users-main-list table th,
+      .users-main .users-main-list table td {
+        padding: 1rem; }
+
+.show-main {
+  width: 80%;
+  margin: auto; }
+  .show-main .show-main-user {
+    margin: auto;
+    padding: 2rem; }
+    .show-main .show-main-user table,
+    .show-main .show-main-user th,
+    .show-main .show-main-user td {
+      border: 1px solid #000; }
+    .show-main .show-main-user table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem; }
+      .show-main .show-main-user table th,
+      .show-main .show-main-user table td {
+        padding: 1rem; }
+
+.edit-main {
+  width: 80%;
+  margin: auto; }
+  .edit-main .edit-main-user {
+    margin: auto;
+    padding: 2rem; }
+    .edit-main .edit-main-user table,
+    .edit-main .edit-main-user th,
+    .edit-main .edit-main-user td {
+      border: 1px solid #000; }
+    .edit-main .edit-main-user table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem; }
+      .edit-main .edit-main-user table th,
+      .edit-main .edit-main-user table td {
+        padding: 1rem; }
+
+.delete-main {
+  width: 80%;
+  margin: auto; }
+  .delete-main .delete-main-user {
+    margin: auto;
+    padding: 2rem; }
+    .delete-main .delete-main-user table,
+    .delete-main .delete-main-user th,
+    .delete-main .delete-main-user td {
+      border: 1px solid #000; }
+    .delete-main .delete-main-user table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem; }
+      .delete-main .delete-main-user table th,
+      .delete-main .delete-main-user table td {
+        padding: 1rem; }

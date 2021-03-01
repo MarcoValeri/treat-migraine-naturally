@@ -1,0 +1,13 @@
+// Import layout
+@import "layout/header";
+@import "layout/footer";
+
+// Import pages
+@import "pages/sign-up.scss";
+@import "pages/login.scss";
+@import "pages/admin.scss";
+@import "pages/admin-menu";
+@import "pages/users";
+@import "pages/show";
+@import "pages/edit";
+@import "pages/delete";
