@@ -8,7 +8,7 @@ require_once('../../private/initialize.php');
 redirect_user($_SESSION['email'], url_for('/pages/login.php'));
 
 // Define a variable that gives the title to the page
-$page_title = 'Menu';
+$page_title = 'Healthy Survey';
 
 // Include head.php and related code
 include(INCLUDE_PATH . '/head.php');
@@ -21,16 +21,16 @@ include(INCLUDE_PATH . '/head.php');
 <!-- Headers -->
 <?php 
 // Give value to $header_sub_title to have a right sub title in the header menu
-$header_sub_title = 'Menu';
+$header_sub_title = 'Healthy Survey';
 // Include header.php and related code
 include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- main --> 
 <main>
-    <section>
-        <a href="<?= url_for('/menu/healthy-survey.php'); ?>">Healthy Survey</a>
-    </section>
+    <h2>Start out survey</h2>
+    <p>Write something nice to convinc the user to start the survey</p>
+    <a href="<?= url_for('/menu/healthy-survey-page-1.php'); ?>">Start now</a>
 </main>
 
 <!-- Footer -->
