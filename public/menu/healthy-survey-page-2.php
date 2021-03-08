@@ -40,7 +40,7 @@ if (isset($_POST['next3'])) {
     * Validate Details input
     * Details must be longer than 5 character
     * Details must be shorter than 500 character
-    * Title should contain characters
+    * Details should contain characters
     * number and special characgter
     */
     if (isset($_POST['medical_history_details'])) {
@@ -122,7 +122,7 @@ if ($valid && count($errors_output) === 0) {
 
 
 // Define a variable that gives the title to the page
-$page_title = 'Healthy Survey Page 1';
+$page_title = 'Healthy Survey Page 2';
 
 // Include head.php and related code
 include(INCLUDE_PATH . '/head.php');
