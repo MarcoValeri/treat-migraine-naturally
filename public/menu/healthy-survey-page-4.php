@@ -29,13 +29,27 @@ $redirect_next = '';
 * Create variables where saving data by the form
 */
 $suffered_from_migraine = '';
+$migraine_type = '';
+$migraine_duration = '';
+$stages_your_migraines = '';
+$migraine_symptoms = '';
+$medications_taken = '';
+$medication_side_effects = '';
+$non_medical_treatments_used = '';
+$known_migraine_triggers = '';
+$diet = '';
+$tabacco = '';
+$alcohol = '';
+$exercise = '';
+$fitness_level = '';
+$posture = '';
 
 
 // Check if the form has been submitted
 if (isset($_POST['end'])) {
     
     /*
-    * Validate Suffered From Migraine checkbox
+    * Validate Suffered From Migraine dropdown
     * Suffered From Migraine is required
     */
     if (isset($_POST['suffered-from-migraine'])) {
@@ -46,7 +60,265 @@ if (isset($_POST['end'])) {
             $suffered_from_migraine = $suffered_from_migraine_input;
             $valid = TRUE;
         } else {
-            $errors_output['suffered-from-migraine'] = "is required";
+            $errors_output['How long have you suffered from migraine'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Migraine type dropdown
+    * Migraine type is NOT required
+    */
+    if (isset($_POST['migraine-type'])) {
+        $migraine_type_input = trim($_POST['migraine-type']);
+        $migraine_type_input = htmlentities($migraine_type_input);
+
+        if ($migraine_type_input !== '') {
+            $migraine_type = $migraine_type_input;
+            $valid = TRUE;
+        } 
+
+    }
+
+    /*
+    * Validate Migraine Duration dropdown
+    * Migraine Duration is required
+    */
+    if (isset($_POST['migraine-duration'])) {
+        $migraine_duration_input = trim($_POST['migraine-duration']);
+        $migraine_duration_input = htmlentities($migraine_duration_input);
+
+        if ($migraine_duration_input !== '') {
+            $migraine_duration = $migraine_duration_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Typical migraine duration'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Stages of Your Migraines dropdown
+    * Stages of Your Migraines is required
+    */
+    if (isset($_POST['stages-your-migraines'])) {
+        $stages_your_migraines_input = trim($_POST['stages-your-migraines']);
+        $stages_your_migraines_input = htmlentities($stages_your_migraines_input);
+
+        if ($stages_your_migraines_input !== '') {
+            $stages_your_migraines = $stages_your_migraines_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Typical stages of your migraines'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Migraine Symptoms dropdown
+    * Migraine Symptoms is required
+    */
+    if (isset($_POST['migraine-symptoms'])) {
+        $migraine_symptoms_input = trim($_POST['migraine-symptoms']);
+        $migraine_symptoms_input = htmlentities($migraine_symptoms_input);
+
+        if ($migraine_symptoms_input !== '') {
+            $migraine_symptoms = $migraine_symptoms_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Migraine Symptoms'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Medications taken dropdown
+    * Medications taken is required
+    */
+    if (isset($_POST['medications-taken'])) {
+        $medications_taken_input = trim($_POST['medications-taken']);
+        $medications_taken_input = htmlentities($medications_taken_input);
+
+        if ($medications_taken_input !== '') {
+            $medications_taken = $medications_taken_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Medications taken'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Medication side effects textarea
+    * Medication side effects must be longer than 5 character
+    * Medication side effects must be shorter than 500 character
+    * Medication side effects should contain characters
+    * number and special characgter
+    */
+    if (isset($_POST['medication-side-effects'])) {
+        $medication_side_effects_input = trim($_POST['medication-side-effects']);
+        $medication_side_effects_input = htmlentities($medication_side_effects_input);
+
+        if ($medication_side_effects_input !== '') {
+
+            if (strlen($medication_side_effects_input) > 5) {
+
+                if (strlen($medication_side_effects_input) < 500) {
+                    $medication_side_effects = $medication_side_effects_input;
+                    $valid = true;
+                } else {
+                    $errors_output['Medication side effects'] = "should be shorter than 500 characters";
+                    $valid = false;
+                }
+    
+            } else {
+                $errors_output['Medication side effects'] = "should be longer than 5 characters";
+                $valid = false;
+            }
+
+        } else {
+            $errors_output['Medication side effects'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Non-medical treatments used dropdown
+    * Non-medical treatments used taken is required
+    */
+    if (isset($_POST['non-medical-treatments-used'])) {
+        $non_medical_treatments_used_input = trim($_POST['non-medical-treatments-used']);
+        $non_medical_treatments_used_input = htmlentities($non_medical_treatments_used_input);
+
+        if ($non_medical_treatments_used_input !== '') {
+            $non_medical_treatments_used = $non_medical_treatments_used_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Non-medical treatments used'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Known migraine triggers dropdown
+    * Known migraine triggers is required
+    */
+    if (isset($_POST['known-migraine-triggers'])) {
+        $known_migraine_triggers_input = trim($_POST['known-migraine-triggers']);
+        $known_migraine_triggers_input = htmlentities($known_migraine_triggers_input);
+
+        if ($known_migraine_triggers_input !== '') {
+            $known_migraine_triggers = $known_migraine_triggers_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Known migraine triggers'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Diet dropdown
+    * Diet is required
+    */
+    if (isset($_POST['diet'])) {
+        $diet_input = trim($_POST['diet']);
+        $diet_input = htmlentities($diet_input);
+
+        if ($diet_input !== '') {
+            $diet = $diet_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Diet'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Tobacco checkbox
+    * Diet is required
+    */
+    if (isset($_POST['tabacco-yes']) || isset($_POST['tabacco-no'])) {
+
+        $tabacco_yes_input = trim($_POST['tabacco-yes']);
+        $tabacco_yes_input = htmlentities($tabacco_yes_input);
+
+        $tabacco_no_input = trim($_POST['tabacco-no']);
+        $tabacco_no_input = htmlentities($tabacco_no_input);
+
+        if ($tabacco_yes_input !== '' || $tabacco_no_input !== '') {
+            $tabacco_yes = $tabacco_yes_input;
+            $tabacco_no = $tabacco_no_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Tabacco'] = "is required";
+            $valid = FALSE;
+        }
+    }
+
+    /*
+    * Validate Alcohol dropdown
+    * Alcohol is required
+    */
+    if (isset($_POST['alcohol'])) {
+        $alcohol_input = trim($_POST['alcohol']);
+        $alcohol_input = htmlentities($alcohol_input);
+
+        if ($alcohol_input !== '') {
+            $alcohol = $alcohol_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Alcohol'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Exercise dropdown
+    * Exercise is required
+    */
+    if (isset($_POST['exercise'])) {
+        $exercise_input = trim($_POST['exercise']);
+        $exercise_input = htmlentities($exercise_input);
+
+        if ($exercise_input !== '') {
+            $exercise = $exercise_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Exercise'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Fitness Level dropdown
+    * Fitness Level is required
+    */
+    if (isset($_POST['fitness-level'])) {
+        $fitness_level_input = trim($_POST['fitness-level']);
+        $fitness_level_input = htmlentities($fitness_level_input);
+
+        if ($fitness_level_input !== '') {
+            $fitness_level = $fitness_level_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Fitness Level'] = "is required";
+            $valid = false;
+        }
+    }
+
+    /*
+    * Validate Posture dropdown
+    * Posture is required
+    */
+    if (isset($_POST['posture'])) {
+        $posture_input = trim($_POST['posture']);
+        $posture_input = htmlentities($posture_input);
+
+        if ($posture_input !== '') {
+            $posture = $posture_input;
+            $valid = TRUE;
+        } else {
+            $errors_output['Posture'] = "is required";
             $valid = false;
         }
     }
@@ -59,6 +331,20 @@ if (isset($_POST['end'])) {
 */
 if ($valid && count($errors_output) === 0) {
     $_SESSION['suffered-from-migraine'] = $suffered_from_migraine;
+    $_SESSION['migraine-type'] = $migraine_type;
+    $_SESSION['migraine-duration'] = $migraine_duration;
+    $_SESSION['stages-your-migraines'] = $stages_your_migraines;
+    $_SESSION['migraine-symptoms'] = $migraine_symptoms;
+    $_SESSION['medications-taken'] = $medications_taken;
+    $_SESSION['medication-side-effects'] = $medication_side_effects;
+    $_SESSION['non-medical-treatments-used'] = $non_medical_treatments_used;
+    $_SESSION['known-migraine-triggers'] = $known_migraine_triggers;
+    $_SESSION['diet'] = $diet;
+    $tabacco = $_SESSION['tabacco-yes'] === 'tabacco-yes' ? 'yes' : 'no';
+    $_SESSION['alcohol'] = $alcohol;
+    $_SESSION['exercise'] = $exercise;
+    $_SESSION['fitness-level'] = $fitness_level;
+    $_SESSION['posture'] = $posture;
     $redirect_next = './healthy-survey-page-4.php'; 
 } else {
     $redirect_next = './healthy-survey-page-4.php';
@@ -100,6 +386,7 @@ include(INCLUDE_PATH . '/header.php');
         <br />
         <label for="migraine-type">Migraine type (if known)?</label>
         <select id="migraine-type" name="migraine-type">
+            <option value="I don't know">I don't know</option>
             <option value="Migraine without aura">Migraine without aura</option>
             <option value="Migraine with aura">Migraine with aura</option>
             <option value="Hemiplegic migraine">Hemiplegic migraine</option>
@@ -193,11 +480,11 @@ include(INCLUDE_PATH . '/header.php');
         </select>
         <br />
         <p>Tobacco</p>
-        <input id="tobacco-yes" name="tobacco-yes" type="checkbox" value="tobacco-yes">
-        <label for="tobacco-yes">Yes</label>
+        <input id="tabacco-yes" name="tabacco-yes" type="checkbox" value="tabacco-yes">
+        <label for="tabacco-yes">Yes</label>
         <br />
-        <input id="tobacco-no" name="tobacco-no" type="checkbox" value="tobacco-no">
-        <label for="tobacco-no">No</label>
+        <input id="tabacco-no" name="tabacco-no" type="checkbox" value="tabacco-no">
+        <label for="tabacco-no">No</label>
         <br />
         <label for="alcohol">Alcohol</label>
         <select id="alcohol" name="alcohol">
