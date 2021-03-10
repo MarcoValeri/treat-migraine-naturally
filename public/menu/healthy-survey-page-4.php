@@ -8,8 +8,9 @@ require_once('../../private/initialize.php');
 redirect_user($_SESSION['email'], url_for('/pages/login.php'));
 
 echo "Test";
-echo "<pre>";
-print_r($_SESSION);
+foreach ($_SESSION as $key => $value) {
+    echo "- " . $key . ": " . $value . "<br />";
+}
 
 /*
 * Validation form for healthy survey
@@ -237,17 +238,13 @@ if (isset($_POST['end'])) {
     * Validate Tobacco checkbox
     * Diet is required
     */
-    if (isset($_POST['tabacco-yes']) || isset($_POST['tabacco-no'])) {
+    if (isset($_POST['tabacco'])) {
 
-        $tabacco_yes_input = trim($_POST['tabacco-yes']);
-        $tabacco_yes_input = htmlentities($tabacco_yes_input);
+        $tabacco_input = trim($_POST['tabacco']);
+        $tabacco_input = htmlentities($tabacco_input);
 
-        $tabacco_no_input = trim($_POST['tabacco-no']);
-        $tabacco_no_input = htmlentities($tabacco_no_input);
-
-        if ($tabacco_yes_input !== '' || $tabacco_no_input !== '') {
-            $tabacco_yes = $tabacco_yes_input;
-            $tabacco_no = $tabacco_no_input;
+        if ($tabacco_input !== '') {
+            $tabacco = $tabacco_input;
             $valid = TRUE;
         } else {
             $errors_output['Tabacco'] = "is required";
@@ -340,12 +337,23 @@ if ($valid && count($errors_output) === 0) {
     $_SESSION['non-medical-treatments-used'] = $non_medical_treatments_used;
     $_SESSION['known-migraine-triggers'] = $known_migraine_triggers;
     $_SESSION['diet'] = $diet;
-    $tabacco = $_SESSION['tabacco-yes'] === 'tabacco-yes' ? 'yes' : 'no';
+    $_SESSION['tabacco'] = $tabacco === 'yes' ? 'yes' : 'no';
     $_SESSION['alcohol'] = $alcohol;
     $_SESSION['exercise'] = $exercise;
     $_SESSION['fitness-level'] = $fitness_level;
     $_SESSION['posture'] = $posture;
-    $redirect_next = './healthy-survey-page-4.php'; 
+    $redirect_next = './healthy-survey-page-thank-you.php'; 
+
+    /*
+    * Set up and send the email for a member of the staff
+    * with the data extract by the survey
+    */
+    $msg = "User " . $_SESSION['first_name'] . " " . $_SESSION['last_name'] . " has submitted the Healthy Survey\n";
+    $msg .= "Data:\n";
+
+    // Loops through $_SESSION array to save the data into $msg variable
+    
+
 } else {
     $redirect_next = './healthy-survey-page-4.php';
 }
@@ -480,11 +488,11 @@ include(INCLUDE_PATH . '/header.php');
         </select>
         <br />
         <p>Tobacco</p>
-        <input id="tabacco-yes" name="tabacco-yes" type="checkbox" value="tabacco-yes">
-        <label for="tabacco-yes">Yes</label>
+        <input id="tabacco" name="tabacco" type="checkbox" value="yes">
+        <label for="tabacco">Yes</label>
         <br />
-        <input id="tabacco-no" name="tabacco-no" type="checkbox" value="tabacco-no">
-        <label for="tabacco-no">No</label>
+        <input id="tabacco" name="tabacco" type="checkbox" value="no">
+        <label for="tabacco">No</label>
         <br />
         <label for="alcohol">Alcohol</label>
         <select id="alcohol" name="alcohol">
