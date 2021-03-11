@@ -31,6 +31,9 @@ include(INCLUDE_PATH . '/header.php');
     <section>
         <a href="<?= url_for('/menu/healthy-survey.php'); ?>">Healthy Survey</a>
     </section>
+    <section>
+        <a href="<?= url_for('/menu/user-settings.php'); ?>">User Setting</a>
+    </section>
 </main>
 
 <!-- Footer -->

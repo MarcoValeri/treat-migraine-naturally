@@ -7,10 +7,16 @@ require_once('../../private/initialize.php');
 // an authorized user
 redirect_user($_SESSION['email'], url_for('/pages/login.php'));
 
-echo "Test";
-foreach ($_SESSION as $key => $value) {
-    echo "- " . $key . ": " . $value . "<br />";
-}
+/* DELETE BEFORE DEPLOY */
+/* DELETE BEFORE DEPLOY */
+/* DELETE BEFORE DEPLOY */
+/* DELETE BEFORE DEPLOY */
+/* DELETE BEFORE DEPLOY */
+/* DELETE BEFORE DEPLOY */
+// echo "Test";
+// foreach ($_SESSION as $key => $value) {
+//     echo "- " . $key . ": " . $value . "<br />";
+// }
 
 /*
 * Validation form for healthy survey
@@ -348,10 +354,47 @@ if ($valid && count($errors_output) === 0) {
     * Set up and send the email for a member of the staff
     * with the data extract by the survey
     */
+    $email_staff = "info@marcovaleri.net";
+    $obj = "Survey of " . $_SESSION['first_name'] . " " . $_SESSION['last_name'];
     $msg = "User " . $_SESSION['first_name'] . " " . $_SESSION['last_name'] . " has submitted the Healthy Survey\n";
     $msg .= "Data:\n";
+    $msg .= "\nTitle: " . $_SESSION['title'];
+    $msg .= "\nName: " . $_SESSION['first_name'];
+    $msg .= "\nSurname: " . $_SESSION['last_name'];
+    $msg .= "\nEmail: " . $_SESSION['email'];
+    $msg .= "\nTelephone: " . $_SESSION['address_number'];
+    $msg .= "\n\nAddress: " . $_SESSION['address_number'] . ", ";
+    $msg .=  $_SESSION['address'] . "\n" . $_SESSION['postcode'] . " - ";
+    $msg .= $_SESSION['city'] . " - " . $_SESSION['country'];
+    $msg .= "\n\nAge: " . $_SESSION['age'];
+    $msg .= "\nGender: " . $_SESSION['gender'];
+    $msg .= "\nOccupation: " . $_SESSION['occupation'];
+    $msg .= "\n\nDiabetes: " . $_SESSION['diabetes'];
+    $msg .= "\nFood allergies: " . $_SESSION['food_allergies'];
+    $msg .= "\nSensitivity to foods: " . $_SESSION['sensitivity_to_foods'];
+    $msg .= "\nAllergies medications: " . $_SESSION['allergies_medications'];
+    $msg .= "\nNotable reactions to medications: " . $_SESSION['notable_reactions_to_medications'];
+    $msg .= "\nMedical history details: " . $_SESSION['medical_history_details'];
+    $msg .= "\n\nCurrent illnesses details: " . $_SESSION['current_illnesses_details'];
+    $msg .= "\nCurrent medications details: " . $_SESSION['current_medications_details'];
+    $msg .= "\n\nSuffered from migraine: " . $_SESSION['suffered-from-migraine'];
+    $msg .= "\nMigraine-type: " . $_SESSION['migraine-type'];
+    $msg .= "\nMigraine duration: " . $_SESSION['migraine-duration'];
+    $msg .= "\nStages your migraines: " . $_SESSION['stages-your-migraines'];
+    $msg .= "\nMigraine symptoms: " . $_SESSION['migraine-symptoms'];
+    $msg .= "\nMedications taken: " . $_SESSION['medications-taken'];
+    $msg .= "\n\nMedication side effects: " . $_SESSION['medication-side-effects'];
+    $msg .= "\nNon medical treatments used: " . $_SESSION['non-medical-treatments-used'];
+    $msg .= "\nKnown migraine triggers: " . $_SESSION['known-migraine-triggers'];
+    $msg .= "\n\nDiet: " . $_SESSION['diet'];
+    $msg .= "\nAlcohol: " . $_SESSION['alcohol'];
+    $msg .= "\nExercise: " . $_SESSION['exercise'];
+    $msg .= "\nFitness level: " . $_SESSION['fitness-level'];
+    $msg .= "\nPosture: " . $_SESSION['posture'];
+    $msg .= "\nTabacco: " . $_SESSION['tabacco'];
 
-    // Loops through $_SESSION array to save the data into $msg variable
+    mail($email_staff, $obj, $msg);
+    echo "Send email";
     
 
 } else {

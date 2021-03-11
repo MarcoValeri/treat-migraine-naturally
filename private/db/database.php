@@ -250,6 +250,26 @@
     }
 
     /*
+    * Create a function that gets
+    * @parameter $connection that connects to the db
+    * @parameter $email of the user and
+    * @return string his/her id getting it into db
+    * This function allows to have the user id
+    */
+    function get_id($connection, $email) {
+
+        $query = "SELECT * FROM users WHERE email='$email'";
+        $result = $connection->query($query);
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $id = $row['id'];
+            return $id;
+        }
+
+    }
+
+    /*
     * Create a function that gets the users data from the db and 
     * saves it into a variable
     * @parameter $connection that connects to the db
