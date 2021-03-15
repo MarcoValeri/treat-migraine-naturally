@@ -109,6 +109,7 @@ if ($valid && count($errors_output) === 0) {
     $_SESSION['current_illnesses_details'] = $current_illnesses_details;
     $_SESSION['current_medications_details'] = $current_medications_details;
     $redirect_next = './healthy-survey-page-4.php';
+    redirect_to('./healthy-survey-page-4.php');
 } else {
     $redirect_next = './healthy-survey-page-3.php';
 }

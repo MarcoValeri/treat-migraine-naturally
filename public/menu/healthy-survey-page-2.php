@@ -116,6 +116,7 @@ if ($valid && count($errors_output) === 0) {
     $_SESSION['notable_reactions_to_medications'] = $notable_reactions_to_medications === '' ? "no" : "yes";
     $_SESSION['medical_history_details'] = $details;
     $redirect_next = './healthy-survey-page-3.php';
+    redirect_to('./healthy-survey-page-3.php');
 } else {
     $redirect_next = './healthy-survey-page-2.php';
 }

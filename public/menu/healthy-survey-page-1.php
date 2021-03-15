@@ -623,6 +623,7 @@ if ($valid && count($errors_output) === 0) {
     $_SESSION['gender'] = $gender;
     $_SESSION['occupation'] = $occupation;
     $redirect_next = './healthy-survey-page-2.php';
+    redirect_to('./healthy-survey-page-2.php');
 } else {
     $redirect_next = './healthy-survey-page-1.php';
 }

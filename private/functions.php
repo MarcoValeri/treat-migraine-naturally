@@ -50,4 +50,13 @@
         }
 
     }
+
+    /*
+    * Create a function that set the redirect
+    * and exit to the current page
+    */
+    function redirect_to($location) {
+        header("Location: " . $location);
+        exit;
+    }
 ?>

@@ -348,7 +348,6 @@ if ($valid && count($errors_output) === 0) {
     $_SESSION['exercise'] = $exercise;
     $_SESSION['fitness-level'] = $fitness_level;
     $_SESSION['posture'] = $posture;
-    $redirect_next = './healthy-survey-page-thank-you.php'; 
 
     /*
     * Set up and send the email for a member of the staff
@@ -395,6 +394,10 @@ if ($valid && count($errors_output) === 0) {
 
     mail($email_staff, $obj, $msg);
     echo "Send email";
+
+    // Redirect user to the thank you page
+    $redirect_next = './healthy-survey-page-thank-you.php'; 
+    redirect_to('./healthy-survey-page-thank-you.php');
     
 
 } else {
