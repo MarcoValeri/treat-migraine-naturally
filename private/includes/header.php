@@ -9,30 +9,43 @@
 ?>
 
 <header>
-    <nav class="header-navbar-one">
+    <nav class="header-navbar">
         <ul>
             <li><a href="<?= url_for('/index.php') ?>">Home</a></li>
             <li><a href="<?= url_for('/pages/sign-up.php'); ?>">Sign Up</a></li>
             <li><a href="<?= url_for('/pages/login.php'); ?>">Login</a></li>
+            <li><a href="<?= url_for('/menu/menu.php'); ?>">Menu</a></li>
             <li><a href="<?= url_for('/pages/about-us.php'); ?>">About Us</a></li>
             <li><a href="<?= url_for('/pages/contact.php'); ?>">Contact</a></li>
-            <li><a href="<?= url_for('/menu/menu.php'); ?>">Menu</a></li>
-            <li><a href="<?= url_for('/admin/admin.php'); ?>">Admin</a></li>
-            <li><a href="<?= url_for('/admin/admin-menu.php'); ?>">Admin Menu</a></li>
-        </ul>
-        <nav class="header-navbar-two">
-            <ul>
+            <li class="header-navbar-admin">
+                <?php
+                    if (isset($_SESSION['admin']) && $_SESSION['admin'] === "1") {
+                        $admin = url_for('/admin/admin.php');
+                        echo "<a href='${admin}'>Admin</a>";
+                    }
+                ?>
+            </li>
+            <li class="header-navbar-admin">
+                <?php
+                    if (isset($_SESSION['admin']) && $_SESSION['admin'] === "1") {
+                        $admin_menu = url_for('/admin/admin-menu.php');
+                        echo "<a href='${admin_menu}'>Admin Menu</a>";
+                    }
+                ?>
+            </li>
+            <li class="header-navbar-btn">
                 <?php
                     if (is_user_logged()) {
                         $redirect = url_for('/pages/logout.php');
-                        echo "<li>Hello " . $_SESSION['first_name'] . "</li>";
-                        echo "<button><a href='${redirect}'>Logout</a></button>";
+                        echo "Hello " . $_SESSION['first_name'] . " ";
+                        echo "<button class='header-navbar-btn-log'><a href='${redirect}'>Logout</a></button>";
                     } else {
                         $redirect = url_for('/pages/login.php');
-                        echo "<button><a href='${redirect}'>Login</a></button>";
+                        echo "<button class='header-navbar-btn-log'><a href='${redirect}'>Login</a></button>";
                     }
                 ?>
-        </nav>
+            </li>
+        </ul>
     </nav>
     <section class="header-headline">
         <h1>Treat Migraine Naturally</h1>
