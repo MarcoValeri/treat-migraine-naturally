@@ -38,10 +38,10 @@
                     if (is_user_logged()) {
                         $redirect = url_for('/pages/logout.php');
                         echo "Hello " . $_SESSION['first_name'] . " ";
-                        echo "<button class='header-navbar-btn-log'><a href='${redirect}'>Logout</a></button>";
+                        echo "<button class='header-navbar-btn-login'><a href='${redirect}'>Logout</a></button>";
                     } else {
                         $redirect = url_for('/pages/login.php');
-                        echo "<button class='header-navbar-btn-log'><a href='${redirect}'>Login</a></button>";
+                        echo "<button class='header-navbar-btn-logout'><a href='${redirect}'>Login</a></button>";
                     }
                 ?>
             </li>

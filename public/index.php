@@ -18,6 +18,11 @@ $header_sub_title = 'Welcome';
 include(INCLUDE_PATH . '/header.php');
 ?>
 
+<!-- Main -->
+<main>
+
+</main>
+
 <!-- Footer -->
 <?php
 // Include footer.php and related code

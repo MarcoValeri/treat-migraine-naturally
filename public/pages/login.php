@@ -80,7 +80,6 @@ if ($valid_user && count($errors_output) === 0) {
         $redirect = url_for('menu/menu.php');
         $output = "Hi " . $email . "<br />";
         $output .= "<button><a href='${redirect}'>Menu</a></button>";
-        echo "<br />";
         create_session_data(get_first_name($db, $email), get_last_name($db, $email), get_email($db, $email), get_admin_permission($db, $email));
     } else {
         $output = "Email and password are not valid";

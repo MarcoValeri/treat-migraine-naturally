@@ -22,3 +22,4 @@
         The tag <head> needs to close on any page that uses head.php
         This allow to add extra line of code before the close tag if needed
         -->
+    

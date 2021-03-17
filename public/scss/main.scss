@@ -2,6 +2,9 @@
 @import "layout/header";
 @import "layout/footer";
 
+// Import base
+@import "base/font";
+
 // Import pages
 @import "pages/sign-up.scss";
 @import "pages/login.scss";
@@ -11,3 +14,9 @@
 @import "pages/show";
 @import "pages/edit";
 @import "pages/delete";
+
+// Remove default padding and margin by the browser
+* {
+    padding: 0;
+    margin: 0;
+}
