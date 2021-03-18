@@ -19,8 +19,22 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-<main>
-
+<main class="main-home-gridcontainer">
+    <section class="main-home-gridcontainer-container-one">
+    1
+    </section>
+    <section class="main-home-gridcontainer-container-two">
+    2
+    </section>
+    <section class="main-home-gridcontainer-container-three">
+    3
+    </section>
+    <section class="main-home-gridcontainer-container-four">
+    4
+    </section>
+    <section class="main-home-gridcontainer-container-five">
+    5
+    </section>
 </main>
 
 <!-- Footer -->

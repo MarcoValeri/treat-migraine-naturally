@@ -71,6 +71,44 @@ footer {
     color: #ff0000;
     font-size: 1.5rem; }
 
+.main-home-gridcontainer {
+  height: 50vh;
+  margin: 0 auto;
+  border: 1px solid #ff0000;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "container-one container-one container-one container-two container-two container-two" "container-three container-three container-four container-four container-five container-five"; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-one {
+    grid-area: container-one;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #000; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-two {
+    grid-area: container-two;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #000; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-three {
+    grid-area: container-three;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #000; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-four {
+    grid-area: container-four;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #000; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-five {
+    grid-area: container-five;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border: 1px solid #000; }
+
 .signup-main {
   width: 80%;
   margin: auto;
