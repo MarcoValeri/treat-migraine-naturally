@@ -5,9 +5,14 @@
     // define("DB_PASS", 'B!rkbeck01');
     // define("DB_NAME", "treat_migraine_naturally");
 
-    define("DB_SERVER", "35.242.164.97");
-    define("DB_USER", "marco_tmn");
-    define("DB_PASS", "S!lver09");
-    define("DB_NAME", "treatMigraineNaturally");
+    // define("DB_SERVER", "35.242.164.97");
+    // define("DB_USER", "marco_tmn");
+    // define("DB_PASS", "S!lver09");
+    // define("DB_NAME", "treatMigraineNaturally");
+
+    define("DB_SERVER", "chegiornoeoggi.com");
+    define("DB_USER", "ug2iusgcymiwi");
+    define("DB_PASS", "tu2n191(4@&2");
+    define("DB_NAME", "dbmiyqteieeurl");
 
 ?>
