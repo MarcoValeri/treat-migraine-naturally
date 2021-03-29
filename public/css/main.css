@@ -115,7 +115,10 @@ footer {
     .main-home-gridcontainer .main-home-gridcontainer-single .main-home-gridcontainer-single-content {
       position: absolute;
       top: 0%;
-      color: #fff; }
+      padding: 2rem;
+      color: #fff;
+      font-size: 1.2rem;
+      line-height: 1.6; }
     .main-home-gridcontainer .main-home-gridcontainer-single img {
       display: block;
       width: 100%; }

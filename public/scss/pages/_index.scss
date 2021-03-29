@@ -62,13 +62,18 @@
         .main-home-gridcontainer-single-content {
             position: absolute;
             top: 0%;
+            padding: 2rem;
             color: #fff;
+
+            font-size: 1.2rem;
+            line-height: 1.6;
         }
 
         img {
             display: block;
             width: 100%;
         }
+
     }
 
 }
