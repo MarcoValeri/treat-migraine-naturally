@@ -30,7 +30,9 @@ include(INCLUDE_PATH . '/header.php');
             <p><strong>Migraine is a primary headache disorder of the nervous system.</strong></p>
             <p>Treat Migraine Naturally has the mission to cure this headache disorder in a efficient and natural way.</p>
             <p>Get today our healthy survey and keep in touch with our staff for a personal and natural treatment.</p>
-            <a class="main-home-gridcontainer-single-a" href="">Read More</a>
+            <div class="main-home-gridcontainer-single-btn-wrap">
+                <div class="main-home-gridcontainer-single-btn" >Read More</div>
+            </div>
         </div>
     </section>
     <section class="main-home-gridcontainer-container-two main-home-gridcontainer-single">
@@ -45,7 +47,9 @@ include(INCLUDE_PATH . '/header.php');
             <p>
                 Start now to treat the migraine in a different, healthy, natural and efficient way, register to our application and get our healthy survey.
             </p>
-            <a href="">Register today</a>
+            <div class="main-home-gridcontainer-single-btn-wrap">
+                <div class="main-home-gridcontainer-single-btn" >Read More</div>
+            </div>
         </div>
     </section>
     <section class="main-home-gridcontainer-container-three main-home-gridcontainer-single">
@@ -60,7 +64,9 @@ include(INCLUDE_PATH . '/header.php');
         <div class="main-home-gridcontainer-single-content">
             <p>So far we have helped NUMBER people in the world to fight against migraine.</p>
             <p>Are you the next?</p>
-            <a href="">Login</a>
+            <div class="main-home-gridcontainer-single-btn-wrap">
+                <div class="main-home-gridcontainer-single-btn" >Login</div>
+            </div>
         </div>
     </section>
     <section class="main-home-gridcontainer-container-five main-home-gridcontainer-single">
@@ -69,7 +75,9 @@ include(INCLUDE_PATH . '/header.php');
             <p>Who we are?</p>
             <p>Treat Migraine Naturally is a Company that has the goal to treat migraine with healthy, naturally and efficient products.</p>
             <p>So far, we have helped…</p>
-            <a href="">Read More</a>
+            <div class="main-home-gridcontainer-single-btn-wrap">
+                <div class="main-home-gridcontainer-single-btn" >Read More</div>
+            </div>
         </div>
     </section>
 </main>

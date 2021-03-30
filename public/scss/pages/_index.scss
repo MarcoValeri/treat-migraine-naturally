@@ -1,19 +1,19 @@
 .main-home-gridcontainer {
-    height: 80vh;
+    height: auto;
     margin: 0 auto;
-    border: 1px solid #ff0000;
 
     background-image: linear-gradient(
         to right bottom,
-        rgba(238, 210, 238, 0.8),
-        rgba(239, 241, 243, 0.8)
+        rgb(0, 0, 0),
+        rgba(51, 3, 47, 1)
     );
     
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-    "container-one container-one container-one container-two container-two container-two"
-    "container-three container-three container-four container-four container-five container-five";
+    "container-one container-one container-one container-one container-one container-one"
+    "container-two container-two container-two container-two container-three container-three"
+    "container-four container-four container-four container-five container-five container-five";
 
     .main-home-gridcontainer-container-one {
         grid-area: container-one;
@@ -58,6 +58,7 @@
     .main-home-gridcontainer-single {
         position: relative;
         overflow: hidden;
+        border-radius: 5px;
 
         .main-home-gridcontainer-single-content {
             position: absolute;
@@ -65,13 +66,41 @@
             padding: 2rem;
             color: #fff;
 
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             line-height: 1.6;
         }
 
         img {
             display: block;
             width: 100%;
+        }
+
+        .main-home-gridcontainer-single-btn-wrap {
+            width: 8rem;
+            padding: 1rem;
+            position: relative;
+            background: linear-gradient(240deg, #B744B8 0%, #33032F 49%, #B744B8 80%, #B744B8 100%);
+            padding: 3px;
+            margin-top: 1rem;
+            border-radius: 10px;
+
+            animation: rainbow 3s linear infinite;
+
+            .main-home-gridcontainer-single-btn {
+                background: #222;
+                color: white;
+                text-align: center;
+                font-size: 1rem;
+                padding: .5rem;
+            }
+
+            @keyframes rainbow {
+
+                to {
+                    background-position: 8rem;
+                }
+            
+            }
         }
 
     }
