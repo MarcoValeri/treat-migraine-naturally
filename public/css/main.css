@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 header {
   position: relative;
   height: 100vh;
@@ -90,10 +91,9 @@ footer {
   .main-home-gridcontainer .main-home-gridcontainer-container-one {
     grid-area: container-one;
     width: 95%;
-    height: 50%;
+    height: 70%;
     margin: auto;
-    border-radius: 5px;
-    border: 1px solid #000; }
+    border-radius: 5px; }
     .main-home-gridcontainer .main-home-gridcontainer-container-one .main-home-gridcontainer-single-content-one {
       position: absolute;
       bottom: 20%;
@@ -114,8 +114,8 @@ footer {
     border: 1px solid #000; }
     .main-home-gridcontainer .main-home-gridcontainer-container-two .main-home-gridcontainer-single-content-two {
       position: absolute;
-      bottom: 0%;
-      padding: 3rem;
+      top: 0%;
+      padding: 1rem;
       color: #fff;
       font-size: 1.3rem;
       line-height: 1.6; }
@@ -187,7 +187,13 @@ footer {
       object-position: 120px 0px; }
   .main-home-gridcontainer .main-home-gridcontainer-single {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    font-family: 'Playfair Display', serif; }
+    .main-home-gridcontainer .main-home-gridcontainer-single .first-letter {
+      font-size: 35px; }
+    .main-home-gridcontainer .main-home-gridcontainer-single a {
+      text-decoration: none;
+      color: #B744B8; }
     .main-home-gridcontainer .main-home-gridcontainer-single .main-home-gridcontainer-single-btn-wrap {
       width: 8rem;
       padding: 1rem;

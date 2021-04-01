@@ -28,14 +28,22 @@ include(INCLUDE_PATH . '/header.php');
         <img src="./images/migraine.jpg" alt="Migraine" /> <!-- Photo by Nik Shuliahin on Unsplash -->
         <div class="main-home-gridcontainer-single-content-one">
             <p>
-                <a href="https://www.who.int/news-room/fact-sheets/detail/headache-disorders" target="_blank">World Health Organization</a> 
-                declares that almost half of the adult population have had a headache<br /> at least once within the last year.
+                <a href="https://www.who.int/news-room/fact-sheets/detail/headache-disorders" target="_blank"><span class="first-letter">W</span>orld Health Organization</a> 
+                <br>declares that almost half of the adult population have had a headache 
+                <br >at least once within the last year.
             </p>
-            <p><strong>Migraine is a primary headache disorder of the nervous system.</strong></p>
-            <p>Treat Migraine Naturally has the mission to cure this headache disorder in a efficient and natural way.</p>
-            <p>Get today our healthy survey and keep in touch with our staff for a personal and natural treatment.</p>
+            <p><mark>Migraine is a primary headache disorder of the nervous system.</mark></p>
+            <p>Treat Migraine Naturally has the mission to cure this headache
+                </br> disorder in a efficient and natural way.
+            </p>
+            <p>
+                Get today our healthy survey and keep in touch with our</br> 
+                staff for a personal and natural treatment.
+            </p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn" >Read More</div>
+                <div class="main-home-gridcontainer-single-btn">
+                    <a href="https://www.who.int/news-room/fact-sheets/detail/headache-disorders" target="_blank">Read More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -43,23 +51,33 @@ include(INCLUDE_PATH . '/header.php');
         <img src="./images/acquatic-jungle.jpg" alt="Aquatic Jungle" /> <!-- Photo by Alfred Schrock on Unsplash -->
         <div class="main-home-gridcontainer-single-content-two">
             <p>
-                Do you know it is possible to Treat Migraine Naturally?
+                <a href="<?= url_for('/pages/sign-up.php'); ?>">
+                    <span class="first-letter">D</span>o you know it is possible to Treat Migraine Naturally?
+                </a>
             </p>
             <p>
-                Nowadays there are different types of natural treatments that allow to treat the migraine with healthy and natural products.    
+                Nowadays there are different types of natural treatments that allow to 
+                <br><mark>treat the migraine with healthy and natural products.</mark>    
             </p>
             <p>
-                Start now to treat the migraine in a different, healthy, natural and efficient way, register to our application and get our healthy survey.
+                Start now to treat the migraine in a 
+                <br>different, 
+                <br>healthy, 
+                <br>natural and efficient way, 
+                <br>register to our application and 
+                <br>get our healthy survey.
             </p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn" >Read More</div>
+                <div class="main-home-gridcontainer-single-btn">
+                    <a href="<?= url_for('/pages/sign-up.php'); ?>">Register</a>
+                </div>
             </div>
         </div>
     </section>
     <section class="main-home-gridcontainer-container-three main-home-gridcontainer-single">
         <img src="./images/moon.jpg" alt="Moon" /> <!-- Photo by Roberto H on Unsplash -->
         <div class="main-home-gridcontainer-single-content-three">
-            <p>Follow Treat Migraine Naturally on</p>
+            <p><span class="first-letter">F</span>ollow Treat Migraine Naturally on</p>
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter-square"></i>
@@ -69,21 +87,38 @@ include(INCLUDE_PATH . '/header.php');
     <section class="main-home-gridcontainer-container-four main-home-gridcontainer-single">
         <img src="./images/world.jpg" alt="World" /> <!-- Photo by NASA on Unsplash -->
         <div class="main-home-gridcontainer-single-content-four">
-            <p>So far we have helped NUMBER people in the world to fight against migraine.</p>
-            <p>Are you the next?</p>
+            <p>
+                <a href="<?= url_for('/pages/login.php'); ?>">
+                    <span class="first-letter">S</span>o far we have helped <span class="first-letter"><?= users_registered($db); ?></span> people in the world to fight against migraine.
+                </a>
+            </p>
+            <p><mark>Are you the next?</mark></p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn" >Login</div>
+                <div class="main-home-gridcontainer-single-btn">
+                    <a href="<?= url_for('/pages/login.php'); ?>">Login</a>
+                </div>
             </div>
         </div>
     </section>
     <section class="main-home-gridcontainer-container-five main-home-gridcontainer-single">
         <img src="./images/brain.jpg" alt="Brain" /> <!-- Photo by Gerd Altmann on Pixabay -->
         <div class="main-home-gridcontainer-single-content-five">
-            <p>Who we are?</p>
-            <p>Treat Migraine Naturally </br>is a Company that has the goal </br>to treat migraine with healthy, </br>naturally and efficient products.</p>
+            <p>
+                <a href="<?= url_for('/pages/login.php'); ?>">
+                    <span class="first-letter">W</span>ho we are?.
+                </a>
+            </p>
+            <p>
+                <mark>Treat Migraine Naturally</mark>
+                <br>is a Company that has the goal 
+                <br>to treat migraine with healthy, 
+                <br>naturally and efficient products.
+            </p>
             <p>So far, we have helped…</p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn" >Read More</div>
+                <div class="main-home-gridcontainer-single-btn">
+                    <a href="<?= url_for('/pages/about-us.php'); ?>">Read More</a>
+                </div>
             </div>
         </div>
     </section>

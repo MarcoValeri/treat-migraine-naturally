@@ -9,6 +9,13 @@
         return $connection;
     }
 
+    // Create a function that disconnects to the database
+    function db_disconnect($connection) {
+        if (isset($connection)) {
+            mysqli_close($connection);
+        }
+    }
+
     // Create a function that checks if the web application is connects to the db
     // If there is not a connect the function returns an error message
     function confirm_db_connect() {
@@ -299,11 +306,19 @@
 
     }
 
-    // Create a function that disconnects to the database
-    function db_disconnect($connection) {
-        if (isset($connection)) {
-            mysqli_close($connection);
-        }
+    /*
+    * Create a function that checks how many users are
+    * registered into the db and return its number
+    * @parameter $connection that connects to the db
+    * @return numbers of users
+    */
+    function users_registered($connection) {
+
+        $query = "SELECT * FROM users";
+        $result = mysqli_query($connection, $query);
+        $rows = mysqli_num_rows($result);
+        return $rows;
+
     }
 
 ?>
