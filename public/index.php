@@ -7,6 +7,10 @@ require_once('../private/initialize.php');
 include(INCLUDE_PATH . '/head.php');
 
 ?>
+
+<!-- Add Font Awesome -->
+<script src="https://kit.fontawesome.com/25e71e3313.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -22,10 +26,10 @@ include(INCLUDE_PATH . '/header.php');
 <main class="main-home-gridcontainer">
     <section class="main-home-gridcontainer-container-one main-home-gridcontainer-single">
         <img src="./images/migraine.jpg" alt="Migraine" /> <!-- Photo by Nik Shuliahin on Unsplash -->
-        <div class="main-home-gridcontainer-single-content">
+        <div class="main-home-gridcontainer-single-content-one">
             <p>
                 <a href="https://www.who.int/news-room/fact-sheets/detail/headache-disorders" target="_blank">World Health Organization</a> 
-                declares that almost half of the adult population have had a headache at least once within the last year.
+                declares that almost half of the adult population have had a headache<br /> at least once within the last year.
             </p>
             <p><strong>Migraine is a primary headache disorder of the nervous system.</strong></p>
             <p>Treat Migraine Naturally has the mission to cure this headache disorder in a efficient and natural way.</p>
@@ -37,7 +41,7 @@ include(INCLUDE_PATH . '/header.php');
     </section>
     <section class="main-home-gridcontainer-container-two main-home-gridcontainer-single">
         <img src="./images/acquatic-jungle.jpg" alt="Aquatic Jungle" /> <!-- Photo by Alfred Schrock on Unsplash -->
-        <div class="main-home-gridcontainer-single-content">
+        <div class="main-home-gridcontainer-single-content-two">
             <p>
                 Do you know it is possible to Treat Migraine Naturally?
             </p>
@@ -54,14 +58,17 @@ include(INCLUDE_PATH . '/header.php');
     </section>
     <section class="main-home-gridcontainer-container-three main-home-gridcontainer-single">
         <img src="./images/moon.jpg" alt="Moon" /> <!-- Photo by Roberto H on Unsplash -->
-        <div class="main-home-gridcontainer-single-content">
-            <p>Follow Treat Migraine Naturally on:</p>
-            <a href="">Read More</a>
+        <div class="main-home-gridcontainer-single-content-three">
+            <p>Follow Treat Migraine Naturally on</p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-linkedin"></i>
         </div>
     </section>
     <section class="main-home-gridcontainer-container-four main-home-gridcontainer-single">
         <img src="./images/world.jpg" alt="World" /> <!-- Photo by NASA on Unsplash -->
-        <div class="main-home-gridcontainer-single-content">
+        <div class="main-home-gridcontainer-single-content-four">
             <p>So far we have helped NUMBER people in the world to fight against migraine.</p>
             <p>Are you the next?</p>
             <div class="main-home-gridcontainer-single-btn-wrap">
@@ -71,9 +78,9 @@ include(INCLUDE_PATH . '/header.php');
     </section>
     <section class="main-home-gridcontainer-container-five main-home-gridcontainer-single">
         <img src="./images/brain.jpg" alt="Brain" /> <!-- Photo by Gerd Altmann on Pixabay -->
-        <div class="main-home-gridcontainer-single-content">
+        <div class="main-home-gridcontainer-single-content-five">
             <p>Who we are?</p>
-            <p>Treat Migraine Naturally is a Company that has the goal to treat migraine with healthy, naturally and efficient products.</p>
+            <p>Treat Migraine Naturally </br>is a Company that has the goal </br>to treat migraine with healthy, </br>naturally and efficient products.</p>
             <p>So far, we have helped…</p>
             <div class="main-home-gridcontainer-single-btn-wrap">
                 <div class="main-home-gridcontainer-single-btn" >Read More</div>

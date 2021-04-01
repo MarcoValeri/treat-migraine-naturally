@@ -1,9 +1,20 @@
 footer {
-    margin: 20rem auto 0rem auto;
+    position: relative;
+    height: 30vh;
+    margin: 0rem auto 0rem auto;
     text-align: center;
+    color: #fff;
+    background-color: #000;
 
-    span {
-        color: #ff0000;
-        font-size: 1.5rem;
+    .footer-content {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        span {
+            color: #ff0000;
+            font-size: 1.5rem;
+        }
     }
 }
