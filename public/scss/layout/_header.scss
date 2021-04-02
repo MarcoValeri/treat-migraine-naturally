@@ -99,10 +99,17 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: 'Redressed', cursive;
-        font-size: 3rem;
         color: #fff;
         text-align: center;
         padding: 2rem;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
     }
 
 }

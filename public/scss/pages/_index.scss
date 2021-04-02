@@ -183,8 +183,8 @@
             animation: rainbow 3s linear infinite;
 
             .main-home-gridcontainer-single-btn {
-                background: #222;
-                color: white;
+                background: #000;
+                color: #B744B8;
                 text-align: center;
                 font-size: 1rem;
                 padding: .5rem;
@@ -196,6 +196,14 @@
                     background-position: 8rem;
                 }
             
+            }
+
+            &:hover {
+                background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%);
+
+                .main-home-gridcontainer-single-btn {
+                    color: #FFD400;
+                }
             }
         }
 

@@ -8,9 +8,6 @@ include(INCLUDE_PATH . '/head.php');
 
 ?>
 
-<!-- Add Font Awesome -->
-<script src="https://kit.fontawesome.com/25e71e3313.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
@@ -41,9 +38,11 @@ include(INCLUDE_PATH . '/header.php');
                 staff for a personal and natural treatment.
             </p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn">
-                    <a href="https://www.who.int/news-room/fact-sheets/detail/headache-disorders" target="_blank">Read More</a>
-                </div>
+                <a href="https://www.who.int/news-room/fact-sheets/detail/headache-disorders" target="_blank">
+                    <div class="main-home-gridcontainer-single-btn">
+                        Read More
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -68,9 +67,11 @@ include(INCLUDE_PATH . '/header.php');
                 <br>get our healthy survey.
             </p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn">
-                    <a href="<?= url_for('/pages/sign-up.php'); ?>">Register</a>
-                </div>
+                <a href="<?= url_for('/pages/sign-up.php'); ?>">
+                    <div class="main-home-gridcontainer-single-btn">
+                        Register
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -94,9 +95,11 @@ include(INCLUDE_PATH . '/header.php');
             </p>
             <p><mark>Are you the next?</mark></p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn">
-                    <a href="<?= url_for('/pages/login.php'); ?>">Login</a>
-                </div>
+                <a href="<?= url_for('/pages/login.php'); ?>">
+                    <div class="main-home-gridcontainer-single-btn">
+                        Login
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -116,9 +119,11 @@ include(INCLUDE_PATH . '/header.php');
             </p>
             <p>So far, we have helped…</p>
             <div class="main-home-gridcontainer-single-btn-wrap">
-                <div class="main-home-gridcontainer-single-btn">
-                    <a href="<?= url_for('/pages/about-us.php'); ?>">Read More</a>
-                </div>
+                <a href="<?= url_for('/pages/about-us.php'); ?>">
+                    <div class="main-home-gridcontainer-single-btn">
+                        Read More
+                    </div>
+                </a>
             </div>
         </div>
     </section>

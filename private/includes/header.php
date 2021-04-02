@@ -48,7 +48,10 @@
         </ul>
     </nav>
     <section class="header-headline">
-        <h1>Treat Migraine Naturally</h1>
+        <h1>
+            Treat Migraine 
+            <br>Naturally
+        </h1>
         <h2><?= $header_sub_title; ?></h2>
     </section>
 </header>

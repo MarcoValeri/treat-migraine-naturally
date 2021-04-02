@@ -60,10 +60,13 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Redressed', cursive;
-    font-size: 3rem;
     color: #fff;
     text-align: center;
     padding: 2rem; }
+    header .header-headline h1 {
+      font-size: 5rem; }
+    header .header-headline h2 {
+      font-size: 3rem; }
 
 footer {
   position: relative;
@@ -74,9 +77,20 @@ footer {
   background-color: #000; }
   footer .footer-content {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    footer .footer-content .fab {
+      padding: 1rem;
+      font-size: 2rem; }
+    footer .footer-content .fa-facebook-square {
+      color: #3b5999; }
+    footer .footer-content .fa-instagram {
+      color: #e4405f; }
+    footer .footer-content .fa-twitter-square {
+      color: #55acee; }
+    footer .footer-content .fa-linkedin {
+      color: #0077B5; }
     footer .footer-content span {
       color: #ff0000;
       font-size: 1.5rem; }
@@ -204,8 +218,8 @@ footer {
       border-radius: 10px;
       animation: rainbow 3s linear infinite; }
       .main-home-gridcontainer .main-home-gridcontainer-single .main-home-gridcontainer-single-btn-wrap .main-home-gridcontainer-single-btn {
-        background: #222;
-        color: white;
+        background: #000;
+        color: #B744B8;
         text-align: center;
         font-size: 1rem;
         padding: .5rem; }
@@ -213,17 +227,32 @@ footer {
 @keyframes rainbow {
   to {
     background-position: 8rem; } }
+      .main-home-gridcontainer .main-home-gridcontainer-single .main-home-gridcontainer-single-btn-wrap:hover {
+        background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%); }
+        .main-home-gridcontainer .main-home-gridcontainer-single .main-home-gridcontainer-single-btn-wrap:hover .main-home-gridcontainer-single-btn {
+          color: #FFD400; }
 
 .signup-main {
   width: 80%;
-  margin: auto;
+  height: 70vh;
+  margin: 5rem auto 5rem auto;
   text-align: center; }
   .signup-main .signup-main-form-gridcontainer {
     margin: auto;
     display: grid;
     width: 50%;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname" "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm" "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm" "signup-main-form-gridcontainer-password-show signup-main-form-gridcontainer-password-show" "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit"; }
+    grid-template-areas: "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname" "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm" "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm" "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit"; }
+    .signup-main .signup-main-form-gridcontainer section {
+      text-align: left;
+      font-size: 1.2rem;
+      padding: 1rem; }
+      .signup-main .signup-main-form-gridcontainer section label,
+      .signup-main .signup-main-form-gridcontainer section input {
+        display: block;
+        margin: .5rem; }
+      .signup-main .signup-main-form-gridcontainer section input {
+        padding: .5rem; }
     .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
       grid-area: signup-main-form-gridcontainer-firstname;
       margin: 1rem; }
@@ -241,9 +270,6 @@ footer {
       margin: 1rem; }
     .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password-confirm {
       grid-area: signup-main-form-gridcontainer-password-confirm;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password-show {
-      grid-area: signup-main-form-gridcontainer-password-show;
       margin: 1rem; }
     .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
       grid-area: signup-main-form-gridcontainer-firstname;

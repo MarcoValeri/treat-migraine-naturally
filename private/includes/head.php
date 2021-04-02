@@ -18,6 +18,9 @@
 
         <title><?= $page_title ?></title>
 
+        <!-- Add Font Awesome -->
+        <script src="https://kit.fontawesome.com/25e71e3313.js" crossorigin="anonymous"></script>
+
         <!--
         The tag <head> needs to close on any page that uses head.php
         This allow to add extra line of code before the close tag if needed

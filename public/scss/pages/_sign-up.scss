@@ -1,6 +1,7 @@
 .signup-main {
     width: 80%;
-    margin: auto;
+    height: 70vh;
+    margin: 5rem auto 5rem auto;
     text-align: center;
 
     .signup-main-form-gridcontainer {
@@ -12,8 +13,23 @@
         "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname"
         "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm"
         "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm"
-        "signup-main-form-gridcontainer-password-show signup-main-form-gridcontainer-password-show"
         "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit";
+
+        section {
+            text-align: left;
+            font-size: 1.2rem;
+            padding: 1rem;
+
+            label,
+            input {
+                display: block;
+                margin: .5rem;
+            }
+
+            input {
+                padding: .5rem;
+            }
+        }
 
         .signup-main-form-gridcontainer-firstname {
             grid-area: signup-main-form-gridcontainer-firstname;
@@ -42,11 +58,6 @@
 
         .signup-main-form-gridcontainer-password-confirm {
             grid-area: signup-main-form-gridcontainer-password-confirm;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-password-show {
-            grid-area: signup-main-form-gridcontainer-password-show;
             margin: 1rem;
         }
 

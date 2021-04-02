@@ -273,7 +273,9 @@ if ($valid_user && count($errors_output) === 0) {
 
 } else {
     $output = "
-    <form id='form' class='signup-main-form-gridcontainer' action='./sign-up.php' method='post'>
+    <fieldset>
+        <legend>Register as a new user</legend>
+        <form id='form' class='signup-main-form-gridcontainer' action='./sign-up.php' method='post'>
             <section class='signup-main-form-gridcontainer-firstname'>
                 <label for='first_name'>First Name *</label>
                 <input id='first_name' name='first_name' type='text' value='${first_name}' placeholder='First Name'>
@@ -293,19 +295,18 @@ if ($valid_user && count($errors_output) === 0) {
             <section class='signup-main-form-gridcontainer-password'>
                 <label for='password'>Password *</label>
                 <input id='password' name='password' type='password' value='${password}' placeholder='Password'>
+                <label style='display: inline' for='show_password'>Show Password</label>
+                <input style='display: inline' id='show_password' name='show_password' type='checkbox'>
             </section>
             <section class='signup-main-form-gridcontainer-password-confirm'>
                 <label for='confirm_password'>Confirm Password *</label>
                 <input id='confirm_password' name='confirm_password' type='password' value='${confirm_password}' placeholder='Confirm Password'>
             </section>
-            <section class='signup-main-form-gridcontainer-password-show'>
-                <label for='show_password'>Show Password</label>
-                <input id='show_password' name='show_password' type='checkbox'>
-            </section>
             <section class='signup-main-form-gridcontainer-submit'>
                 <input name='submit' type='Submit' value='Create new account'>
             </section>
         </form>
+    </fieldset>
     ";
 }
 
