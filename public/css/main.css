@@ -264,7 +264,14 @@ footer {
         display: block;
         margin: .5rem; }
       .signup-main .signup-main-form-gridcontainer section input {
-        padding: .5rem; }
+        padding: .5rem;
+        border: none;
+        border-radius: 5px; }
+      .signup-main .signup-main-form-gridcontainer section input[type="text"]:focus,
+      .signup-main .signup-main-form-gridcontainer section input[type="email"]:focus,
+      .signup-main .signup-main-form-gridcontainer section input[type="password"]:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px #b744b8; }
     .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
       grid-area: signup-main-form-gridcontainer-firstname;
       margin: 1rem; }
