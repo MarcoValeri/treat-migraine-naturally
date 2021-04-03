@@ -273,8 +273,6 @@ if ($valid_user && count($errors_output) === 0) {
 
 } else {
     $output = "
-    <fieldset>
-        <legend>Register as a new user</legend>
         <form id='form' class='signup-main-form-gridcontainer' action='./sign-up.php' method='post'>
             <section class='signup-main-form-gridcontainer-firstname'>
                 <label for='first_name'>First Name *</label>
@@ -306,7 +304,6 @@ if ($valid_user && count($errors_output) === 0) {
                 <input name='submit' type='Submit' value='Create new account'>
             </section>
         </form>
-    </fieldset>
     ";
 }
 
@@ -335,21 +332,22 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Main -->
 <main class="signup-main">
-    <!-- Output -->
-    <?= $output; ?>
-
-    <section class="signup-main-error">
-        <!-- Show errors if they exist -->
-        <ul>
-        <?php
-            foreach($errors_output as $key => $value) {
-        ?>
-                <li><?= "${key}: ${value}"; ?></li>
-        <?php
-            }
-        ?>
-    </section>
-
+    <fieldset>
+        <legend>Create new account</legend>
+        <section class="signup-main-error">
+            <!-- Show errors if they exist -->
+            <ul>
+            <?php
+                foreach($errors_output as $key => $value) {
+            ?>
+                    <li><?= "${key}: ${value}"; ?></li>
+            <?php
+                }
+            ?>
+        </section>
+        <!-- Output -->
+        <?= $output; ?>
+    </fieldset>
 </main>
 
 <!-- Footer -->
