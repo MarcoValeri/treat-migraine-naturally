@@ -1,6 +1,7 @@
 .signup-main {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0rem auto 0rem auto;
     padding-top: 10rem;
     text-align: center;
@@ -23,10 +24,61 @@
 
         legend {
             font-size: 2rem;
-            //background-color: #000;
-            //color: #fff;
             padding: 3px 6px;
         }
+
+        .signup-main-error {
+
+            width: 50%;
+            font-size: 1.5rem;
+            margin: 1rem auto 1rem auto;
+            padding: 1rem;
+        
+            ul {
+    
+                li {
+                    list-style-type: none;
+                    color: darken(#ff0000, 20%);
+                }
+            }
+        }
+
+        .signup-main-confim {
+            width: 100%;
+            height: 70vh;
+            margin: 1rem auto 1rem auto;
+            padding: 1rem;
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            button {
+                padding: .5rem 1.5rem;
+                margin: 1rem;
+                font-size: 1.2rem;
+                background-color: #000;
+                border: 3px solid #B744B8;
+                border-radius: 5px;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: #B744B8;
+                }
+
+                &:hover {
+                    color: #FFD400;
+                    border: 3px solid #FFD400;
+
+                    a {
+                        color: #FFD400;
+                    }
+                }
+
+            }
+        }
+
 
     }
 
@@ -103,16 +155,21 @@
 
         .signup-main-form-gridcontainer-submit {
             grid-area: signup-main-form-gridcontainer-submit;
-            margin: 1rem;
-        }
-    }
+            margin: 0rem 1rem 1rem 1rem;
 
-    .signup-main-error {
-        
-        ul {
+            input {
+                font-size: 1rem;
+                padding: .5rem;
+                color: #B744B8;
+                background-color: #000;
+                border: 3px solid #B744B8;
+                border-radius: 5px;
+                cursor: pointer;
 
-            li {
-                list-style-type: none;
+                &:hover {
+                    color: #FFD400;
+                    border: 3px solid #FFD400;
+                }
             }
         }
     }

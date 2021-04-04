@@ -264,10 +264,13 @@ if ($valid_user && count($errors_output) === 0) {
     if (is_new_user($db, $email)) {
         add_new_user($db, $first_name, $last_name, $email, $password);
         $redirect = url_for('pages/login.php');
-        $output = "New user has been registered<br />Please login<br />";
-        $output .= "<button><a href='${redirect}'>Login</a></button>";
+        $output = "<section class='signup-main-confim'><p>New user has been registered<br />Please login<br /></p>";
+        $output .= "<button><a href='${redirect}'>Login</a></button></section>";
     } else {
-        $output = "There is already an user registered with this email: " . $email;
+        $redirect = url_for('pages/login.php');
+        $output = "<section class='signup-main-confim'><p>There is already an user registered with this email:";
+        $output .= "<mark></br>" . $email . "</mark></p>";
+        $output .= "<button><a href='${redirect}'>Login</a></button></section>";
     }
 
 
@@ -344,6 +347,7 @@ include(INCLUDE_PATH . '/header.php');
             <?php
                 }
             ?>
+            </ul>
         </section>
         <!-- Output -->
         <?= $output; ?>
