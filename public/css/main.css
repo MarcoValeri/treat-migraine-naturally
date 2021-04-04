@@ -526,6 +526,93 @@ footer {
       .delete-main .delete-main-user table td {
         padding: 1rem; }
 
+.contact-main {
+  width: 80%;
+  height: auto;
+  min-height: 50vh;
+  margin: auto;
+  text-align: center; }
+  .contact-main fieldset {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    color: #B744B8; }
+    .contact-main fieldset legend {
+      font-size: 2rem;
+      padding: 3px 6px; }
+    .contact-main fieldset .contact-main-error {
+      width: 50%;
+      font-size: 1.5rem;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .contact-main fieldset .contact-main-error ul li {
+        list-style-type: none;
+        color: #990000; }
+    .contact-main fieldset .contact-main-confim {
+      width: 100%;
+      height: 70vh;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .contact-main fieldset .contact-main-confim p {
+        font-size: 1.5rem; }
+    .contact-main fieldset .contact-main-form-gridcontainer {
+      margin: auto;
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "contact-main-form-gridcontainer-name contact-main-form-gridcontainer-email" "contact-main-form-gridcontainer-message contact-main-form-gridcontainer-message" "contact-main-form-gridcontainer-submit contact-main-form-gridcontainer-submit"; }
+      .contact-main fieldset .contact-main-form-gridcontainer section {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 1rem; }
+        .contact-main fieldset .contact-main-form-gridcontainer section label,
+        .contact-main fieldset .contact-main-form-gridcontainer section input {
+          display: block;
+          margin: .5rem; }
+        .contact-main fieldset .contact-main-form-gridcontainer section input {
+          width: 100%;
+          padding: .5rem;
+          border: none;
+          border-radius: 5px; }
+        .contact-main fieldset .contact-main-form-gridcontainer section input[type="text"]:focus,
+        .contact-main fieldset .contact-main-form-gridcontainer section input[type="email"]:focus {
+          outline: none;
+          box-shadow: 0 0 0 4px #b744b8; }
+        .contact-main fieldset .contact-main-form-gridcontainer section textarea {
+          width: 100%;
+          height: auto;
+          min-height: 50%;
+          margin: .5rem;
+          padding: .5rem;
+          color: #000;
+          border: none;
+          border-radius: 5px; }
+          .contact-main fieldset .contact-main-form-gridcontainer section textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px #b744b8; }
+      .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-name {
+        grid-area: contact-main-form-gridcontainer-name;
+        margin: 1rem; }
+      .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-email {
+        grid-area: contact-main-form-gridcontainer-email;
+        margin: 1rem; }
+      .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-message {
+        grid-area: contact-main-form-gridcontainer-message;
+        margin: 1rem; }
+      .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-submit {
+        grid-area: contact-main-form-gridcontainer-submit;
+        margin: 1rem; }
+        .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-submit input {
+          font-size: 1rem;
+          padding: .5rem;
+          color: #B744B8;
+          background-color: #000;
+          border: 3px solid #B744B8;
+          border-radius: 5px;
+          cursor: pointer; }
+          .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-submit input:hover {
+            color: #FFD400;
+            border: 3px solid #FFD400; }
+
 * {
   padding: 0;
   margin: 0; }

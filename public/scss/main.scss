@@ -1,3 +1,6 @@
+// Import abstracts
+@import "abstracts/variables";
+
 // Import layout
 @import "layout/header";
 @import "layout/footer";
@@ -15,6 +18,7 @@
 @import "pages/show";
 @import "pages/edit";
 @import "pages/delete";
+@import "pages/contact";
 
 // Remove default padding and margin by the browser
 * {

@@ -155,23 +155,26 @@ if ($valid && count($errors_output) === 0) {
     mail($email, "Treat Migraine Naturally", $copy_msg_for_user);
 
     // Thanks message for the user
-    $output = "Thank you. Yout form submission has been received.";
+    $output = "<section class='contact-main-confim'><p>Thank you. Your message has been delivered.</p></section>";
 
 } else {
     $output = "
-        <form class='login-main-form' action='./contact.php' method='post'>
-            <label for='name'>Name *</label>
-            <input id='name' name='name' type='text' value='${name}' placeholder='First Name'>
-            <br />
-            <label for='email'>Email *</label>
-            <input id='email' name='email' type='email' value='${email}' placeholder='Email'>
-            <br />
-            <label for='message'>Message *</label>
-            <br />
-            <textarea id='message' name='message' rows='4' cols='50' placeholder='Write your message...'>
-            </textarea>
-            <br />
-            <input name='submit' type='submit' value='submit'>
+        <form class='contact-main-form-gridcontainer' action='./contact.php' method='post'>
+            <section class='contact-main-form-gridcontainer-name'>
+                <label for='name'>Name *</label>
+                <input id='name' name='name' type='text' value='${name}' placeholder='First Name'>
+            </section>
+            <section class='contact-main-form-gridcontainer-email'>
+                <label for='email'>Email *</label>
+                <input id='email' name='email' type='email' value='${email}' placeholder='Email'>
+            </section>
+            <section class='contact-main-form-gridcontainer-message'>
+                <label for='message'>Message *</label>
+                <textarea id='message' name='message' placeholder='Write your message...'></textarea>
+            </section>
+            <section class='contact-main-form-gridcontainer-submit'>
+                <input name='submit' type='submit' value='Submit'>
+            </section>
         </form>
 ";
 }
@@ -195,23 +198,24 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-<main class="login-main">
-    <!-- Output -->
-    <?= $output; ?>
+<main class="contact-main">
+    <fieldset>
+        <legend>Contact</legend>
+        <section class="contact-main-error">
+            <!-- Show errors if they exist -->
+            <ul>
+            <?php
+                foreach($errors_output as $key => $value) {
+            ?>
+                    <li><?= "${key}: ${value}"; ?></li>
+            <?php
+                }
+            ?>
+        </section>
 
-
-    <section class="login-main-error">
-        <!-- Show errors if they exist -->
-        <ul>
-        <?php
-            foreach($errors_output as $key => $value) {
-        ?>
-                <li><?= "${key}: ${value}"; ?></li>
-        <?php
-            }
-        ?>
-    </section>
-
+        <!-- Output -->
+        <?= $output; ?>
+    </fieldset>
 </main>
 
 <!-- Footer -->
