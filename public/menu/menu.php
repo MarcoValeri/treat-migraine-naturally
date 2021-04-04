@@ -27,12 +27,17 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- main --> 
-<main>
-    <section>
-        <a href="<?= url_for('/menu/healthy-survey.php'); ?>">Healthy Survey</a>
-    </section>
-    <section>
-        <a href="<?= url_for('/menu/user-settings.php'); ?>">User Setting</a>
+<main class="menu-main">
+    <section class="menu-main-gridcontainer">
+        <section class="menu-main-gridcontainer-title">
+            <h2>Main Menu</h2>
+        </section>
+        <section class="menu-main-gridcontainer-section-one">
+            <a href="<?= url_for('/menu/healthy-survey.php'); ?>">Healthy Survey</a>
+        </section>
+        <section class="menu-main-gridcontainer-section-two">
+            <a href="<?= url_for('/menu/user-settings.php'); ?>">User Setting</a>
+        </section>
     </section>
 </main>
 

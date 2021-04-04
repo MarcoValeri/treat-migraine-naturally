@@ -1,0 +1,42 @@
+.menu-main {
+    width: 80%;
+    height: auto;
+    min-height: 50vh;
+    margin: auto;
+    text-align: center;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(247, 247, 247, 0.8),
+        rgba(183, 68, 184, 0.8)),
+        url('http://localhost/treat-migraine-naturally/public/images/brain.jpg');
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    .menu-main-gridcontainer {
+        margin: auto;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "menu-main-gridcontainer-title menu-main-gridcontainer-title"
+        "menu-main-gridcontainer-section-one menu-main-gridcontainer-section-two";
+    }
+
+    .menu-main-gridcontainer-title {
+        grid-area: menu-main-gridcontainer-title;
+        margin: 1rem;
+    }
+
+    .menu-main-gridcontainer-section-one {
+        grid-area: menu-main-gridcontainer-section-one;
+        margin: 1rem;
+    }
+
+    .menu-main-gridcontainer-section-two {
+        grid-area: menu-main-gridcontainer-section-two;
+        margin: 1rem;
+    }
+}
