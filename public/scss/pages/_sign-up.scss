@@ -79,98 +79,99 @@
             }
         }
 
-
-    }
-
-    .signup-main-form-gridcontainer {
-        margin: auto;
-        display: grid;
-        width: 50%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname"
-        "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm"
-        "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm"
-        "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit";
-
-        section {
-            text-align: left;
-            font-size: 1.2rem;
-            padding: 1rem;
-
-            label,
-            input {
-                display: block;
-                margin: .5rem;
+        .signup-main-form-gridcontainer {
+            margin: auto;
+            display: grid;
+            width: 50%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname"
+            "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm"
+            "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm"
+            "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit";
+    
+            section {
+                text-align: left;
+                font-size: 1.2rem;
+                padding: 1rem;
+    
+                label,
+                input {
+                    display: block;
+                    margin: .5rem;
+                }
+    
+                input {
+                    padding: .5rem;
+                    border: none;
+                    border-radius: 5px;
+                }
+    
+                input[type="text"]:focus,
+                input[type="email"]:focus,
+                input[type="password"]:focus {
+                    outline: none;
+                    box-shadow: 0 0 0 4px rgb(183, 68, 184);
+                }
             }
-
-            input {
-                padding: .5rem;
-                border: none;
-                border-radius: 5px;
+    
+            .signup-main-form-gridcontainer-firstname {
+                grid-area: signup-main-form-gridcontainer-firstname;
+                margin: 1rem;
             }
-
-            input[type="text"]:focus,
-            input[type="email"]:focus,
-            input[type="password"]:focus {
-                outline: none;
-                box-shadow: 0 0 0 4px rgb(183, 68, 184);
+    
+            .signup-main-form-gridcontainer-lastname {
+                grid-area: signup-main-form-gridcontainer-lastname;
+                margin: 1rem;
             }
-        }
-
-        .signup-main-form-gridcontainer-firstname {
-            grid-area: signup-main-form-gridcontainer-firstname;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-lastname {
-            grid-area: signup-main-form-gridcontainer-lastname;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-email {
-            grid-area: signup-main-form-gridcontainer-email;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-email-confirm {
-            grid-area: signup-main-form-gridcontainer-email-confirm;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-password {
-            grid-area: signup-main-form-gridcontainer-password;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-password-confirm {
-            grid-area: signup-main-form-gridcontainer-password-confirm;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-firstname {
-            grid-area: signup-main-form-gridcontainer-firstname;
-            margin: 1rem;
-        }
-
-        .signup-main-form-gridcontainer-submit {
-            grid-area: signup-main-form-gridcontainer-submit;
-            margin: 0rem 1rem 1rem 1rem;
-
-            input {
-                font-size: 1rem;
-                padding: .5rem;
-                color: #B744B8;
-                background-color: #000;
-                border: 3px solid #B744B8;
-                border-radius: 5px;
-                cursor: pointer;
-
-                &:hover {
-                    color: #FFD400;
-                    border: 3px solid #FFD400;
+    
+            .signup-main-form-gridcontainer-email {
+                grid-area: signup-main-form-gridcontainer-email;
+                margin: 1rem;
+            }
+    
+            .signup-main-form-gridcontainer-email-confirm {
+                grid-area: signup-main-form-gridcontainer-email-confirm;
+                margin: 1rem;
+            }
+    
+            .signup-main-form-gridcontainer-password {
+                grid-area: signup-main-form-gridcontainer-password;
+                margin: 1rem;
+            }
+    
+            .signup-main-form-gridcontainer-password-confirm {
+                grid-area: signup-main-form-gridcontainer-password-confirm;
+                margin: 1rem;
+            }
+    
+            .signup-main-form-gridcontainer-firstname {
+                grid-area: signup-main-form-gridcontainer-firstname;
+                margin: 1rem;
+            }
+    
+            .signup-main-form-gridcontainer-submit {
+                grid-area: signup-main-form-gridcontainer-submit;
+                margin: 0rem 1rem 1rem 1rem;
+    
+                input {
+                    font-size: 1rem;
+                    padding: .5rem;
+                    color: #B744B8;
+                    background-color: #000;
+                    border: 3px solid #B744B8;
+                    border-radius: 5px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        color: #FFD400;
+                        border: 3px solid #FFD400;
+                    }
                 }
             }
         }
+
+
     }
+
 }

@@ -281,77 +281,152 @@ footer {
           border: 3px solid #FFD400; }
           .signup-main fieldset .signup-main-confim button:hover a {
             color: #FFD400; }
-  .signup-main .signup-main-form-gridcontainer {
-    margin: auto;
-    display: grid;
-    width: 50%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname" "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm" "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm" "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit"; }
-    .signup-main .signup-main-form-gridcontainer section {
-      text-align: left;
-      font-size: 1.2rem;
+    .signup-main fieldset .signup-main-form-gridcontainer {
+      margin: auto;
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "signup-main-form-gridcontainer-firstname signup-main-form-gridcontainer-lastname" "signup-main-form-gridcontainer-email signup-main-form-gridcontainer-email-confirm" "signup-main-form-gridcontainer-password signup-main-form-gridcontainer-password-confirm" "signup-main-form-gridcontainer-submit signup-main-form-gridcontainer-submit"; }
+      .signup-main fieldset .signup-main-form-gridcontainer section {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 1rem; }
+        .signup-main fieldset .signup-main-form-gridcontainer section label,
+        .signup-main fieldset .signup-main-form-gridcontainer section input {
+          display: block;
+          margin: .5rem; }
+        .signup-main fieldset .signup-main-form-gridcontainer section input {
+          padding: .5rem;
+          border: none;
+          border-radius: 5px; }
+        .signup-main fieldset .signup-main-form-gridcontainer section input[type="text"]:focus,
+        .signup-main fieldset .signup-main-form-gridcontainer section input[type="email"]:focus,
+        .signup-main fieldset .signup-main-form-gridcontainer section input[type="password"]:focus {
+          outline: none;
+          box-shadow: 0 0 0 4px #b744b8; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
+        grid-area: signup-main-form-gridcontainer-firstname;
+        margin: 1rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-lastname {
+        grid-area: signup-main-form-gridcontainer-lastname;
+        margin: 1rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-email {
+        grid-area: signup-main-form-gridcontainer-email;
+        margin: 1rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-email-confirm {
+        grid-area: signup-main-form-gridcontainer-email-confirm;
+        margin: 1rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password {
+        grid-area: signup-main-form-gridcontainer-password;
+        margin: 1rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password-confirm {
+        grid-area: signup-main-form-gridcontainer-password-confirm;
+        margin: 1rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
+        grid-area: signup-main-form-gridcontainer-firstname;
+        margin: 1rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit {
+        grid-area: signup-main-form-gridcontainer-submit;
+        margin: 0rem 1rem 1rem 1rem; }
+        .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit input {
+          font-size: 1rem;
+          padding: .5rem;
+          color: #B744B8;
+          background-color: #000;
+          border: 3px solid #B744B8;
+          border-radius: 5px;
+          cursor: pointer; }
+          .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit input:hover {
+            color: #FFD400;
+            border: 3px solid #FFD400; }
+
+.login-main {
+  width: 80%;
+  height: auto;
+  min-height: 50vh;
+  margin: auto;
+  text-align: center; }
+  .login-main fieldset {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    color: #B744B8; }
+    .login-main fieldset legend {
+      font-size: 2rem;
+      padding: 3px 6px; }
+    .login-main fieldset .login-main-error {
+      width: 50%;
+      font-size: 1.5rem;
+      margin: 1rem auto 1rem auto;
       padding: 1rem; }
-      .signup-main .signup-main-form-gridcontainer section label,
-      .signup-main .signup-main-form-gridcontainer section input {
-        display: block;
-        margin: .5rem; }
-      .signup-main .signup-main-form-gridcontainer section input {
-        padding: .5rem;
-        border: none;
-        border-radius: 5px; }
-      .signup-main .signup-main-form-gridcontainer section input[type="text"]:focus,
-      .signup-main .signup-main-form-gridcontainer section input[type="email"]:focus,
-      .signup-main .signup-main-form-gridcontainer section input[type="password"]:focus {
-        outline: none;
-        box-shadow: 0 0 0 4px #b744b8; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
-      grid-area: signup-main-form-gridcontainer-firstname;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-lastname {
-      grid-area: signup-main-form-gridcontainer-lastname;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-email {
-      grid-area: signup-main-form-gridcontainer-email;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-email-confirm {
-      grid-area: signup-main-form-gridcontainer-email-confirm;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password {
-      grid-area: signup-main-form-gridcontainer-password;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-password-confirm {
-      grid-area: signup-main-form-gridcontainer-password-confirm;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-firstname {
-      grid-area: signup-main-form-gridcontainer-firstname;
-      margin: 1rem; }
-    .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit {
-      grid-area: signup-main-form-gridcontainer-submit;
-      margin: 0rem 1rem 1rem 1rem; }
-      .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit input {
-        font-size: 1rem;
-        padding: .5rem;
-        color: #B744B8;
+      .login-main fieldset .login-main-error ul li {
+        list-style-type: none;
+        color: #990000; }
+    .login-main fieldset .signup-main-confim {
+      width: 100%;
+      height: 70vh;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .login-main fieldset .signup-main-confim p {
+        font-size: 1.5rem; }
+      .login-main fieldset .signup-main-confim button {
+        padding: .5rem 1.5rem;
+        margin: 1rem;
+        font-size: 1.2rem;
         background-color: #000;
         border: 3px solid #B744B8;
         border-radius: 5px;
         cursor: pointer; }
-        .signup-main .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit input:hover {
+        .login-main fieldset .signup-main-confim button a {
+          text-decoration: none;
+          color: #B744B8; }
+        .login-main fieldset .signup-main-confim button:hover {
           color: #FFD400;
           border: 3px solid #FFD400; }
-
-.login-main {
-  width: 80%;
-  margin: auto;
-  text-align: center; }
-  .login-main .login-main-form {
-    width: 80%;
-    margin: auto;
-    text-align: center; }
-    .login-main .login-main-form input {
-      margin-bottom: 1rem; }
-  .login-main .login-main-error ul li {
-    list-style-type: none; }
+          .login-main fieldset .signup-main-confim button:hover a {
+            color: #FFD400; }
+    .login-main fieldset .login-main-form-gridcontainer {
+      margin: auto;
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "login-main-form-gridcontainer-email login-main-form-gridcontainer-password" "login-main-form-gridcontainer-submit login-main-form-gridcontainer-submit"; }
+      .login-main fieldset .login-main-form-gridcontainer section {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 1rem; }
+        .login-main fieldset .login-main-form-gridcontainer section label,
+        .login-main fieldset .login-main-form-gridcontainer section input {
+          display: block;
+          margin: .5rem; }
+        .login-main fieldset .login-main-form-gridcontainer section input {
+          padding: .5rem;
+          border: none;
+          border-radius: 5px; }
+        .login-main fieldset .login-main-form-gridcontainer section input[type="text"]:focus,
+        .login-main fieldset .login-main-form-gridcontainer section input[type="email"]:focus,
+        .login-main fieldset .login-main-form-gridcontainer section input[type="password"]:focus {
+          outline: none;
+          box-shadow: 0 0 0 4px #b744b8; }
+      .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-email {
+        grid-area: login-main-form-gridcontainer-email;
+        margin: 1rem; }
+      .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-password {
+        grid-area: login-main-form-gridcontainer-password;
+        margin: 1rem; }
+      .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit {
+        grid-area: login-main-form-gridcontainer-submit;
+        margin: 1rem; }
+        .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit input {
+          font-size: 1rem;
+          padding: .5rem;
+          color: #B744B8;
+          background-color: #000;
+          border: 3px solid #B744B8;
+          border-radius: 5px;
+          cursor: pointer; }
+          .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit input:hover {
+            color: #FFD400;
+            border: 3px solid #FFD400; }
 
 .admin-main {
   width: 80%;
