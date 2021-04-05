@@ -787,6 +787,98 @@ footer {
         .survey-main .survey-main-container .survey-main-container-btn-wrap:hover .survey-main-container-btn {
           color: #FFD400; }
 
+.healthy-main-page-one {
+  width: 90%;
+  height: auto;
+  min-height: 100vh;
+  margin: 2rem auto 0rem auto;
+  padding-top: 10rem;
+  color: #fff;
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("http://localhost/treat-migraine-naturally/public/images/acquatic-jungle.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .healthy-main-page-one fieldset {
+    width: 80%;
+    text-align: center;
+    color: #33032F;
+    margin: 0rem auto 0rem auto; }
+    .healthy-main-page-one fieldset legend {
+      font-size: 2rem;
+      padding: 3px 6px; }
+    .healthy-main-page-one fieldset .healthy-main-page-one-error {
+      width: 50%;
+      font-size: 1.5rem;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-error ul li {
+        list-style-type: none;
+        color: #990000; }
+    .healthy-main-page-one fieldset .healthy-main-page-one-title h2 {
+      font-size: 5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-image: linear-gradient(to right, #B744B8, #33032F);
+      -webkit-background-clip: text;
+      background-color: text;
+      color: transparent;
+      letter-spacing: 2px;
+      transition: all .2s; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-title h2:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer {
+      margin: auto;
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "healthy-main-page-one-form-gridcontainer-personal-title healthy-main-page-one-form-gridcontainer-surname" "healthy-main-page-one-form-gridcontainer-email healthy-main-page-one-form-gridcontainer-personal-telephone" "healthy-main-page-one-form-gridcontainer-personal-address-line-one healthy-main-page-one-form-gridcontainer-personal-address-line-two" "healthy-main-page-one-form-gridcontainer-personal-city healthy-main-page-one-form-gridcontainer-personal-country" "healthy-main-page-one-form-gridcontainer-personal-postcode healthy-main-page-one-form-gridcontainer-personal-postcode" "healthy-main-page-one-form-gridcontainer-personal-age healthy-main-page-one-form-gridcontainer-personal-gender" "healthy-main-page-one-form-gridcontainer-personal-occupation healthy-main-page-one-form-gridcontainer-personal-occupation" "healthy-main-page-one-form-gridcontainer-personal-next healthy-main-page-one-form-gridcontainer-personal-next"; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer input,
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer label {
+        display: block;
+        text-align: left; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer label {
+        margin-bottom: .5rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-title {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-title;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-surname {
+        grid-area: healthy-main-page-one-form-gridcontainer-surname;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-email {
+        grid-area: healthy-main-page-one-form-gridcontainer-email;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-telephone {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-telephone;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-address-line-one {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-address-line-one;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-address-line-two {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-address-line-two;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-city {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-city;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-country {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-country;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-postcode {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-postcode;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-age {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-age;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-gender {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-gender;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-occupation {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-occupation;
+        margin: 1rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-next {
+        grid-area: healthy-main-page-one-form-gridcontainer-personal-next;
+        margin: 1rem; }
+
 * {
   padding: 0;
   margin: 0; }

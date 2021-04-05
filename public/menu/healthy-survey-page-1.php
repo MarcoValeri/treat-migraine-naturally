@@ -649,60 +649,77 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- main --> 
-<main>
-    <h2>Patient Details</h2>
-    <form action="<?= $redirect_next; ?>" method="post">
-        <label for='title'>Title</label>
-        <input id='title' name='title' type='text' value='<?= $title ?>' placeholder='Title'>
-        <br />
-        <label for='surname'>Surname</label>
-        <input id='surname' name='surname' type='text' value='<?= $surname ?>' placeholder='Surname'>
-        <br />
-        <label for='email'>Email</label>
-        <input id='email' name='email' type='email' value='<?= $email ?>' placeholder='Email'>
-        <br />
-        <label for='telephone'>Telephone</label>
-        <input id='telephone' name='telephone' type='text' value='<?= $telephone ?>' placeholder='Telephone'>
-        <br />
-        <label for='address_number'>Address Line 1</label>
-        <input id='address_number' name='address_number' type='text' value='<?= $address_number ?>' placeholder='Number'>
-        <br />
-        <label for='address'>Address Line 2</label>
-        <input id='address' name='address' type='text' value='<?= $address ?>' placeholder='Address'>
-        <br />
-        <label for='city'>Town or City</label>
-        <input id='city' name='city' type='text' value='<?= $city ?>' placeholder='Town or City'>
-        <br />
-        <label for='country'>Country</label>
-        <input id='country' name='country' type='text' value='<?= $country ?>' placeholder='Country'>
-        <br />
-        <label for='postcode'>Postal or Zip Code</label>
-        <input id='postcode' name='postcode' type='text' value='<?= $postcode ?>' placeholder='Postal or Zip Code'>
-        <br />
-        <label for='age'>Age</label>
-        <input id='age' name='age' type='text' value='<?= $age ?>' placeholder='Age'>
-        <br />
-        <label for='gender'>Gender</label>
-        <input id='gender' name='gender' type='text' value='<?= $gender ?>' placeholder='Gender'>
-        <br />
-        <label for='occupation'>Occupation</label>
-        <input id='occupation' name='occupation' type='text' value='<?= $occupation ?>' placeholder='Occupation'>
-        <br />
-        <input name='next2' type='Submit' value='Next'>
-    </form>
-
-    <section>
-        <!-- Show errors if they exist -->
-        <h4>Test errors:</h4>
-        <ul>
-        <?php
-            foreach($errors_output as $key => $value) {
-        ?>
-                <li><?= "${key}: ${value}"; ?></li>
-        <?php
-            }
-        ?>
-    </section>
+<main class="healthy-main-page-one">
+    <fieldset>
+        <legend>Page 1 of 4</legend>
+        <section class="healthy-main-page-one-error">
+            <!-- Show errors if they exist -->
+            <ul>
+            <?php
+                foreach($errors_output as $key => $value) {
+            ?>
+                    <li><?= "${key}: ${value}"; ?></li>
+            <?php
+                }
+            ?>
+        </section>
+        <section class="healthy-main-page-one-title">
+            <h2>Patient Details</h2>
+        </section>
+        <form class="healthy-main-page-one-form-gridcontainer" action="<?= $redirect_next; ?>" method="post">
+            <section class="healthy-main-page-one-form-gridcontainer-personal-title">
+                <label for='title'>Title</label>
+                <input id='title' name='title' type='text' value='<?= $title ?>' placeholder='Title'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-surname">
+                <label for='surname'>Surname</label>
+                <input id='surname' name='surname' type='text' value='<?= $surname ?>' placeholder='Surname'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-email">
+                <label for='email'>Email</label>
+                <input id='email' name='email' type='email' value='<?= $email ?>' placeholder='Email'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-telephone">
+                <label for='telephone'>Telephone</label>
+                <input id='telephone' name='telephone' type='text' value='<?= $telephone ?>' placeholder='Telephone'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-address-line-one">
+                <label for='address_number'>Address Line 1</label>
+                <input id='address_number' name='address_number' type='text' value='<?= $address_number ?>' placeholder='Number'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-address-line-two">
+                <label for='address'>Address Line 2</label>
+                <input id='address' name='address' type='text' value='<?= $address ?>' placeholder='Address'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-city">
+                <label for='city'>Town or City</label>
+                <input id='city' name='city' type='text' value='<?= $city ?>' placeholder='Town or City'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-country">
+                <label for='country'>Country</label>
+                <input id='country' name='country' type='text' value='<?= $country ?>' placeholder='Country'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-postcode">
+                <label for='postcode'>Postal or Zip Code</label>
+                <input id='postcode' name='postcode' type='text' value='<?= $postcode ?>' placeholder='Postal or Zip Code'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-age">
+                <label for='age'>Age</label>
+                <input id='age' name='age' type='text' value='<?= $age ?>' placeholder='Age'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-gender">
+                <label for='gender'>Gender</label>
+                <input id='gender' name='gender' type='text' value='<?= $gender ?>' placeholder='Gender'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-occupation">
+                <label for='occupation'>Occupation</label>
+                <input id='occupation' name='occupation' type='text' value='<?= $occupation ?>' placeholder='Occupation'>
+            </section>
+            <section class="healthy-main-page-one-form-gridcontainer-personal-next">
+                <input name='next2' type='Submit' value='Next'>
+            </section>
+        </form>
+    </fieldset>
 </main>
 
 <!-- Footer -->
