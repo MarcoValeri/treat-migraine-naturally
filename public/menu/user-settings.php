@@ -246,16 +246,15 @@ if (isset($_POST['confirm'])) {
 if ($valid_user && count($errors_output) === 0) {
 
     edit_user($db, $id, $first_name, $last_name, $email, $password, $admin);
-    $output = "Your data has been updated";
-    $output .= "<br />";
-    $output = "
+    $output = "<h3><mark>Your data has been updated</mark></h3>";
+    $output .= "
     <form action='./user-settings.php' method='post'>    
         <td>${user['id']}</td>
         <td><input name='first_name' type='text' value='${first_name}'></td>
         <td><input name='last_name' type='text' value='${last_name}'></td>
         <td><input name='email' type='text' value='${email}'></td>
         <td><input name='password' type='text' value='${password}'></td>
-        <td><input type='submit' name='confirm' value='confirm'></td>
+        <td><input type='submit' name='confirm' value='Confirm'></td>
     </form>
     ";
 
@@ -267,7 +266,7 @@ if ($valid_user && count($errors_output) === 0) {
         <td><input name='last_name' type='text' value='${last_name}'></td>
         <td><input name='email' type='text' value='${email}'></td>
         <td><input name='password' type='text' value='${password}'></td>
-        <td><input type='submit' name='confirm' value='confirm'></td>
+        <td><input type='submit' name='confirm' value='Confirm'></td>
     </form>
     ";
 }
@@ -293,6 +292,17 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Main -->
 <main class='edit-main'>
+    <section>
+        <!-- Show errors if they exist -->
+        <ul>
+        <?php
+            foreach($errors_output as $key => $value) {
+        ?>
+                <li><?= "${key}: ${value}"; ?></li>
+        <?php
+            }
+        ?>
+    </section>
     <section class="edit-main-user">
         <h2>User: <?= $user['email'] ?></h2>
         <table>
@@ -310,18 +320,6 @@ include(INCLUDE_PATH . '/header.php');
             </tr>
         </table>
         <a href="<?= url_for('/menu/menu.php'); ?>">&laquo; Back to Menu</a>
-    </section>
-
-    <section>
-        <!-- Show errors if they exist -->
-        <ul>
-        <?php
-            foreach($errors_output as $key => $value) {
-        ?>
-                <li><?= "${key}: ${value}"; ?></li>
-        <?php
-            }
-        ?>
     </section>
 </main>
 

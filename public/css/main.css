@@ -492,14 +492,20 @@ footer {
 
 .edit-main {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  color: #fff; }
   .edit-main .edit-main-user {
     margin: auto;
     padding: 2rem; }
+    .edit-main .edit-main-user h2,
+    .edit-main .edit-main-user h3 {
+      margin-bottom: 2rem; }
     .edit-main .edit-main-user table,
     .edit-main .edit-main-user th,
     .edit-main .edit-main-user td {
-      border: 1px solid #000; }
+      text-align: center;
+      color: #fff;
+      border: 1px solid #fff; }
     .edit-main .edit-main-user table {
       width: 100%;
       border-collapse: collapse;
@@ -507,6 +513,30 @@ footer {
       .edit-main .edit-main-user table th,
       .edit-main .edit-main-user table td {
         padding: 1rem; }
+        .edit-main .edit-main-user table th input,
+        .edit-main .edit-main-user table td input {
+          padding: .5rem;
+          border-radius: 5px; }
+          .edit-main .edit-main-user table th input:focus,
+          .edit-main .edit-main-user table td input:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px #b744b8; }
+        .edit-main .edit-main-user table th input[type=submit],
+        .edit-main .edit-main-user table td input[type=submit] {
+          font-size: 1rem;
+          padding: .5rem;
+          color: #B744B8;
+          background-color: #000;
+          border: 3px solid #B744B8;
+          border-radius: 5px;
+          cursor: pointer; }
+          .edit-main .edit-main-user table th input[type=submit]:hover,
+          .edit-main .edit-main-user table td input[type=submit]:hover {
+            color: #FFD400;
+            border: 3px solid #FFD400; }
+    .edit-main .edit-main-user a {
+      font-size: 1.5rem;
+      color: #B744B8; }
 
 .delete-main {
   width: 80%;
