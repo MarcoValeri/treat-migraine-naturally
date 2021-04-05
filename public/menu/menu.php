@@ -30,13 +30,25 @@ include(INCLUDE_PATH . '/header.php');
 <main class="menu-main">
     <section class="menu-main-gridcontainer">
         <section class="menu-main-gridcontainer-title">
-            <h2>Main Menu</h2>
+            <h2 class="menu-main-gridcontainer-title-elastic">Main Menu</h2>
         </section>
         <section class="menu-main-gridcontainer-section-one">
-            <a href="<?= url_for('/menu/healthy-survey.php'); ?>">Healthy Survey</a>
+            <div class="menu-main-gridcontainer-section-one-btn-wrap">
+                <a href="<?= url_for('/menu/healthy-survey.php'); ?>">
+                    <div class="menu-main-gridcontainer-section-one-btn">
+                        Healthy Survey
+                    </div>
+                </a>
+            </div>
         </section>
         <section class="menu-main-gridcontainer-section-two">
-            <a href="<?= url_for('/menu/user-settings.php'); ?>">User Setting</a>
+            <div class="menu-main-gridcontainer-section-two-btn-wrap">
+                <a href="<?= url_for('/menu/user-settings.php'); ?>">
+                    <div class="menu-main-gridcontainer-section-two-btn">
+                        User Setting
+                    </div>
+                </a>
+            </div>
         </section>
     </section>
 </main>
