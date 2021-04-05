@@ -27,10 +27,17 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- main --> 
-<main>
-    <h2>Start out survey</h2>
-    <p>Write something nice to convinc the user to start the survey</p>
-    <a href="<?= url_for('/menu/healthy-survey-page-1.php'); ?>">Start now</a>
+<main class="survey-main">
+    <section class="survey-main-container">
+        <h2>Start our survey</h2>
+        <div class="survey-main-container-btn-wrap">
+            <a href="<?= url_for('/menu/healthy-survey-page-1.php'); ?>">
+                <div class="survey-main-container-btn">
+                    Start now
+                </div>
+            </a>
+        </div>
+    </section>
 </main>
 
 <!-- Footer -->

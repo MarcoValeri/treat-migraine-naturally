@@ -744,6 +744,49 @@ footer {
         .menu-main .menu-main-gridcontainer-section-two .menu-main-gridcontainer-section-two-btn-wrap:hover .menu-main-gridcontainer-section-two-btn {
           color: #FFD400; }
 
+.survey-main {
+  position: relative;
+  height: auto;
+  min-height: 50vh;
+  text-align: center;
+  color: #B744B8; }
+  .survey-main .survey-main-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+    border: 5px solid #B744B8;
+    border-radius: 25px; }
+    .survey-main .survey-main-container h2 {
+      font-size: 2rem; }
+    .survey-main .survey-main-container .survey-main-container-btn-wrap {
+      width: 8rem;
+      padding: 1rem;
+      position: relative;
+      background: linear-gradient(240deg, #B744B8 0%, #33032F 49%, #B744B8 80%, #B744B8 100%);
+      padding: 3px;
+      margin: 1rem auto 0rem auto;
+      border-radius: 10px;
+      animation: rainbow 3s linear infinite; }
+      .survey-main .survey-main-container .survey-main-container-btn-wrap .survey-main-container-btn {
+        background: #000;
+        color: #B744B8;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: .5rem; }
+      .survey-main .survey-main-container .survey-main-container-btn-wrap a {
+        color: #B744B8;
+        text-decoration: none; }
+
+@keyframes rainbow {
+  to {
+    background-position: 8rem; } }
+      .survey-main .survey-main-container .survey-main-container-btn-wrap:hover {
+        background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%); }
+        .survey-main .survey-main-container .survey-main-container-btn-wrap:hover .survey-main-container-btn {
+          color: #FFD400; }
+
 * {
   padding: 0;
   margin: 0; }
