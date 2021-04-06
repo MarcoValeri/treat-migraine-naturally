@@ -142,36 +142,12 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- main --> 
-<main>
-    <h2>Medical History</h2>
-    <form action="<?= $redirect_next; ?>" method="post">
-        <h4>Do you have:</h4>
-        <input id="diabetes" name="diabetes" type="checkbox" value="diabetes">
-        <label for="diabetes">Diabetes</label>
-        <br />
-        <input id="food_allergies" name="food_allergies" type="checkbox" value="food_allergies">
-        <label for="food_allergies">Food allergies</label>
-        <br />
-        <input id="sensitivity_to_foods" name="sensitivity_to_foods" type="checkbox" value="sensitivity_to_foods">
-        <label for="sensitivity_to_foods">Sensitivity to foods</label>
-        <br />
-        <input id="allergies_medications" name="allergies_medications" type="checkbox" value="allergies_medications">
-        <label for="allergies_medications">Allergies to any medications</label>
-        <br />
-        <input id="notable_reactions_to_medications" name="notable_reactions_to_medications" type="checkbox" value="notable_reactions_to_medications">
-        <label for="notable_reactions_to_medications">Notable reactions to medications</label>
-        <br />
-        <label for="medical_history_details">Please give details</label>
-        <br />
-        <textarea id="medical_history_details" name="medical_history_details" rows="4" cols="50"></textarea>
-        <br />
-        <button><a href="<?= url_for('/menu/healthy-survey-page-1.php'); ?>">Back</a></button>
-        <input name='next3' type='Submit' value='Next'>
-    </form>
+<main class="healthy-main-page-two">
+    <fieldset>
+        <legend>Page 2 of 4</legend>
 
-    <section>
+        <section class="healthy-main-page-two-error">
         <!-- Show errors if they exist -->
-        <h4>Test errors:</h4>
         <ul>
         <?php
             foreach($errors_output as $key => $value) {
@@ -180,7 +156,43 @@ include(INCLUDE_PATH . '/header.php');
         <?php
             }
         ?>
-    </section>
+        </section>
+        <section class="healthy-main-page-two-title">
+            <h2>Medical History</h2>
+        </section>
+        <form class="healthy-main-page-two-form-gridcontainer" action="<?= $redirect_next; ?>" method="post">
+            <section class="healthy-main-page-two-form-gridcontainer-checkbox">
+                <h4>Do you have:</h4>
+                <input id="diabetes" name="diabetes" type="checkbox" value="diabetes">
+                <label for="diabetes">Diabetes</label>
+                <br />
+                <input id="food_allergies" name="food_allergies" type="checkbox" value="food_allergies">
+                <label for="food_allergies">Food allergies</label>
+                <br />
+                <input id="sensitivity_to_foods" name="sensitivity_to_foods" type="checkbox" value="sensitivity_to_foods">
+                <label for="sensitivity_to_foods">Sensitivity to foods</label>
+                <br />
+                <input id="allergies_medications" name="allergies_medications" type="checkbox" value="allergies_medications">
+                <label for="allergies_medications">Allergies to any medications</label>
+                <br />
+                <input id="notable_reactions_to_medications" name="notable_reactions_to_medications" type="checkbox" value="notable_reactions_to_medications">
+                <label for="notable_reactions_to_medications">Notable reactions to medications</label>
+                <br />
+            </section>
+            <section class="healthy-main-page-two-form-gridcontainer-details">
+                <label for="medical_history_details">Please give details</label>
+                <br />
+                <textarea id="medical_history_details" name="medical_history_details" rows="4" cols="50"></textarea>
+                <br />
+            </section>
+            <section class="healthy-main-page-two-form-gridcontainer-back">
+                <button><a href="<?= url_for('/menu/healthy-survey-page-1.php'); ?>">Back</a></button>
+            </section>
+            <section class="healthy-main-page-two-form-gridcontainer-next">
+                <input name='next3' type='Submit' value='Next'>
+            </section>
+        </form>
+    <fieldset>
 </main>
 
 <!-- Footer -->

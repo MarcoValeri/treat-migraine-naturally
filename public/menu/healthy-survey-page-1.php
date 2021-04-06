@@ -684,11 +684,11 @@ include(INCLUDE_PATH . '/header.php');
                 <input id='telephone' name='telephone' type='text' value='<?= $telephone ?>' placeholder='Telephone'>
             </section>
             <section class="healthy-main-page-one-form-gridcontainer-personal-address-line-one">
-                <label for='address_number'>Address Line 1</label>
+                <label for='address_number'>House Number</label>
                 <input id='address_number' name='address_number' type='text' value='<?= $address_number ?>' placeholder='Number'>
             </section>
             <section class="healthy-main-page-one-form-gridcontainer-personal-address-line-two">
-                <label for='address'>Address Line 2</label>
+                <label for='address'>Address</label>
                 <input id='address' name='address' type='text' value='<?= $address ?>' placeholder='Address'>
             </section>
             <section class="healthy-main-page-one-form-gridcontainer-personal-city">
