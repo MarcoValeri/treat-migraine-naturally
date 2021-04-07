@@ -583,6 +583,111 @@ footer {
           .admin-menu-main .admin-menu-main-gridcontainer .admin-menu-main-gridcontainer-one .admin-menu-main-gridcontainer-one-btn-wrap:hover .menu-main-gridcontainer-section-one-btn {
             color: #FFD400; }
 
+.add-main {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  margin: 0rem auto 0rem auto;
+  padding-top: 10rem;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("http://localhost/treat-migraine-naturally/public/images/acquatic-jungle.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); }
+  .add-main fieldset {
+    width: 80%;
+    margin: 0rem auto 0rem auto; }
+    .add-main fieldset legend {
+      font-size: 2rem;
+      padding: 3px 6px; }
+    .add-main fieldset .add-main-error {
+      width: 50%;
+      font-size: 1.5rem;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .add-main fieldset .add-main-error ul li {
+        list-style-type: none;
+        color: #990000; }
+    .add-main fieldset .add-main-confim {
+      width: 100%;
+      height: 70vh;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .add-main fieldset .add-main-confim p {
+        font-size: 1.5rem; }
+      .add-main fieldset .add-main-confim button {
+        padding: .5rem 1.5rem;
+        margin: 1rem;
+        font-size: 1.2rem;
+        background-color: #000;
+        border: 3px solid #B744B8;
+        border-radius: 5px;
+        cursor: pointer; }
+        .add-main fieldset .add-main-confim button a {
+          text-decoration: none;
+          color: #B744B8; }
+        .add-main fieldset .add-main-confim button:hover {
+          color: #FFD400;
+          border: 3px solid #FFD400; }
+          .add-main fieldset .add-main-confim button:hover a {
+            color: #FFD400; }
+    .add-main fieldset .add-main-form-gridcontainer {
+      margin: auto;
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "add-main-form-gridcontainer-first-name add-main-form-gridcontainer-last-name" "add-main-form-gridcontainer-email add-main-form-gridcontainer-email-confirm" "add-main-form-gridcontainer-password add-main-form-gridcontainer-password-confirm" "add-main-form-gridcontainer-submit add-main-form-gridcontainer-submit"; }
+      .add-main fieldset .add-main-form-gridcontainer section {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 1rem; }
+        .add-main fieldset .add-main-form-gridcontainer section label,
+        .add-main fieldset .add-main-form-gridcontainer section input {
+          display: block;
+          margin: .5rem; }
+        .add-main fieldset .add-main-form-gridcontainer section input {
+          padding: .5rem;
+          border: none;
+          border-radius: 5px; }
+        .add-main fieldset .add-main-form-gridcontainer section input[type="text"]:focus,
+        .add-main fieldset .add-main-form-gridcontainer section input[type="email"]:focus,
+        .add-main fieldset .add-main-form-gridcontainer section input[type="password"]:focus {
+          outline: none;
+          box-shadow: 0 0 0 4px #b744b8; }
+      .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-first-name {
+        grid-area: add-main-form-gridcontainer-first-name;
+        margin: 1rem; }
+      .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-last-name {
+        grid-area: add-main-form-gridcontainer-last-name;
+        margin: 1rem; }
+      .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-email {
+        grid-area: add-main-form-gridcontainer-email;
+        margin: 1rem; }
+      .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-email-confirm {
+        grid-area: add-main-form-gridcontainer-email-confirm;
+        margin: 1rem; }
+      .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-password {
+        grid-area: add-main-form-gridcontainer-password;
+        margin: 1rem; }
+      .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-password-confirm {
+        grid-area: add-main-form-gridcontainer-password-confirm;
+        margin: 1rem; }
+      .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit {
+        grid-area: add-main-form-gridcontainer-submit;
+        margin: 0rem 1rem 1rem 1rem; }
+        .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit input {
+          font-size: 1rem;
+          padding: .5rem;
+          color: #B744B8;
+          background-color: #000;
+          border: 3px solid #B744B8;
+          border-radius: 5px;
+          cursor: pointer; }
+          .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit input:hover {
+            color: #FFD400;
+            border: 3px solid #FFD400; }
+
 .users-main {
   width: 80%;
   height: auto;
@@ -652,24 +757,6 @@ footer {
         .users-main .user-main-gridcontainer .user-main-gridcontainer-list table td {
           padding: 1rem; }
 
-.show-main {
-  width: 80%;
-  margin: auto; }
-  .show-main .show-main-user {
-    margin: auto;
-    padding: 2rem; }
-    .show-main .show-main-user table,
-    .show-main .show-main-user th,
-    .show-main .show-main-user td {
-      border: 1px solid #000; }
-    .show-main .show-main-user table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 1rem; }
-      .show-main .show-main-user table th,
-      .show-main .show-main-user table td {
-        padding: 1rem; }
-
 .edit-main {
   width: 80%;
   margin: auto;
@@ -717,24 +804,6 @@ footer {
     .edit-main .edit-main-user a {
       font-size: 1.5rem;
       color: #B744B8; }
-
-.delete-main {
-  width: 80%;
-  margin: auto; }
-  .delete-main .delete-main-user {
-    margin: auto;
-    padding: 2rem; }
-    .delete-main .delete-main-user table,
-    .delete-main .delete-main-user th,
-    .delete-main .delete-main-user td {
-      border: 1px solid #000; }
-    .delete-main .delete-main-user table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 1rem; }
-      .delete-main .delete-main-user table th,
-      .delete-main .delete-main-user table td {
-        padding: 1rem; }
 
 .contact-main {
   width: 80%;

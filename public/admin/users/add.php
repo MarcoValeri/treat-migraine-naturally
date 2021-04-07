@@ -268,32 +268,49 @@ if ($valid_user && count($errors_output) === 0) {
     if (is_new_user($db, $email)) {
         add_new_user($db, $first_name, $last_name, $email, $password);
         $redirect = url_for('/admin/users/users.php');
-        $output = "New user has been added<br />";
-        $output .= "<a href='${redirect}'>&laquo; Back to Users List</a>";
+        $output = "<section class='add-main-confim'><p>New user has been added</p>";
+        $output .= "<button><a href='${redirect}'>&laquo; Back to Users List</a></button></section>";
     } else {
-        $output = "There is already an user registered with this email: " . $email;
+        $redirect = url_for('/admin/users/users.php');
+        $output = "<section class='add-main-confim'><p>There is already an user registered with this email: " . $email;
+        $output .= "<mark></br>" . $email . "</mark></p>";
+        $output .= "<button><a href='${redirect}'>User's Menu</a></button></section>";
     }
 
 
 } else {
     $output = "
     <main>
-        <form id='form' action='./add.php' method='post'>
-            <label for='first_name'>First Name *</label>
-            <input id='first_name' name='first_name' type='text' value='${first_name}' placeholder='First Name'>
-            <label for='last_name'>Last Name *</label>
-            <input id='last_name' name='last_name' type='text' value='${last_name}' placeholder='Last Name'>
-            <label for='email'>Email *</label>
-            <input id='email' name='email' type='email' value='${email}' placeholder='Email'>
-            <label for='confirm_email'>Confirm email *</label>
-            <input id='confirm_email' name='confirm_email' type='email' value='${confirm_email}' placeholder='Confirm Email'>
-            <label for='password'>Password *</label>
-            <input id='password' name='password' type='password' value='${password}' placeholder='Password'>
-            <label for='confirm_password'>Confirm Password *</label>
-            <input id='confirm_password' name='confirm_password' type='password' value='${confirm_password}' placeholder='Confirm Password'>
-            <label for='show_password'>Show Password</label>
-            <input id='show_password' name='show_password' type='checkbox'>
-            <input name='submit' type='Submit' value='Create new account'>
+        <form id='form' class='add-main-form-gridcontainer' action='./add.php' method='post'>
+            <section class='add-main-form-gridcontainer-first-name'>
+                <label for='first_name'>First Name *</label>
+                <input id='first_name' name='first_name' type='text' value='${first_name}' placeholder='First Name'>
+            </section>
+            <section class='add-main-form-gridcontainer-last-name'>
+                <label for='last_name'>Last Name *</label>
+                <input id='last_name' name='last_name' type='text' value='${last_name}' placeholder='Last Name'>
+            </section>
+            <section class='add-main-form-gridcontainer-email'>
+                <label for='email'>Email *</label>
+                <input id='email' name='email' type='email' value='${email}' placeholder='Email'>
+            </section>
+            <section class='add-main-form-gridcontainer-email-confirm'>
+                <label for='confirm_email'>Confirm email *</label>
+                <input id='confirm_email' name='confirm_email' type='email' value='${confirm_email}' placeholder='Confirm Email'>
+            </section>
+            <section class='add-main-form-gridcontainer-password'>
+                <label for='password'>Password *</label>
+                <input id='password' name='password' type='password' value='${password}' placeholder='Password'>
+                <label style='display: inline' for='show_password'>Show Password</label>
+                <input style='display: inline' id='show_password' name='show_password' type='checkbox'>
+            </section>
+            <section class='add-main-form-gridcontainer-password-confirm'>
+                <label for='confirm_password'>Confirm Password *</label>
+                <input id='confirm_password' name='confirm_password' type='password' value='${confirm_password}' placeholder='Confirm Password'>
+            </section>
+            <section class='add-main-form-gridcontainer-submit'>
+                <input name='submit' type='Submit' value='Create new account'>
+            </section>
         </form>
     </main>
     ";
@@ -322,21 +339,23 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-
-<!-- Output -->
-<?= $output; ?>
-
-<section>
-    <!-- Show errors if they exist -->
-    <ul>
-    <?php
-        foreach($errors_output as $key => $value) {
-    ?>
-            <li><?= "${key}: ${value}"; ?></li>
-    <?php
-        }
-    ?>
-</section>
+<main class="add-main">
+    <fieldset>
+        <legend>Add new account</legend>
+        <section class="add-main-error">
+            <!-- Show errors if they exist -->
+            <ul>
+            <?php
+                foreach($errors_output as $key => $value) {
+            ?>
+                    <li><?= "${key}: ${value}"; ?></li>
+            <?php
+                }
+            ?>
+        </section>
+        <!-- Output -->
+        <?= $output; ?>
+</main>
 
 <!-- Footer -->
 <?php

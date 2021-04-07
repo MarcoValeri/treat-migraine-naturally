@@ -64,9 +64,14 @@ $header_sub_title = 'Delete User';
 include(INCLUDE_PATH . '/header.php');
 ?>
 
-<!-- Main -->
-<main class="delete-main">
-    <section class="delete-main-user">
+<!-- 
+    
+Main 
+Styled by _edit.scss
+
+-->
+<main class="edit-main">
+    <section class="edit-main-user">
         <h2>User: <?= $user['email'] ?></h2>
         <table>
             <tr>

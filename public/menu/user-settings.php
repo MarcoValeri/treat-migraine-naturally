@@ -290,7 +290,13 @@ $header_sub_title = 'User Settings';
 include(INCLUDE_PATH . '/header.php');
 ?>
 
-<!-- Main -->
+<!-- 
+    
+Main 
+Styled by _edit.scss
+
+-->
+
 <main class='edit-main'>
     <section>
         <!-- Show errors if they exist -->
