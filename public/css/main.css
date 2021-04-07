@@ -1308,6 +1308,14 @@ footer {
             color: #FFD400;
             border: 3px solid #FFD400; }
 
+.thanks-page-main {
+  text-align: center;
+  color: #B744B8; }
+  .thanks-page-main h2 {
+    font-size: 3rem; }
+  .thanks-page-main p {
+    font-size: 1.5rem; }
+
 * {
   padding: 0;
   margin: 0; }

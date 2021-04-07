@@ -27,7 +27,7 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- main --> 
-<main>
+<main class="thanks-page-main">
     <h2>Thank you to fill up our survey</h2>
     <p>A member of our staff will  be in touch with you soon</p>
 </main>
