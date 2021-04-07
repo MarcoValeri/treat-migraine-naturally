@@ -28,10 +28,18 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Main -->
 <main class='admin-menu-main'>
-    <section class="admin-menu-main-menu">
-        <a href="<?= url_for('/admin/users/users.php'); ?>">
-            Users
-        </a>
+    <section class="admin-menu-main-gridcontainer">
+        <section class="admin-menu-main-gridcontainer-title">
+            <h2 class="admin-menu-main-gridcontainer-title-elastic">Admin Menu</h2>
+        </section>
+        <section class="admin-menu-main-gridcontainer-one">
+            <div class="admin-menu-main-gridcontainer-one-btn-wrap">
+                <a href="<?= url_for('/admin/users/users.php'); ?>">
+                    <div class="menu-main-gridcontainer-section-one-btn">
+                        Users
+                    </div>
+                </a>
+            </div>
     </section>
 </main>
 
