@@ -78,24 +78,29 @@ if ($valid_user && count($errors_output) === 0) {
 
     if (check_admin($db, $email, $password)) {
         $redirect = url_for('admin/admin-menu.php');
-        $output = "Hi " . $email . "<br />";
-        $output .= "<button><a href='${redirect}'>Admin Menu</a></button>";
-        echo "<br />";
+        $output = "<section class='admin-main-confim'><p>Hi " . $email . "<p/>";
+        $output .= "<button><a href='${redirect}'>Admin Menu</a></button></section>";
         create_session_data(get_first_name($db, $email), get_last_name($db, $email), get_email($db, $email), get_admin_permission($db, $email));
     } else {
-        $output = "Email and password are not valid";
+        $redirect = url_for('admin/admin.php');
+        $output = "<section class='admin-main-confim'><p>Email and password are not valid</p>";
+        $output .= "<button><a href='${redirect}'>Admin Login</a></button></section>";
     }
 
 } else {
     $output = "
-        <form class='admin-main-form' action='./admin.php' method='post'>
-            <label for='email'>Email *</label>
-            <input id='email' name='email' type='email' value='' placeholder='Email'>
-            <br />
-            <label for='password'>Password *</label>
-            <input id='password' name='password' type='password' value='' placeholder='Password'>
-            <br />
-            <input name='submit' type='Submit' value='Login'>
+        <form class='admin-main-form-gridcontainer' action='./admin.php' method='post'>
+            <section class='admin-main-form-gridcontainer-email'>
+                <label for='email'>Email *</label>
+                <input id='email' name='email' type='email' value='' placeholder='Email'>
+            </section>
+            <section class='admin-main-form-gridcontainer-password'>
+                <label for='password'>Password *</label>
+                <input id='password' name='password' type='password' value='' placeholder='Password'>
+            </section>
+            <section class='admin-main-form-gridcontainer-submit'>
+                <input name='submit' type='Submit' value='Login'>
+            </section>
         </form>
 ";
 }
@@ -122,20 +127,22 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Main -->
 <main class="admin-main">
-    <!-- Output -->
-    <?= $output; ?>
-
-    <section class="admin-main-error">
-        <!-- Show errors if they exist -->
-        <ul>
-        <?php
-            foreach($errors_output as $key => $value) {
-        ?>
-                <li><?= "${key}: ${value}"; ?></li>
-        <?php
-            }
-        ?>
-    </section>
+    <fieldset>
+        <legend>Login</legend>
+        <section class="admin-main-error">
+            <!-- Show errors if they exist -->
+            <ul>
+            <?php
+                foreach($errors_output as $key => $value) {
+            ?>
+                    <li><?= "${key}: ${value}"; ?></li>
+            <?php
+                }
+            ?>
+        </section>
+        <!-- Output -->
+        <?= $output; ?>
+    </fieldset>
 </main>
 
 <!-- Footer -->

@@ -430,16 +430,91 @@ footer {
 
 .admin-main {
   width: 80%;
+  height: auto;
+  min-height: 50vh;
   margin: auto;
   text-align: center; }
-  .admin-main .admin-main-form {
+  .admin-main fieldset {
     width: 80%;
-    margin: auto;
-    text-align: center; }
-    .admin-main .admin-main-form input {
-      margin-bottom: 1rem; }
-  .admin-main .admin-main-error ul li {
-    list-style-type: none; }
+    margin: 0 auto 0 auto;
+    color: #B744B8; }
+    .admin-main fieldset legend {
+      font-size: 2rem;
+      padding: 3px 6px; }
+    .admin-main fieldset .admin-main-error {
+      width: 50%;
+      font-size: 1.5rem;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .admin-main fieldset .admin-main-error ul li {
+        list-style-type: none;
+        color: #990000; }
+    .admin-main fieldset .admin-main-confim {
+      width: 100%;
+      height: 70vh;
+      margin: 1rem auto 1rem auto;
+      padding: 1rem; }
+      .admin-main fieldset .admin-main-confim p {
+        font-size: 1.5rem; }
+      .admin-main fieldset .admin-main-confim button {
+        padding: .5rem 1.5rem;
+        margin: 1rem;
+        font-size: 1.2rem;
+        background-color: #000;
+        border: 3px solid #B744B8;
+        border-radius: 5px;
+        cursor: pointer; }
+        .admin-main fieldset .admin-main-confim button a {
+          text-decoration: none;
+          color: #B744B8; }
+        .admin-main fieldset .admin-main-confim button:hover {
+          color: #FFD400;
+          border: 3px solid #FFD400; }
+          .admin-main fieldset .admin-main-confim button:hover a {
+            color: #FFD400; }
+    .admin-main fieldset .admin-main-form-gridcontainer {
+      margin: auto;
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "admin-main-form-gridcontainer-email admin-main-form-gridcontainer-password" "admin-main-form-gridcontainer-submit admin-main-form-gridcontainer-submit"; }
+      .admin-main fieldset .admin-main-form-gridcontainer section {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 1rem; }
+        .admin-main fieldset .admin-main-form-gridcontainer section label,
+        .admin-main fieldset .admin-main-form-gridcontainer section input {
+          display: block;
+          margin: .5rem; }
+        .admin-main fieldset .admin-main-form-gridcontainer section input {
+          padding: .5rem;
+          border: none;
+          border-radius: 5px; }
+        .admin-main fieldset .admin-main-form-gridcontainer section input[type="text"]:focus,
+        .admin-main fieldset .admin-main-form-gridcontainer section input[type="email"]:focus,
+        .admin-main fieldset .admin-main-form-gridcontainer section input[type="password"]:focus {
+          outline: none;
+          box-shadow: 0 0 0 4px #b744b8; }
+      .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-email {
+        grid-area: admin-main-form-gridcontainer-email;
+        margin: 1rem; }
+      .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-password {
+        grid-area: admin-main-form-gridcontainer-password;
+        margin: 1rem; }
+      .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-submit {
+        grid-area: admin-main-form-gridcontainer-submit;
+        margin: 1rem; }
+        .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-submit input {
+          font-size: 1rem;
+          padding: .5rem;
+          color: #B744B8;
+          background-color: #000;
+          border: 3px solid #B744B8;
+          border-radius: 5px;
+          cursor: pointer; }
+          .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-submit input:hover {
+            color: #FFD400;
+            border: 3px solid #FFD400; }
 
 .admin-menu-main {
   width: 80%;
