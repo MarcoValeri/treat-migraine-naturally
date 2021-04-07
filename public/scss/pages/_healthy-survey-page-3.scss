@@ -1,4 +1,4 @@
-.healthy-main-page-two {
+.healthy-main-page-three {
     width: 90%;
     height: auto;
     min-height: 100vh;
@@ -27,7 +27,7 @@
             padding: 3px 6px;
         }
 
-        .healthy-main-page-two-error {
+        .healthy-main-page-three-error {
             width: 50%;
             font-size: 1.5rem;
             margin: 1rem auto 1rem auto;
@@ -42,7 +42,7 @@
             }
         }
 
-        .healthy-main-page-two-title {
+        .healthy-main-page-three-title {
 
             h2 {
                 font-size: 5rem;
@@ -60,42 +60,62 @@
                     text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
                 }
             }
+
         }
 
-        .healthy-main-page-two-form-gridcontainer {
+        .healthy-main-page-three-form-gridcontainer {
             margin: auto;
             display: grid;
             width: 60%;
             grid-template-columns: 1fr 1fr;
-            grid-template-areas:
-            "healthy-main-page-two-form-gridcontainer-checkbox healthy-main-page-two-form-gridcontainer-checkbox"
-            "healthy-main-page-two-form-gridcontainer-details healthy-main-page-two-form-gridcontainer-details"
-            "healthy-main-page-two-form-gridcontainer-back healthy-main-page-two-form-gridcontainer-next";
+            grid-template-areas: 
+            "healthy-main-page-three-form-gridcontainer-title healthy-main-page-three-form-gridcontainer-title"
+            "healthy-main-page-three-form-gridcontainer-illnesses healthy-main-page-three-form-gridcontainer-illnesses"
+            "healthy-main-page-three-form-gridcontainer-medications healthy-main-page-three-form-gridcontainer-medications"
+            "healthy-main-page-three-form-gridcontainer-back healthy-main-page-three-form-gridcontainer-next";
 
             label {
                 font-size: 1.3rem;
                 margin-bottom: .5rem;
             }
 
-            .healthy-main-page-two-form-gridcontainer-checkbox {
-                grid-area: healthy-main-page-two-form-gridcontainer-checkbox;
+            .healthy-main-page-three-form-gridcontainer-title {
+                grid-area: healthy-main-page-three-form-gridcontainer-title;
                 margin: 1rem;
-
-                text-align: left;
 
                 h4 {
                     font-size: 2rem;
                     margin-bottom: .5rem;
                 }
-
-                /* It is not worlink, need to fix it */
-                input[type="checkbox"] {
-                    font-size: 2rem;
-                }
             }
 
-            .healthy-main-page-two-form-gridcontainer-details {
-                grid-area: healthy-main-page-two-form-gridcontainer-details;
+            .healthy-main-page-three-form-gridcontainer-illnesses {
+                grid-area: healthy-main-page-three-form-gridcontainer-illnesses;
+                width: 100%;
+                margin: 1rem;
+
+                label {
+                    font-size: 2rem;
+                }
+
+                textarea {
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    border-radius: 5px;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 0 0 4px rgb(183, 68, 184);
+                    }
+                }
+
+            }
+
+            .healthy-main-page-three-form-gridcontainer-medications {
+                grid-area: healthy-main-page-three-form-gridcontainer-medications;
                 width: 100%;
                 margin: 1rem;
 
@@ -118,8 +138,8 @@
                 }
             }
 
-            .healthy-main-page-two-form-gridcontainer-back {
-                grid-area: healthy-main-page-two-form-gridcontainer-back;
+            .healthy-main-page-three-form-gridcontainer-back {
+                grid-area: healthy-main-page-three-form-gridcontainer-back;
                 margin: 1rem;
 
                 button {
@@ -146,8 +166,8 @@
                 }
             }
 
-            .healthy-main-page-two-form-gridcontainer-next {
-                grid-area: healthy-main-page-two-form-gridcontainer-next;
+            .healthy-main-page-three-form-gridcontainer-next {
+                grid-area: healthy-main-page-three-form-gridcontainer-next;
                 margin: 1rem;
 
                 input {
@@ -165,6 +185,7 @@
                     }
                 }
             }
+
         }
     }
 }

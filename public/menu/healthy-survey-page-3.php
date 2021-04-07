@@ -135,34 +135,49 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- main --> 
-<main>
-    <h2>Medical History</h2>
-    <form action="<?= $redirect_next; ?>" method="post">
-        <h4>Current Medical Status:</h4>
-        <label for="current_illnesses_details">Please give details of any of current illnesses</label>
-        <br />
-        <textarea id="current_illnesses_details" name="current_illnesses_details" rows="4" cols="50"></textarea>
-        <br />
-        <label for="current_medications_details">Please give details of any of current medications you are taking</label>
-        <br />
-        <textarea id="current_medications_details" name="current_medications_details" rows="4" cols="50"></textarea>
-        <br />
-        <button><a href="<?= url_for('/menu/healthy-survey-page-2.php'); ?>">Back</a></button>
-        <input name='next4' type='Submit' value='Next'>
-    </form>
+<main class="healthy-main-page-three">
+    <fieldset>
+        <legend>Page 3 of 4</legend>
 
-    <section>
-        <!-- Show errors if they exist -->
-        <h4>Test errors:</h4>
-        <ul>
-        <?php
-            foreach($errors_output as $key => $value) {
-        ?>
-                <li><?= "${key}: ${value}"; ?></li>
-        <?php
-            }
-        ?>
-    </section>
+        <section class="healthy-main-page-three-error">
+            <!-- Show errors if they exist -->
+            <ul>
+            <?php
+                foreach($errors_output as $key => $value) {
+            ?>
+                    <li><?= "${key}: ${value}"; ?></li>
+            <?php
+                }
+            ?>
+        </section>
+        
+        <section class="healthy-main-page-three-title">
+            <h2>Medical History</h2>
+        </section>
+        <form class="healthy-main-page-three-form-gridcontainer" action="<?= $redirect_next; ?>" method="post">
+            <section class="healthy-main-page-three-form-gridcontainer-title">
+                <h4>Current Medical Status:</h4>
+            </section>
+            <section class="healthy-main-page-three-form-gridcontainer-illnesses">
+                <label for="current_illnesses_details">Please give details of any of current illnesses</label>
+                <br />
+                <textarea id="current_illnesses_details" name="current_illnesses_details" rows="4" cols="50"></textarea>
+                <br />
+            </section>
+            <section class="healthy-main-page-three-form-gridcontainer-medications">
+                <label for="current_medications_details">Please give details of any of current medications you are taking</label>
+                <br />
+                <textarea id="current_medications_details" name="current_medications_details" rows="4" cols="50"></textarea>
+                <br />
+            </section>
+            <section class="healthy-main-page-three-form-gridcontainer-back">
+                <button><a href="<?= url_for('/menu/healthy-survey-page-2.php'); ?>">Back</a></button>
+            </section>
+            <section class="healthy-main-page-three-form-gridcontainer-next">
+                <input name='next4' type='Submit' value='Next'>
+            </section>
+        </form>
+    <fieldset>
 </main>
 
 <!-- Footer -->
