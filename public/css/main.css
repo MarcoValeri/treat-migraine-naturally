@@ -585,23 +585,72 @@ footer {
 
 .users-main {
   width: 80%;
-  margin: auto; }
-  .users-main .users-main-newuser {
-    margin: 0rem auto 2rem auto;
-    border: 1px solid #000; }
-  .users-main .users-main-list {
+  height: auto;
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("http://localhost/treat-migraine-naturally/public/images/brain.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .users-main .user-main-gridcontainer {
     margin: auto;
-    padding: 2rem; }
-    .users-main .users-main-list table,
-    .users-main .users-main-list th,
-    .users-main .users-main-list td {
-      border: 1px solid #000; }
-    .users-main .users-main-list table {
-      width: 100%;
-      border-collapse: collapse; }
-      .users-main .users-main-list table th,
-      .users-main .users-main-list table td {
-        padding: 1rem; }
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5rem;
+    grid-template-areas: "user-main-gridcontainer-newuser user-main-gridcontainer-newuser" "user-main-gridcontainer-list user-main-gridcontainer-list"; }
+    .users-main .user-main-gridcontainer .user-main-gridcontainer-newuser {
+      grid-area: user-main-gridcontainer-newuser;
+      margin: 1rem; }
+      .users-main .user-main-gridcontainer .user-main-gridcontainer-newuser h2 {
+        color: #33032F; }
+      .users-main .user-main-gridcontainer .user-main-gridcontainer-newuser .user-main-gridcontainer-newuser-btn-wrap {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8rem;
+        padding: 1rem;
+        position: relative;
+        background: linear-gradient(240deg, #B744B8 0%, #33032F 49%, #B744B8 80%, #B744B8 100%);
+        padding: 3px;
+        margin-top: 1rem;
+        border-radius: 10px;
+        animation: rainbow 3s linear infinite; }
+        .users-main .user-main-gridcontainer .user-main-gridcontainer-newuser .user-main-gridcontainer-newuser-btn-wrap a {
+          text-decoration: none; }
+        .users-main .user-main-gridcontainer .user-main-gridcontainer-newuser .user-main-gridcontainer-newuser-btn-wrap .user-main-gridcontainer-newuser-btn {
+          background: #000;
+          color: #B744B8;
+          text-align: center;
+          font-size: 1rem;
+          padding: .5rem; }
+
+@keyframes rainbow {
+  to {
+    background-position: 8rem; } }
+        .users-main .user-main-gridcontainer .user-main-gridcontainer-newuser .user-main-gridcontainer-newuser-btn-wrap:hover {
+          background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%); }
+          .users-main .user-main-gridcontainer .user-main-gridcontainer-newuser .user-main-gridcontainer-newuser-btn-wrap:hover .user-main-gridcontainer-newuser-btn {
+            color: #FFD400; }
+    .users-main .user-main-gridcontainer .user-main-gridcontainer-list {
+      grid-area: user-main-gridcontainer-list;
+      margin: 1rem; }
+      .users-main .user-main-gridcontainer .user-main-gridcontainer-list h2 {
+        color: #33032F;
+        margin-bottom: 1rem; }
+      .users-main .user-main-gridcontainer .user-main-gridcontainer-list table,
+      .users-main .user-main-gridcontainer .user-main-gridcontainer-list th,
+      .users-main .user-main-gridcontainer .user-main-gridcontainer-list td {
+        border: 1px solid #000; }
+      .users-main .user-main-gridcontainer .user-main-gridcontainer-list table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #f7f7f7; }
+        .users-main .user-main-gridcontainer .user-main-gridcontainer-list table th,
+        .users-main .user-main-gridcontainer .user-main-gridcontainer-list table td {
+          padding: 1rem; }
 
 .show-main {
   width: 80%;
