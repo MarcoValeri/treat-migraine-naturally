@@ -306,6 +306,17 @@ footer {
         .main-home-gridcontainer .main-home-gridcontainer-single .main-home-gridcontainer-single-btn-wrap:hover .main-home-gridcontainer-single-btn {
           color: #FFD400; }
 
+/*
+* Media Queries
+* for tablets screens
+* max 1024px
+*/
+@media (max-width: 1024px) {
+  .main-home-gridcontainer {
+    grid-template-areas: "container-one container-one container-one container-one container-one container-one" "container-two container-two container-two container-two container-two container-two" "container-three container-three container-three container-three container-three container-three" "container-four container-four container-four container-five container-five container-five"; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-one .main-home-gridcontainer-single-content-one {
+      bottom: 0%; } }
+
 .signup-main {
   width: 100%;
   height: auto;
