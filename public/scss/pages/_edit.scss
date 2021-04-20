@@ -3,9 +3,56 @@
     margin: auto;
     color: #fff;
 
+    .edit-main-error {
+        width: 50%;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem auto 1rem auto;
+        padding: 1rem;
+    
+        ul {
+
+            li {
+                list-style-type: none;
+                color: darken(#ff0000, 20%);
+            }
+        }
+    }
+
     .edit-main-user {
         margin: auto;
         padding: 2rem;
+
+        /*
+        * This class has been implement only into 
+        * delete.php
+        */
+        .edit-main-confirm {
+            margin-bottom: 2rem;
+
+            h3 {
+                font-size: 1.5rem;
+                color: #ff0000;
+            }
+
+            form {
+                input[type=submit] {
+                    font-size: 1rem;
+                    padding: .5rem;
+                    margin: .5rem;
+                    color: #B744B8;
+                    background-color: #000;
+                    border: 3px solid #B744B8;
+                    border-radius: 5px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        color: #FFD400;
+                        border: 3px solid #FFD400;
+                    }
+                }
+            }
+        }
 
         h2,
         h3 {
@@ -61,4 +108,20 @@
             color: $purple-primary;
         }
     }
+}
+
+/*
+* Media Queries
+* for tablets screens
+* max 1024px
+*/
+@media (max-width: 1024px) {
+
+    .edit-main {
+        width: 90%;
+        .edit-main-user {
+            overflow: auto;
+        }
+    }
+
 }

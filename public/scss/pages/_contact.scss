@@ -131,3 +131,20 @@
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* max 1024px
+*/
+@media (max-width: 1024px) {
+
+    .contact-main {
+        fieldset {
+            .contact-main-form-gridcontainer {
+                width: 80%;
+            }
+        }
+    }
+
+}

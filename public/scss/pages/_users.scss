@@ -107,3 +107,22 @@
     
     }
 }
+
+/*
+* Media Queries
+* for tablets screens
+* max 1024px
+*/
+@media (max-width: 1024px) {
+
+    .users-main {
+        width: 90%;
+
+        .user-main-gridcontainer {
+            .user-main-gridcontainer-list {
+                overflow: auto;
+            }
+        }
+    }
+
+}

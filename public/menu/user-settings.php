@@ -298,7 +298,7 @@ Styled by _edit.scss
 -->
 
 <main class='edit-main'>
-    <section>
+    <section class="edit-main-error">
         <!-- Show errors if they exist -->
         <ul>
         <?php

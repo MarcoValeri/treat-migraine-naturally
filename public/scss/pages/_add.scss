@@ -28,7 +28,6 @@
         }
 
         .add-main-error {
-
             width: 50%;
             font-size: 1.5rem;
             margin: 1rem auto 1rem auto;
@@ -168,4 +167,21 @@
 
         }
     }
+}
+
+/*
+* Media Queries
+* for tablets screens
+* max 1024px
+*/
+@media (max-width: 1024px) {
+
+    .add-main {
+        fieldset {
+            .add-main-form-gridcontainer {
+                width: 100%;
+            }
+        }
+    }
+
 }

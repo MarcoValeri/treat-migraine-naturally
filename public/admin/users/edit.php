@@ -281,6 +281,17 @@ include(INCLUDE_PATH . '/header.php');
 
 <!-- Main -->
 <main class='edit-main'>
+    <section class="edit-main-error">
+        <!-- Show errors if they exist -->
+        <ul>
+        <?php
+            foreach($errors_output as $key => $value) {
+        ?>
+                <li><?= "${key}: ${value}"; ?></li>
+        <?php
+            }
+        ?>
+    </section>
     <section class="edit-main-user">
         <h2>User: <?= $user['email'] ?></h2>
         <table>
@@ -299,18 +310,6 @@ include(INCLUDE_PATH . '/header.php');
             </tr>
         </table>
         <a href="<?= url_for('/admin/users/users.php'); ?>">&laquo; Back to Users List</a>
-    </section>
-
-    <section>
-        <!-- Show errors if they exist -->
-        <ul>
-        <?php
-            foreach($errors_output as $key => $value) {
-        ?>
-                <li><?= "${key}: ${value}"; ?></li>
-        <?php
-            }
-        ?>
     </section>
 </main>
 

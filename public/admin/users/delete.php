@@ -73,6 +73,9 @@ Styled by _edit.scss
 <main class="edit-main">
     <section class="edit-main-user">
         <h2>User: <?= $user['email'] ?></h2>
+        <section class="edit-main-confirm">
+            <?= $output_confirm ?>
+        </section>
         <table>
             <tr>
                 <th>id</th>
@@ -93,9 +96,6 @@ Styled by _edit.scss
                 <td><?= $output_delete ?></td>
             </tr>
         </table>
-        <br />
-        <?= $output_confirm ?>
-        <br />
         <a href="<?= url_for('/admin/users/users.php'); ?>">&laquo; Back to Users List</a>
     </section>
 <main>

@@ -135,3 +135,20 @@
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* max 1024px
+*/
+@media (max-width: 1024px) {
+
+    .login-main {
+        fieldset {
+            .login-main-form-gridcontainer {
+                width: 80%;
+            } 
+        }
+    }
+
+}
