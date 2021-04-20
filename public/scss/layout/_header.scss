@@ -121,13 +121,13 @@ header {
 
 /*
 * Media Queries
-* for tablets screens
+* for tablets screens in landscape
 * max 1024px
 */
 @media (max-width: 1024px) {
 
     header {
-        background-position: top;
+        background-position: bottom;
         background-size: 60%;
 
         .header-navbar {
@@ -235,6 +235,24 @@ header {
             input:checked ~ ul {
                 transform: none;
             }
+        }
+    }
+
+}
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 1024px
+*/
+@media (max-width: 800px) {
+
+    header {
+        background-position: top;
+
+        .header-headline {
+            top: 50%;
         }
     }
 

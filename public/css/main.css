@@ -73,12 +73,12 @@ header {
 
 /*
 * Media Queries
-* for tablets screens
+* for tablets screens in landscape
 * max 1024px
 */
 @media (max-width: 1024px) {
   header {
-    background-position: top;
+    background-position: bottom;
     background-size: 60%; }
     header .header-navbar .header-navbar-menu-toggle {
       display: block;
@@ -141,6 +141,18 @@ header {
         display: block; }
     header .header-navbar input:checked ~ ul {
       transform: none; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 1024px
+*/
+@media (max-width: 800px) {
+  header {
+    background-position: top; }
+    header .header-headline {
+      top: 50%; } }
 
 footer {
   position: relative;
