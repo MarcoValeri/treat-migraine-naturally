@@ -20,6 +20,11 @@ header {
         font-family: 'Open Sans Condensed', sans-serif;
         padding: 1rem;
 
+        input,
+        span {
+            display: none;
+        }
+
         li {
             display: inline;
             font-size: 2rem;
@@ -122,6 +127,8 @@ header {
 @media (max-width: 1024px) {
 
     header {
+        background-position: top;
+        background-size: 60%;
 
         .header-navbar {
 
