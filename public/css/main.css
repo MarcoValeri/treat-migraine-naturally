@@ -605,6 +605,14 @@ footer {
   .login-main fieldset .login-main-form-gridcontainer {
     width: 100%; } }
 
+.logout-main {
+  text-align: center;
+  color: #B744B8; }
+  .logout-main h2 {
+    font-size: 3rem; }
+  .logout-main p {
+    font-size: 1.5rem; }
+
 .admin-main {
   width: 80%;
   height: auto;

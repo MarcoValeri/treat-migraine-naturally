@@ -25,7 +25,10 @@ include(INCLUDE_PATH . '/header.php');
 ?>
 
 <!-- Main -->
-<h4>User has been logout</h4>
+<main class="logout-main">
+    <h2>User has been logout</h2>
+    <p>Thank you for visiting Treat Migraine Naturally</p>
+</main>
 
 <!-- Footer -->
 <?php
