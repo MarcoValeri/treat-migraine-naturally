@@ -183,3 +183,21 @@
         }
     }
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+
+    .healthy-main-page-one {
+        fieldset {
+            .healthy-main-page-one-form-gridcontainer {
+                width: 80%;
+            }
+        }
+    }
+
+}

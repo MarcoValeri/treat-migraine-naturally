@@ -91,6 +91,8 @@ header {
         text-decoration: none;
         color: #fff;
         transition: color 0.3s ease; }
+      header .header-navbar .header-navbar-menu-toggle .header-navbar-admin a {
+        color: #FFD400; }
       header .header-navbar .header-navbar-menu-toggle input {
         display: block;
         width: 40px;
@@ -146,7 +148,7 @@ header {
 * Media Queries
 * for tablets screens
 * not in landscape
-* max 1024px
+* max 800px
 */
 @media (max-width: 800px) {
   header {
@@ -335,7 +337,7 @@ footer {
 * Media Queries
 * for tablets screens
 * not in landscape
-* max 1024px
+* max 800px
 */
 @media (max-width: 800px) {
   .main-home-gridcontainer {
@@ -477,6 +479,25 @@ footer {
             color: #FFD400;
             border: 3px solid #FFD400; }
 
+/*
+* Media Queries
+* for tablets screens in landscape
+* max 1024px
+*/
+@media (max-width: 1024px) {
+  .signup-main fieldset .signup-main-form-gridcontainer {
+    width: 70%; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+  .signup-main fieldset .signup-main-form-gridcontainer {
+    width: 80%; } }
+
 .login-main {
   width: 80%;
   height: auto;
@@ -567,12 +588,22 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for tablets screens in landscape
 * max 1024px
 */
 @media (max-width: 1024px) {
   .login-main fieldset .login-main-form-gridcontainer {
     width: 80%; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+  .login-main fieldset .login-main-form-gridcontainer {
+    width: 100%; } }
 
 .admin-main {
   width: 80%;
@@ -664,12 +695,22 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for tablets screens in landscape
 * max 1024px
 */
 @media (max-width: 1024px) {
   .admin-main fieldset .admin-main-form-gridcontainer {
     width: 80%; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+  .admin-main fieldset .admin-main-form-gridcontainer {
+    width: 100%; } }
 
 .admin-menu-main {
   width: 80%;
@@ -1373,6 +1414,16 @@ footer {
           .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-next input:hover {
             color: #FFD400;
             border: 3px solid #FFD400; }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+  .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer {
+    width: 80%; } }
 
 .healthy-main-page-two {
   width: 90%;

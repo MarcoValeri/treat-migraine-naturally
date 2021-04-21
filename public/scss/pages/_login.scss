@@ -138,7 +138,7 @@
 
 /*
 * Media Queries
-* for tablets screens
+* for tablets screens in landscape
 * max 1024px
 */
 @media (max-width: 1024px) {
@@ -148,6 +148,24 @@
             .login-main-form-gridcontainer {
                 width: 80%;
             } 
+        }
+    }
+
+}
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+
+    .login-main {
+        fieldset {
+            .login-main-form-gridcontainer {
+                width: 100%;
+            }
         }
     }
 

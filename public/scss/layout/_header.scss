@@ -153,6 +153,13 @@ header {
                     // }
                 }
 
+                .header-navbar-admin {
+            
+                    a {
+                        color: #FFD400;
+                    }
+                }
+
                 input {
                     display: block;
                     width: 40px;
@@ -244,7 +251,7 @@ header {
 * Media Queries
 * for tablets screens
 * not in landscape
-* max 1024px
+* max 800px
 */
 @media (max-width: 800px) {
 

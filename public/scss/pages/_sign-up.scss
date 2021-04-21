@@ -175,3 +175,38 @@
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens in landscape
+* max 1024px
+*/
+@media (max-width: 1024px) {
+
+    .signup-main {
+        fieldset {
+            .signup-main-form-gridcontainer {
+                width: 70%;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+
+    .signup-main {
+        fieldset {
+            .signup-main-form-gridcontainer {
+                width: 80%;
+            }
+        }
+    }
+    
+}

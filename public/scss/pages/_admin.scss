@@ -135,7 +135,7 @@
 
 /*
 * Media Queries
-* for tablets screens
+* for tablets screens in landscape
 * max 1024px
 */
 @media (max-width: 1024px) {
@@ -144,6 +144,24 @@
         fieldset {
             .admin-main-form-gridcontainer {
                 width: 80%;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 800px
+*/
+@media (max-width: 800px) {
+
+    .admin-main {
+        fieldset {
+            .admin-main-form-gridcontainer {
+                width: 100%;
             }
         }
     }
