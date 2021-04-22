@@ -3,11 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 header {
   position: relative;
-  height: 100vh;
-  background-image: url("http://localhost/treat-migraine-naturally/public/images/brain-purple.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  height: 100vh; }
   header .header-navbar {
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 1rem; }
@@ -59,17 +55,21 @@ header {
             text-decoration: none; }
   header .header-headline {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Redressed', cursive;
     color: #fff;
     text-align: center;
-    padding: 2rem; }
+    padding: 2rem;
+    border: 1px solid #B744B8;
+    border-radius: 25px; }
     header .header-headline h1 {
       font-size: 5rem; }
     header .header-headline h2 {
       font-size: 3rem; }
+    header .header-headline img {
+      width: 30%; }
 
 /*
 * Media Queries
@@ -78,8 +78,7 @@ header {
 */
 @media (max-width: 1024px) {
   header {
-    background-position: bottom;
-    background-size: 60%; }
+    background-image: none; }
     header .header-navbar .header-navbar-menu-toggle {
       display: block;
       position: relative;
@@ -151,10 +150,8 @@ header {
 * max 800px
 */
 @media (max-width: 800px) {
-  header {
-    background-position: top; }
-    header .header-headline {
-      top: 50%; } }
+  header .header-headline {
+    top: 50%; } }
 
 footer {
   position: relative;

@@ -11,10 +11,10 @@ header {
     //url('http://localhost/treat-migraine-naturally/public/images/brain-purple.jpg'); // Photo by Raman Oza on Pixabay 
     //url('http://localhost/treat-migraine-naturally/public/images/neuron.jpg'); // Photo by Josh Riemer on Unsplash
     //url('http://localhost/treat-migraine-naturally/public/images/sphere.jpg'); // Photo by Michael Dziedzic on Unsplash
-    background-image: url('http://localhost/treat-migraine-naturally/public/images/brain-purple.jpg'); // Photo by Raman Oza on Pixabay 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url('http://localhost/treat-migraine-naturally/public/images/brain-purple.jpg'); // Photo by Raman Oza on Pixabay 
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
     .header-navbar {
         font-family: 'Open Sans Condensed', sans-serif;
@@ -100,13 +100,16 @@ header {
 
     .header-headline {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: 'Redressed', cursive;
         color: #fff;
         text-align: center;
         padding: 2rem;
+
+        border: 1px solid #B744B8;
+        border-radius: 25px;
 
         h1 {
             font-size: 5rem;
@@ -115,8 +118,11 @@ header {
         h2 {
             font-size: 3rem;
         }
-    }
 
+        img {
+            width: 30%;
+        }
+    }
 }
 
 /*
@@ -127,8 +133,7 @@ header {
 @media (max-width: 1024px) {
 
     header {
-        background-position: bottom;
-        background-size: 60%;
+        background-image: none;
 
         .header-navbar {
 
@@ -256,7 +261,6 @@ header {
 @media (max-width: 800px) {
 
     header {
-        background-position: top;
 
         .header-headline {
             top: 50%;

@@ -59,5 +59,6 @@
             <br>Naturally
         </h1>
         <h2><?= $header_sub_title; ?></h2>
+        <img src="http://localhost/treat-migraine-naturally/public/images/brain-purple.jpg" alt="logo">
     </section>
 </header>
