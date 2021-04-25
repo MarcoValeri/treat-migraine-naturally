@@ -189,3 +189,29 @@
         }
     }
 }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+
+    .healthy-main-page-three {
+        fieldset {
+            .healthy-main-page-three-form-gridcontainer {
+                width: 100%;
+
+                .healthy-main-page-three-form-gridcontainer-illnesses {
+                    width: 90%;
+                    margin: 1rem auto;
+                }
+
+                .healthy-main-page-three-form-gridcontainer-medications {
+                    width: 90%;
+                    margin: 1rem auto;
+                }
+            }
+        }
+    }
+
+}

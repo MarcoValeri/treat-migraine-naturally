@@ -300,3 +300,20 @@
 
     }
 }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+
+    .healthy-main-page-four {
+        fieldset {
+            .healthy-main-page-four-form-gridcontainer {
+                width: 100%;
+                grid-row-gap: 2rem;
+            }
+        }
+    }
+
+}

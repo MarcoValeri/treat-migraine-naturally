@@ -55,6 +55,7 @@ header {
             text-decoration: none; }
   header .header-headline {
     position: absolute;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -131,6 +132,7 @@ header {
       margin: -100px 0 0 -50px;
       padding: 50px;
       padding-top: 125px;
+      background: #111;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
@@ -141,7 +143,10 @@ header {
         font-size: 22px;
         display: block; }
     header .header-navbar input:checked ~ ul {
-      transform: none; } }
+      transform: none; }
+    header .header-headline {
+      width: 70%;
+      top: 40%; } }
 
 /*
 * Media Queries
@@ -151,7 +156,7 @@ header {
 */
 @media (max-width: 800px) {
   header .header-headline {
-    top: 50%; } }
+    top: 45%; } }
 
 footer {
   position: relative;
@@ -368,6 +373,20 @@ footer {
       .main-home-gridcontainer .main-home-gridcontainer-container-five .main-home-gridcontainer-single-content-five img {
         object-position: 0px 0px; } }
 
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+  .main-home-gridcontainer .main-home-gridcontainer-container-one {
+    height: 100vh; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-one .main-home-gridcontainer-single-content-one {
+      bottom: 10%; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-two {
+    height: 100vh; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-two .main-home-gridcontainer-single-content-two {
+      top: 50%; } }
+
 .signup-main {
   width: 100%;
   height: auto;
@@ -494,6 +513,14 @@ footer {
 @media (max-width: 800px) {
   .signup-main fieldset .signup-main-form-gridcontainer {
     width: 80%; } }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+  .signup-main fieldset .signup-main-form-gridcontainer {
+    width: 100%; } }
 
 .login-main {
   width: 80%;
@@ -1163,6 +1190,23 @@ footer {
   .contact-main fieldset .contact-main-form-gridcontainer {
     width: 80%; } }
 
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+  .contact-main fieldset {
+    width: 100%; }
+    .contact-main fieldset .contact-main-form-gridcontainer {
+      width: 100%;
+      grid-template-areas: "contact-main-form-gridcontainer-name contact-main-form-gridcontainer-name" "contact-main-form-gridcontainer-email contact-main-form-gridcontainer-email" "contact-main-form-gridcontainer-message contact-main-form-gridcontainer-message" "contact-main-form-gridcontainer-submit contact-main-form-gridcontainer-submit"; }
+      .contact-main fieldset .contact-main-form-gridcontainer section input[type="text"],
+      .contact-main fieldset .contact-main-form-gridcontainer section input[type="email"],
+      .contact-main fieldset .contact-main-form-gridcontainer section input[type="submit"] {
+        width: 70%; }
+      .contact-main fieldset .contact-main-form-gridcontainer section textarea {
+        width: 70%; } }
+
 .menu-main {
   width: 80%;
   height: auto;
@@ -1430,6 +1474,14 @@ footer {
   .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer {
     width: 80%; } }
 
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+  .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer {
+    width: 100%; } }
+
 .healthy-main-page-two {
   width: 90%;
   height: auto;
@@ -1483,7 +1535,7 @@ footer {
         grid-area: healthy-main-page-two-form-gridcontainer-checkbox;
         margin: 1rem;
         text-align: left;
-        /* It is not worlink, need to fix it */ }
+        /* It is not working, need to fix it */ }
         .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-checkbox h4 {
           font-size: 2rem;
           margin-bottom: .5rem; }
@@ -1537,6 +1589,17 @@ footer {
           .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-next input:hover {
             color: #FFD400;
             border: 3px solid #FFD400; }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+  .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer {
+    width: 100%; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-details {
+      width: 80%;
+      margin: 1rem auto; } }
 
 .healthy-main-page-three {
   width: 90%;
@@ -1657,6 +1720,20 @@ footer {
           .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-next input:hover {
             color: #FFD400;
             border: 3px solid #FFD400; }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+  .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer {
+    width: 100%; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-illnesses {
+      width: 90%;
+      margin: 1rem auto; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-medications {
+      width: 90%;
+      margin: 1rem auto; } }
 
 .healthy-main-page-four {
   width: 90%;
@@ -1837,6 +1914,15 @@ footer {
           .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-next input:hover {
             color: #FFD400;
             border: 3px solid #FFD400; }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+  .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer {
+    width: 100%;
+    grid-row-gap: 2rem; } }
 
 .thanks-page-main {
   text-align: center;

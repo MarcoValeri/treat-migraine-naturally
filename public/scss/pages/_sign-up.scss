@@ -210,3 +210,19 @@
     }
     
 }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+
+    .signup-main {
+        fieldset {
+            .signup-main-form-gridcontainer {
+                width: 100%;
+            }
+        }
+    }
+
+}

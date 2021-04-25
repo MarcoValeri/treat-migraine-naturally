@@ -148,3 +148,37 @@
     }
 
 }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+
+    .contact-main {
+        fieldset {
+            width: 100%;
+            .contact-main-form-gridcontainer {
+                width: 100%;
+                grid-template-areas: 
+                "contact-main-form-gridcontainer-name contact-main-form-gridcontainer-name"
+                "contact-main-form-gridcontainer-email contact-main-form-gridcontainer-email"
+                "contact-main-form-gridcontainer-message contact-main-form-gridcontainer-message"
+                "contact-main-form-gridcontainer-submit contact-main-form-gridcontainer-submit";
+
+                section {
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="submit"] {
+                        width: 70%;
+                    }
+
+                    textarea {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }    
+
+}

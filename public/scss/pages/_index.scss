@@ -303,3 +303,26 @@
     }
 
 }
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+
+    .main-home-gridcontainer {
+        .main-home-gridcontainer-container-one {
+            height: 100vh;
+            .main-home-gridcontainer-single-content-one {
+                bottom: 10%;
+            }
+        }
+        .main-home-gridcontainer-container-two {
+            height: 100vh;
+            .main-home-gridcontainer-single-content-two {
+                top: 50%;
+            }
+        }
+    }
+
+}

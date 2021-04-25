@@ -88,7 +88,7 @@
                     margin-bottom: .5rem;
                 }
 
-                /* It is not worlink, need to fix it */
+                /* It is not working, need to fix it */
                 input[type="checkbox"] {
                     font-size: 2rem;
                 }
@@ -167,4 +167,25 @@
             }
         }
     }
+}
+
+/*
+* Media Queries
+* screens large max 600px
+*/
+@media (max-width: 600px) {
+
+    .healthy-main-page-two {
+        fieldset {
+            .healthy-main-page-two-form-gridcontainer {
+                width: 100%;
+
+                .healthy-main-page-two-form-gridcontainer-details {
+                    width: 80%;
+                    margin: 1rem auto;
+                }
+            }
+        }
+    }
+
 }
