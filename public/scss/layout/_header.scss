@@ -274,3 +274,30 @@ header {
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+
+    header {
+        .header-headline {
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+}

@@ -158,6 +158,20 @@ header {
   header .header-headline {
     top: 45%; } }
 
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+  header .header-headline h1 {
+    font-size: 4rem; }
+  header .header-headline h2 {
+    font-size: 2rem; }
+  header .header-headline img {
+    width: 80%; } }
+
 footer {
   position: relative;
   height: 30vh;
@@ -184,6 +198,16 @@ footer {
     footer .footer-content span {
       color: #ff0000;
       font-size: 1.5rem; }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+  footer .footer-content {
+    width: 80%; } }
 
 .main-home-gridcontainer {
   height: auto;
@@ -383,9 +407,33 @@ footer {
     .main-home-gridcontainer .main-home-gridcontainer-container-one .main-home-gridcontainer-single-content-one {
       bottom: 10%; }
   .main-home-gridcontainer .main-home-gridcontainer-container-two {
-    height: 100vh; }
+    height: 100vh;
+    overflow: auto; }
     .main-home-gridcontainer .main-home-gridcontainer-container-two .main-home-gridcontainer-single-content-two {
       top: 50%; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+  .main-home-gridcontainer .main-home-gridcontainer-container-two .main-home-gridcontainer-single-content-two {
+    top: 30%; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-three .main-home-gridcontainer-single-content-three {
+    padding: 3rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-four {
+    height: 60vh; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-four .main-home-gridcontainer-single-content-four {
+      top: 50%; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-five {
+    height: 80vh; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-five .main-home-gridcontainer-single-content-five {
+      bottom: 10%;
+      font-size: 1.3rem; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-five img {
+      object-position: 0px 0px; } }
 
 .signup-main {
   width: 100%;
@@ -522,6 +570,32 @@ footer {
   .signup-main fieldset .signup-main-form-gridcontainer {
     width: 100%; } }
 
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+  .signup-main {
+    width: 90%; }
+    .signup-main fieldset {
+      width: 90%; }
+      .signup-main fieldset legend {
+        font-size: 1.8rem; }
+      .signup-main fieldset .signup-main-error {
+        width: 80%; }
+      .signup-main fieldset .signup-main-form-gridcontainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: "signup-main-form-gridcontainer-firstname" "signup-main-form-gridcontainer-lastname" "signup-main-form-gridcontainer-email" "signup-main-form-gridcontainer-email-confirm" "signup-main-form-gridcontainer-password" "signup-main-form-gridcontainer-password-confirm" "signup-main-form-gridcontainer-submit"; }
+        .signup-main fieldset .signup-main-form-gridcontainer section {
+          font-size: 1.5rem; }
+          .signup-main fieldset .signup-main-form-gridcontainer section input {
+            font-size: 1.2rem; }
+        .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit input {
+          font-size: 1.2rem; } }
+
 .login-main {
   width: 80%;
   height: auto;
@@ -628,6 +702,31 @@ footer {
 @media (max-width: 800px) {
   .login-main fieldset .login-main-form-gridcontainer {
     width: 100%; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+  .login-main {
+    width: 90%; }
+    .login-main fieldset {
+      width: 100%; }
+      .login-main fieldset .login-main-error {
+        width: 80%; }
+      .login-main fieldset .login-main-form-gridcontainer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-areas: "login-main-form-gridcontainer-email" "login-main-form-gridcontainer-password" "login-main-form-gridcontainer-submit"; }
+        .login-main fieldset .login-main-form-gridcontainer section {
+          font-size: 1.5rem; }
+          .login-main fieldset .login-main-form-gridcontainer section input {
+            font-size: 1.2rem; }
+        .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit input {
+          font-size: 1.5rem;
+          padding: .8rem; } }
 
 .logout-main {
   text-align: center;

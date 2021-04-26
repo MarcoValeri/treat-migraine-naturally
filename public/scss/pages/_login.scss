@@ -16,7 +16,6 @@
         }
 
         .login-main-error {
-
             width: 50%;
             font-size: 1.5rem;
             margin: 1rem auto 1rem auto;
@@ -165,6 +164,51 @@
         fieldset {
             .login-main-form-gridcontainer {
                 width: 100%;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+
+    .login-main {
+        width: 90%;
+        fieldset {
+            width: 100%;
+
+            .login-main-error {
+                width: 80%;
+            }
+
+            .login-main-form-gridcontainer {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                grid-template-areas: 
+                "login-main-form-gridcontainer-email"
+                "login-main-form-gridcontainer-password"
+                "login-main-form-gridcontainer-submit";
+
+                section {
+                    font-size: 1.5rem;
+
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .login-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1.5rem;
+                        padding: .8rem;
+                    }
+                }
             }
         }
     }

@@ -39,3 +39,19 @@ footer {
         }
     }
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+
+    footer {
+        .footer-content {
+            width: 80%;
+        }
+    }
+
+}

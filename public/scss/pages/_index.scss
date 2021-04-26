@@ -319,8 +319,54 @@
         }
         .main-home-gridcontainer-container-two {
             height: 100vh;
+            overflow: auto;
             .main-home-gridcontainer-single-content-two {
                 top: 50%;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+
+    .main-home-gridcontainer {
+        .main-home-gridcontainer-container-two {
+            .main-home-gridcontainer-single-content-two {
+                top: 30%;
+            }
+        }
+
+        .main-home-gridcontainer-container-three {
+            .main-home-gridcontainer-single-content-three {
+                padding: 3rem;
+            }
+        }
+
+        .main-home-gridcontainer-container-four {
+            height: 60vh;
+
+            .main-home-gridcontainer-single-content-four {
+                top: 50%;
+            }
+        }
+
+        .main-home-gridcontainer-container-five {
+            height: 80vh;
+
+            .main-home-gridcontainer-single-content-five {
+                bottom: 10%;
+                font-size: 1.3rem;
+            }
+
+            img {
+                object-position: 0px 0px;
             }
         }
     }

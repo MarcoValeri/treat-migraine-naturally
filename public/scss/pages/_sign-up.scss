@@ -28,7 +28,6 @@
         }
 
         .signup-main-error {
-
             width: 50%;
             font-size: 1.5rem;
             margin: 1rem auto 1rem auto;
@@ -221,6 +220,58 @@
         fieldset {
             .signup-main-form-gridcontainer {
                 width: 100%;
+            }
+        }
+    }
+
+}
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 400px
+*/
+@media (max-width: 480px) {
+
+    .signup-main {
+        width: 90%;
+        fieldset {
+            width: 90%;
+
+            legend {
+                font-size: 1.8rem;
+            }
+
+            .signup-main-error {
+                width: 80%;
+            }
+
+            .signup-main-form-gridcontainer {
+                width: 100%;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "signup-main-form-gridcontainer-firstname"
+                "signup-main-form-gridcontainer-lastname"
+                "signup-main-form-gridcontainer-email"
+                "signup-main-form-gridcontainer-email-confirm"
+                "signup-main-form-gridcontainer-password"
+                "signup-main-form-gridcontainer-password-confirm"
+                "signup-main-form-gridcontainer-submit";
+
+                section {
+                    font-size: 1.5rem;
+
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .signup-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
             }
         }
     }
