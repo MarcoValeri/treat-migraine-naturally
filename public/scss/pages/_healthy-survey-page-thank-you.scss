@@ -10,3 +10,27 @@
         font-size: 1.5rem;
     }
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .thanks-page-main {
+        width: 90%;
+        margin: auto;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+}

@@ -189,3 +189,55 @@
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .healthy-main-page-two {
+        fieldset {
+            width: 90%;
+
+            .healthy-main-page-two-error {
+                width: 80%;
+            }
+
+            .healthy-main-page-two-title {
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+
+            .healthy-main-page-two-form-gridcontainer {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                grid-template-areas:
+                "healthy-main-page-two-form-gridcontainer-checkbox"
+                "healthy-main-page-two-form-gridcontainer-details"
+                "healthy-main-page-two-form-gridcontainer-back"
+                "healthy-main-page-two-form-gridcontainer-next";
+
+                label {
+                    font-size: 1.5rem;
+                }
+
+                .healthy-main-page-two-form-gridcontainer-back {
+                    button {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .healthy-main-page-two-form-gridcontainer-next {
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -217,3 +217,65 @@
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .healthy-main-page-one {
+        fieldset {
+            width: 90%;
+
+            .healthy-main-page-one-error {
+                width: 80%;
+            }
+
+            .healthy-main-page-one-title {
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+
+            .healthy-main-page-one-form-gridcontainer {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                grid-template-areas:
+                "healthy-main-page-one-form-gridcontainer-personal-title"
+                "healthy-main-page-one-form-gridcontainer-surname"
+                "healthy-main-page-one-form-gridcontainer-email"
+                "healthy-main-page-one-form-gridcontainer-personal-telephone"
+                "healthy-main-page-one-form-gridcontainer-personal-address-line-one"
+                "healthy-main-page-one-form-gridcontainer-personal-address-line-two"
+                "healthy-main-page-one-form-gridcontainer-personal-city"
+                "healthy-main-page-one-form-gridcontainer-personal-country"
+                "healthy-main-page-one-form-gridcontainer-personal-postcode"
+                "healthy-main-page-one-form-gridcontainer-personal-postcode"
+                "healthy-main-page-one-form-gridcontainer-personal-age"
+                "healthy-main-page-one-form-gridcontainer-personal-gender"
+                "healthy-main-page-one-form-gridcontainer-personal-occupation"
+                "healthy-main-page-one-form-gridcontainer-personal-occupation"
+                "healthy-main-page-one-form-gridcontainer-personal-next"
+                "healthy-main-page-one-form-gridcontainer-personal-next";
+
+                label {
+                    font-size: 1.5rem;
+                }
+
+                input {
+                    font-size: 1.2rem;
+                }
+
+                .healthy-main-page-one-form-gridcontainer-personal-next {
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

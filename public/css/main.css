@@ -162,7 +162,7 @@ header {
 * Media Queries
 * for tablets screens
 * not in landscape
-* max 400px
+* max 480px
 */
 @media (max-width: 480px) {
   header .header-headline h1 {
@@ -416,7 +416,7 @@ footer {
 * Media Queries
 * for tablets screens
 * not in landscape
-* max 400px
+* max 480px
 */
 @media (max-width: 480px) {
   .main-home-gridcontainer .main-home-gridcontainer-container-two .main-home-gridcontainer-single-content-two {
@@ -574,7 +574,7 @@ footer {
 * Media Queries
 * for tablets screens
 * not in landscape
-* max 400px
+* max 480px
 */
 @media (max-width: 480px) {
   .signup-main {
@@ -707,7 +707,7 @@ footer {
 * Media Queries
 * for tablets screens
 * not in landscape
-* max 400px
+* max 480px
 */
 @media (max-width: 480px) {
   .login-main {
@@ -1581,6 +1581,30 @@ footer {
   .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer {
     width: 100%; } }
 
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .healthy-main-page-one fieldset {
+    width: 90%; }
+    .healthy-main-page-one fieldset .healthy-main-page-one-error {
+      width: 80%; }
+    .healthy-main-page-one fieldset .healthy-main-page-one-title h2 {
+      font-size: 3rem; }
+    .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-template-areas: "healthy-main-page-one-form-gridcontainer-personal-title" "healthy-main-page-one-form-gridcontainer-surname" "healthy-main-page-one-form-gridcontainer-email" "healthy-main-page-one-form-gridcontainer-personal-telephone" "healthy-main-page-one-form-gridcontainer-personal-address-line-one" "healthy-main-page-one-form-gridcontainer-personal-address-line-two" "healthy-main-page-one-form-gridcontainer-personal-city" "healthy-main-page-one-form-gridcontainer-personal-country" "healthy-main-page-one-form-gridcontainer-personal-postcode" "healthy-main-page-one-form-gridcontainer-personal-postcode" "healthy-main-page-one-form-gridcontainer-personal-age" "healthy-main-page-one-form-gridcontainer-personal-gender" "healthy-main-page-one-form-gridcontainer-personal-occupation" "healthy-main-page-one-form-gridcontainer-personal-occupation" "healthy-main-page-one-form-gridcontainer-personal-next" "healthy-main-page-one-form-gridcontainer-personal-next"; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer label {
+        font-size: 1.5rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer input {
+        font-size: 1.2rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-next input {
+        font-size: 1.2rem; } }
+
 .healthy-main-page-two {
   width: 90%;
   height: auto;
@@ -1699,6 +1723,30 @@ footer {
     .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-details {
       width: 80%;
       margin: 1rem auto; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .healthy-main-page-two fieldset {
+    width: 90%; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-error {
+      width: 80%; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-title h2 {
+      font-size: 3rem; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-template-areas: "healthy-main-page-two-form-gridcontainer-checkbox" "healthy-main-page-two-form-gridcontainer-details" "healthy-main-page-two-form-gridcontainer-back" "healthy-main-page-two-form-gridcontainer-next"; }
+      .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer label {
+        font-size: 1.5rem; }
+      .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-back button {
+        font-size: 1.2rem; }
+      .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-next input {
+        font-size: 1.2rem; } }
 
 .healthy-main-page-three {
   width: 90%;
@@ -1833,6 +1881,30 @@ footer {
     .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-medications {
       width: 90%;
       margin: 1rem auto; } }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .healthy-main-page-three fieldset {
+    width: 100%; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-error {
+      width: 80%; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-title h2 {
+      font-size: 3rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-template-areas: "healthy-main-page-three-form-gridcontainer-title" "healthy-main-page-three-form-gridcontainer-illnesses" "healthy-main-page-three-form-gridcontainer-medications " "healthy-main-page-three-form-gridcontainer-back" "healthy-main-page-three-form-gridcontainer-next"; }
+      .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer label {
+        font-size: 1.5rem; }
+      .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-back button {
+        font-size: 1.2rem; }
+      .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-next input {
+        font-size: 1.2rem; } }
 
 .healthy-main-page-four {
   width: 90%;
@@ -2023,6 +2095,61 @@ footer {
     width: 100%;
     grid-row-gap: 2rem; } }
 
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .healthy-main-page-four fieldset {
+    width: 90%; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-error {
+      width: 90%; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-title h2 {
+      font-size: 3rem; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-template-areas: "healthy-main-page-four-form-gridcontainer-title" "healthy-main-page-four-form-gridcontainer-migraine" "healthy-main-page-four-form-gridcontainer-type" "healthy-main-page-four-form-gridcontainer-duration" "healthy-main-page-four-form-gridcontainer-stages" "healthy-main-page-four-form-gridcontainer-symptoms" "healthy-main-page-four-form-gridcontainer-medication" "healthy-main-page-four-form-gridcontainer-effects" "healthy-main-page-four-form-gridcontainer-non-medical" "healthy-main-page-four-form-gridcontainer-triggers" "healthy-main-page-four-form-gridcontainer-lifestyle" "healthy-main-page-four-form-gridcontainer-tobacco" "healthy-main-page-four-form-gridcontainer-alcohol" "healthy-main-page-four-form-gridcontainer-exercise" "healthy-main-page-four-form-gridcontainer-fitness" "healthy-main-page-four-form-gridcontainer-posture" "healthy-main-page-four-form-gridcontainer-back" "healthy-main-page-four-form-gridcontainer-next"; }
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer label {
+        font-size: 1.5rem; }
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-migraine,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-type,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-duration,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-stages,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-symptoms,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-medication,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-non-medical,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-triggers,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-lifestyle,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-alcohol,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-exercise,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-fitness,
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-posture {
+        width: 90%; }
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-migraine select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-type select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-duration select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-stages select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-symptoms select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-medication select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-non-medical select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-triggers select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-lifestyle select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-alcohol select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-exercise select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-fitness select,
+        .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-posture select {
+          width: 80%; }
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-tobacco {
+        width: 90%; }
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-back button {
+        font-size: 1.2rem;
+        color: #ff0000; }
+      .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-next input {
+        font-size: 1.2rem; } }
+
 .thanks-page-main {
   text-align: center;
   color: #B744B8; }
@@ -2030,6 +2157,22 @@ footer {
     font-size: 3rem; }
   .thanks-page-main p {
     font-size: 1.5rem; }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .thanks-page-main {
+    width: 90%;
+    margin: auto; }
+    .thanks-page-main h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem; }
+    .thanks-page-main p {
+      font-size: 1.5rem; } }
 
 * {
   padding: 0;

@@ -215,3 +215,56 @@
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .healthy-main-page-three {
+        fieldset {
+            width: 100%;
+
+            .healthy-main-page-three-error {
+                width: 80%;
+            }
+
+            .healthy-main-page-three-title {
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+
+            .healthy-main-page-three-form-gridcontainer {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                grid-template-areas:
+                "healthy-main-page-three-form-gridcontainer-title"
+                "healthy-main-page-three-form-gridcontainer-illnesses"
+                "healthy-main-page-three-form-gridcontainer-medications "
+                "healthy-main-page-three-form-gridcontainer-back"
+                "healthy-main-page-three-form-gridcontainer-next";
+
+                label {
+                    font-size: 1.5rem;
+                }
+
+                .healthy-main-page-three-form-gridcontainer-back {
+                    button {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .healthy-main-page-three-form-gridcontainer-next {
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

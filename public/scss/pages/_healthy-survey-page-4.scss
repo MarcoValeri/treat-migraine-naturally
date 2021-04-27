@@ -317,3 +317,93 @@
     }
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .healthy-main-page-four {
+        fieldset {
+            width: 90%;
+
+            .healthy-main-page-four-error {
+                width: 90%;
+            }
+
+            .healthy-main-page-four-title {
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+
+            .healthy-main-page-four-form-gridcontainer {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                grid-template-areas:
+                "healthy-main-page-four-form-gridcontainer-title"
+                "healthy-main-page-four-form-gridcontainer-migraine"
+                "healthy-main-page-four-form-gridcontainer-type"
+                "healthy-main-page-four-form-gridcontainer-duration"
+                "healthy-main-page-four-form-gridcontainer-stages"
+                "healthy-main-page-four-form-gridcontainer-symptoms"
+                "healthy-main-page-four-form-gridcontainer-medication"
+                "healthy-main-page-four-form-gridcontainer-effects"
+                "healthy-main-page-four-form-gridcontainer-non-medical"
+                "healthy-main-page-four-form-gridcontainer-triggers"
+                "healthy-main-page-four-form-gridcontainer-lifestyle"
+                "healthy-main-page-four-form-gridcontainer-tobacco"
+                "healthy-main-page-four-form-gridcontainer-alcohol"
+                "healthy-main-page-four-form-gridcontainer-exercise"
+                "healthy-main-page-four-form-gridcontainer-fitness"
+                "healthy-main-page-four-form-gridcontainer-posture"
+                "healthy-main-page-four-form-gridcontainer-back"
+                "healthy-main-page-four-form-gridcontainer-next";
+
+                label {
+                    font-size: 1.5rem;
+                }
+
+                .healthy-main-page-four-form-gridcontainer-migraine,
+                .healthy-main-page-four-form-gridcontainer-type,
+                .healthy-main-page-four-form-gridcontainer-duration,
+                .healthy-main-page-four-form-gridcontainer-stages,
+                .healthy-main-page-four-form-gridcontainer-symptoms,
+                .healthy-main-page-four-form-gridcontainer-medication,
+                .healthy-main-page-four-form-gridcontainer-non-medical,
+                .healthy-main-page-four-form-gridcontainer-triggers,
+                .healthy-main-page-four-form-gridcontainer-lifestyle,
+                .healthy-main-page-four-form-gridcontainer-alcohol,
+                .healthy-main-page-four-form-gridcontainer-exercise,
+                .healthy-main-page-four-form-gridcontainer-fitness,
+                .healthy-main-page-four-form-gridcontainer-posture {
+                    width: 90%;
+                    select {
+                        width: 80%;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-tobacco {
+                    width: 90%;
+                }
+
+                .healthy-main-page-four-form-gridcontainer-back {
+                    button {
+                        font-size: 1.2rem;
+                        color: #ff0000;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-next {
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
