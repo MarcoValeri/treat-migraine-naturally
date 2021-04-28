@@ -330,7 +330,7 @@
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -344,6 +344,7 @@
         }
 
         .main-home-gridcontainer-container-three {
+            overflow: auto;
             .main-home-gridcontainer-single-content-three {
                 padding: 3rem;
             }
@@ -351,6 +352,7 @@
 
         .main-home-gridcontainer-container-four {
             height: 60vh;
+            overflow: auto;
 
             .main-home-gridcontainer-single-content-four {
                 top: 50%;
@@ -359,6 +361,7 @@
 
         .main-home-gridcontainer-container-five {
             height: 80vh;
+            overflow: auto;
 
             .main-home-gridcontainer-single-content-five {
                 bottom: 10%;

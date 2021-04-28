@@ -182,3 +182,64 @@
     }    
 
 }
+
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .contact-main {
+        width: 100%;
+        fieldset {
+            width: 90%;
+            .contact-main-error {
+                width: 80%;
+            }
+
+            .contact-main-confim {
+                width: 80%;
+                height: 30vh;
+            }
+
+            .contact-main-form-gridcontainer {
+                grid-template-columns: 1fr;
+                justify-items: left;
+                grid-template-areas: 
+                "contact-main-form-gridcontainer-name"
+                "contact-main-form-gridcontainer-email"
+                "contact-main-form-gridcontainer-message"
+                "contact-main-form-gridcontainer-submit";
+
+                section {
+                    font-size: 1.5rem;
+
+                    input {
+                        font-size: 1.2rem;
+                        padding: .8rem;
+                    }
+
+                    textarea {
+                        width: 90%;
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .contact-main-form-gridcontainer-message {
+                    width: 80%;
+                }
+
+                .contact-main-form-gridcontainer-submit {
+                    width: 80%;
+                    input {
+                        font-size: 1.2rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -160,7 +160,7 @@ header {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -201,13 +201,15 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
-* max 400px
+* max 480px
 */
 @media (max-width: 480px) {
   footer .footer-content {
-    width: 80%; } }
+    width: 80%; }
+    footer .footer-content p {
+      margin-top: 2rem; } }
 
 .main-home-gridcontainer {
   height: auto;
@@ -414,21 +416,25 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
 @media (max-width: 480px) {
   .main-home-gridcontainer .main-home-gridcontainer-container-two .main-home-gridcontainer-single-content-two {
     top: 30%; }
-  .main-home-gridcontainer .main-home-gridcontainer-container-three .main-home-gridcontainer-single-content-three {
-    padding: 3rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-three {
+    overflow: auto; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-three .main-home-gridcontainer-single-content-three {
+      padding: 3rem; }
   .main-home-gridcontainer .main-home-gridcontainer-container-four {
-    height: 60vh; }
+    height: 60vh;
+    overflow: auto; }
     .main-home-gridcontainer .main-home-gridcontainer-container-four .main-home-gridcontainer-single-content-four {
       top: 50%; }
   .main-home-gridcontainer .main-home-gridcontainer-container-five {
-    height: 80vh; }
+    height: 80vh;
+    overflow: auto; }
     .main-home-gridcontainer .main-home-gridcontainer-container-five .main-home-gridcontainer-single-content-five {
       bottom: 10%;
       font-size: 1.3rem; }
@@ -572,7 +578,7 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -705,7 +711,7 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -843,6 +849,34 @@ footer {
   .admin-main fieldset .admin-main-form-gridcontainer {
     width: 100%; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .admin-main {
+    width: 90%; }
+    .admin-main fieldset {
+      width: 100%; }
+      .admin-main fieldset .admin-main-error {
+        width: 80%; }
+      .admin-main fieldset .admin-main-confim {
+        width: 80%;
+        height: 30vh; }
+      .admin-main fieldset .admin-main-form-gridcontainer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-areas: "admin-main-form-gridcontainer-email" "admin-main-form-gridcontainer-password" "admin-main-form-gridcontainer-submit"; }
+        .admin-main fieldset .admin-main-form-gridcontainer section {
+          font-size: 1.5rem; }
+          .admin-main fieldset .admin-main-form-gridcontainer section input {
+            font-size: 1.2rem; }
+        .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-submit input {
+          font-size: 1.2rem;
+          padding: .8rem; } }
+
 .admin-menu-main {
   width: 80%;
   height: auto;
@@ -909,6 +943,16 @@ footer {
           background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%); }
           .admin-menu-main .admin-menu-main-gridcontainer .admin-menu-main-gridcontainer-one .admin-menu-main-gridcontainer-one-btn-wrap:hover .menu-main-gridcontainer-section-one-btn {
             color: #FFD400; }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .admin-menu-main .admin-menu-main-gridcontainer .admin-menu-main-gridcontainer-title .admin-menu-main-gridcontainer-title-elastic {
+    font-size: 3rem; } }
 
 .add-main {
   width: 100%;
@@ -1023,6 +1067,33 @@ footer {
 @media (max-width: 1024px) {
   .add-main fieldset .add-main-form-gridcontainer {
     width: 100%; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .add-main {
+    width: 90%; }
+    .add-main fieldset {
+      width: 80%; }
+      .add-main fieldset .add-main-error {
+        width: 80%; }
+      .add-main fieldset .add-main-confim {
+        width: 80%;
+        height: 30vh; }
+      .add-main fieldset .add-main-form-gridcontainer {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-template-areas: "add-main-form-gridcontainer-first-name" "add-main-form-gridcontainer-last-name" "add-main-form-gridcontainer-email" "add-main-form-gridcontainer-email-confirm" "add-main-form-gridcontainer-password" "add-main-form-gridcontainer-password-confirm" "add-main-form-gridcontainer-submit"; }
+        .add-main fieldset .add-main-form-gridcontainer section {
+          font-size: 1.5rem; }
+          .add-main fieldset .add-main-form-gridcontainer section input {
+            font-size: 1.2rem; }
+        .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit input {
+          font-size: 1.2rem; } }
 
 .users-main {
   width: 80%;
@@ -1193,6 +1264,27 @@ footer {
     .edit-main .edit-main-user {
       overflow: auto; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+.edit-main .edit-main-error {
+  width: 80%; }
+
+.edit-main .edit-main-user h2 {
+  font-size: 2rem; }
+
+.edit-main .edit-main-user .edit-main-confirm {
+  width: 100%; }
+
+.edit-main .edit-main-user table {
+  font-size: 1.5rem; }
+
+.edit-main .edit-main-user a {
+  font-size: 2rem; }
+
 .contact-main {
   width: 80%;
   height: auto;
@@ -1306,6 +1398,42 @@ footer {
       .contact-main fieldset .contact-main-form-gridcontainer section textarea {
         width: 70%; } }
 
+/*
+* Media Queries
+* for tablets screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .contact-main {
+    width: 100%; }
+    .contact-main fieldset {
+      width: 90%; }
+      .contact-main fieldset .contact-main-error {
+        width: 80%; }
+      .contact-main fieldset .contact-main-confim {
+        width: 80%;
+        height: 30vh; }
+      .contact-main fieldset .contact-main-form-gridcontainer {
+        grid-template-columns: 1fr;
+        justify-items: left;
+        grid-template-areas: "contact-main-form-gridcontainer-name" "contact-main-form-gridcontainer-email" "contact-main-form-gridcontainer-message" "contact-main-form-gridcontainer-submit"; }
+        .contact-main fieldset .contact-main-form-gridcontainer section {
+          font-size: 1.5rem; }
+          .contact-main fieldset .contact-main-form-gridcontainer section input {
+            font-size: 1.2rem;
+            padding: .8rem; }
+          .contact-main fieldset .contact-main-form-gridcontainer section textarea {
+            width: 90%;
+            font-size: 1.2rem; }
+        .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-message {
+          width: 80%; }
+        .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-submit {
+          width: 80%; }
+          .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-submit input {
+            font-size: 1.2rem;
+            padding: 1rem; } }
+
 .menu-main {
   width: 80%;
   height: auto;
@@ -1406,6 +1534,20 @@ footer {
         background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%); }
         .menu-main .menu-main-gridcontainer-section-two .menu-main-gridcontainer-section-two-btn-wrap:hover .menu-main-gridcontainer-section-two-btn {
           color: #FFD400; }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+  .menu-main .menu-main-gridcontainer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-areas: "menu-main-gridcontainer-title" "menu-main-gridcontainer-section-one"  "menu-main-gridcontainer-section-two"; }
+    .menu-main .menu-main-gridcontainer .menu-main-gridcontainer-title-elastic {
+      font-size: 3rem; } }
 
 .survey-main {
   position: relative;
@@ -1583,7 +1725,7 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -1726,7 +1868,7 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -1884,7 +2026,7 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -2097,7 +2239,7 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */
@@ -2160,7 +2302,7 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
 * max 480px
 */

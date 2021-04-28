@@ -150,3 +150,28 @@
         }
     }
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .menu-main {
+        .menu-main-gridcontainer {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            grid-template-areas: 
+            "menu-main-gridcontainer-title"
+            "menu-main-gridcontainer-section-one" 
+            "menu-main-gridcontainer-section-two";
+
+            .menu-main-gridcontainer-title-elastic {
+                font-size: 3rem;
+            }
+        }
+    }
+
+}

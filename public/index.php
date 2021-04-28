@@ -29,10 +29,10 @@ include(INCLUDE_PATH . '/header.php');
                 <br>declares that almost half of the adult population have had a headache 
                 <br >at least once within the last year.
             </p>
-            <p><mark>Migraine is a primary headache disorder of the nervous system.</mark></p>
+            <!-- <p><mark>Migraine is a primary headache disorder of the nervous system.</mark></p>
             <p>Treat Migraine Naturally has the mission to cure this headache
                 </br> disorder in a efficient and natural way.
-            </p>
+            </p> -->
             <p>
                 Get today our healthy survey and keep in touch with our</br> 
                 staff for a personal and natural treatment.

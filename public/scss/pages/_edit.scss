@@ -125,3 +125,35 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+.edit-main {
+    .edit-main-error {
+        width: 80%;
+    }
+
+    .edit-main-user {
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .edit-main-confirm {
+            width: 100%;
+        }
+
+        table {
+            font-size: 1.5rem;
+        }
+
+        a {
+            font-size: 2rem;
+        }
+    }
+
+}

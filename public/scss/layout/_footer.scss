@@ -42,15 +42,19 @@ footer {
 
 /*
 * Media Queries
-* for tablets screens
+* for smartphone screens
 * not in landscape
-* max 400px
+* max 480px
 */
 @media (max-width: 480px) {
 
     footer {
         .footer-content {
             width: 80%;
+
+            p {
+                margin-top: 2rem;
+            }
         }
     }
 

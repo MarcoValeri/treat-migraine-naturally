@@ -98,3 +98,23 @@
         }
     }
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 480px
+*/
+@media (max-width: 480px) {
+
+    .admin-menu-main {
+        .admin-menu-main-gridcontainer {
+            .admin-menu-main-gridcontainer-title {
+                .admin-menu-main-gridcontainer-title-elastic {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+}
