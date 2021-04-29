@@ -59,3 +59,17 @@ footer {
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    footer {
+        height: 50vh;
+    }
+
+}

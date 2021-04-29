@@ -172,6 +172,22 @@ header {
   header .header-headline img {
     width: 80%; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  header .header-headline {
+    padding: 1rem; }
+    header .header-headline h1 {
+      font-size: 2.5rem; }
+    header .header-headline h2 {
+      font-size: 1.5rem; }
+    header .header-headline img {
+      width: 60%; } }
+
 footer {
   position: relative;
   height: 30vh;
@@ -210,6 +226,16 @@ footer {
     width: 80%; }
     footer .footer-content p {
       margin-top: 2rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  footer {
+    height: 50vh; } }
 
 .main-home-gridcontainer {
   height: auto;
@@ -440,6 +466,27 @@ footer {
       font-size: 1.3rem; }
     .main-home-gridcontainer .main-home-gridcontainer-container-five img {
       object-position: 0px 0px; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .main-home-gridcontainer .main-home-gridcontainer-container-one .main-home-gridcontainer-single-content-one {
+    font-size: 1rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-two .main-home-gridcontainer-single-content-two {
+    font-size: 1rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-three .main-home-gridcontainer-single-content-three {
+    font-size: 1rem; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-three .main-home-gridcontainer-single-content-three .fab {
+      padding: .5rem;
+      font-size: 1.5rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-four .main-home-gridcontainer-single-content-four {
+    font-size: 1rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-five .main-home-gridcontainer-single-content-five {
+    font-size: 1rem; } }
 
 .signup-main {
   width: 100%;
