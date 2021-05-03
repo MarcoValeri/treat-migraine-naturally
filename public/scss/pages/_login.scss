@@ -214,3 +214,43 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    .login-main {
+        width: 100%;
+        fieldset {
+            width: 90%;
+            .login-main-error {
+                text-align: left;
+            }
+
+            .signup-main-confim {
+                width: 80%;
+            }
+
+            .login-main-form-gridcontainer {
+                section {
+                    font-size: 1.2rem;
+
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+
+                .login-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }    
+
+}

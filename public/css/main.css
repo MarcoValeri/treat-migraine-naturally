@@ -649,6 +649,27 @@ footer {
         .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit input {
           font-size: 1.2rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .signup-main {
+    width: 100%; }
+    .signup-main fieldset legend {
+      font-size: 1.5rem; }
+    .signup-main fieldset .signup-main-error {
+      text-align: left; }
+    .signup-main fieldset .signup-main-confim {
+      width: 80%;
+      height: 50vh; }
+    .signup-main fieldset .signup-main-form-gridcontainer section {
+      font-size: 1.2rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer section input {
+        font-size: 1rem; } }
+
 .login-main {
   width: 80%;
   height: auto;
@@ -780,6 +801,28 @@ footer {
         .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit input {
           font-size: 1.5rem;
           padding: .8rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .login-main {
+    width: 100%; }
+    .login-main fieldset {
+      width: 90%; }
+      .login-main fieldset .login-main-error {
+        text-align: left; }
+      .login-main fieldset .signup-main-confim {
+        width: 80%; }
+      .login-main fieldset .login-main-form-gridcontainer section {
+        font-size: 1.2rem; }
+        .login-main fieldset .login-main-form-gridcontainer section input {
+          font-size: 1rem; }
+      .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit input {
+        font-size: 1.2rem; } }
 
 .logout-main {
   text-align: center;
@@ -1794,6 +1837,26 @@ footer {
       .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-next input {
         font-size: 1.2rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .healthy-main-page-one fieldset legend {
+    font-size: 1.5rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-error {
+    font-size: 1.3rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-title h2 {
+    font-size: 2.5rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer label {
+    font-size: 1.3rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer input {
+    font-size: 1rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-next input {
+    font-size: 1rem; } }
+
 .healthy-main-page-two {
   width: 90%;
   height: auto;
@@ -1936,6 +1999,24 @@ footer {
         font-size: 1.2rem; }
       .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-next input {
         font-size: 1.2rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .healthy-main-page-two fieldset .healthy-main-page-two-error {
+    font-size: 1.3rem; }
+  .healthy-main-page-two fieldset .healthy-main-page-two-title h2 {
+    font-size: 2.5rem; }
+  .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer label {
+    font-size: 1.3rem; }
+  .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-back button {
+    font-size: 1rem; }
+  .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-next input {
+    font-size: 1rem; } }
 
 .healthy-main-page-three {
   width: 90%;
@@ -2095,6 +2176,12 @@ footer {
       .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-next input {
         font-size: 1.2rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
 .healthy-main-page-four {
   width: 90%;
   height: auto;
