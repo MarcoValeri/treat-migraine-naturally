@@ -157,3 +157,32 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    .edit-main {
+
+        .edit-main-user {
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            table {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+}

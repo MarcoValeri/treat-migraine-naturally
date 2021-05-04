@@ -407,3 +407,63 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    .healthy-main-page-four {
+        fieldset {
+
+            legend {
+                font-size: 1.5rem;
+            }
+
+            .healthy-main-page-four-error {
+                font-size: 1.3rem;
+            }
+
+            .healthy-main-page-four-title {
+                h2 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .healthy-main-page-four-form-gridcontainer {
+                
+                label {
+                    font-size: 1.3rem;
+                }
+
+                .healthy-main-page-four-form-gridcontainer-title {
+                    h4 {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-lifestyle {
+                    h4 {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-back  {
+                    button {
+                        font-size: 1rem;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-next {
+                    font-size: 1rem;
+                }
+
+            }
+
+        }
+    }
+
+}

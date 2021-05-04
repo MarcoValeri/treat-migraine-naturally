@@ -1375,6 +1375,20 @@ footer {
 .edit-main .edit-main-user a {
   font-size: 2rem; }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .edit-main .edit-main-user h2 {
+    font-size: 1.5rem; }
+  .edit-main .edit-main-user table {
+    font-size: 1rem; }
+  .edit-main .edit-main-user a {
+    font-size: 1.5rem; } }
+
 .contact-main {
   width: 80%;
   height: auto;
@@ -2182,6 +2196,32 @@ footer {
 * not in landscape
 * max 320px
 */
+@media (max-width: 320px) {
+  .healthy-main-page-three fieldset {
+    width: 90%; }
+    .healthy-main-page-three fieldset legend {
+      font-size: 1.5rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-error {
+      font-size: 1.3rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-title h2 {
+      font-size: 2.5rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer label {
+      font-size: 1.3rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-title h4 {
+      font-size: 1.8rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-illnesses label {
+      font-size: 1.5rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-illnesses textarea {
+      font-size: 1rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-medications label {
+      font-size: 1.5rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-medications textarea {
+      font-size: 1rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-back button {
+      font-size: 1rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-next input {
+      font-size: 1rem; } }
+
 .healthy-main-page-four {
   width: 90%;
   height: auto;
@@ -2426,6 +2466,30 @@ footer {
       .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-next input {
         font-size: 1.2rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .healthy-main-page-four fieldset legend {
+    font-size: 1.5rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-error {
+    font-size: 1.3rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-title h2 {
+    font-size: 2.5rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer label {
+    font-size: 1.3rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-title h4 {
+    font-size: 1.8rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-lifestyle h4 {
+    font-size: 1.8rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-back button {
+    font-size: 1rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-next {
+    font-size: 1rem; } }
+
 .thanks-page-main {
   text-align: center;
   color: #B744B8; }
@@ -2449,6 +2513,18 @@ footer {
       margin-bottom: 1rem; }
     .thanks-page-main p {
       font-size: 1.5rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .thanks-page-main h2 {
+    font-size: 2rem; }
+  .thanks-page-main p {
+    font-size: 1.2rem; } }
 
 * {
   padding: 0;
