@@ -316,3 +316,46 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    .signup-main {
+        
+        fieldset {
+
+            legend {
+                font-size: 1.2rem;
+            }
+
+            .signup-main-error {
+                font-size: 1rem;
+            }
+
+            .signup-main-form-gridcontainer {
+                width: auto;
+
+                section {
+                    font-size: 1rem;
+                    padding: 0rem;
+
+                    input {
+                        font-size: .8rem;
+                    }
+                }
+
+                .signup-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

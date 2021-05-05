@@ -10,3 +10,23 @@
         font-size: 1.5rem;
     }
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    .logout-main {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+}

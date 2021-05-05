@@ -243,3 +243,42 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    .contact-main {
+        fieldset {
+            .contact-main-error {
+                text-align: left;
+            }
+
+            .contact-main-form-gridcontainer {
+                section {
+                    font-size: 1.2rem;
+
+                    input {
+                        font-size: 1rem;
+                    }
+
+                    textarea {
+                        font-size: 1rem;
+                    }
+                }
+
+                .contact-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1rem;
+                        padding: .8rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

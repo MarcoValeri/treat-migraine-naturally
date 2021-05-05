@@ -331,3 +331,43 @@ header {
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    header {
+
+        .header-navbar {
+            .header-navbar-menu-toggle {
+                .header-navbar-btn {
+                    .header-navbar-btn-login {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+
+            .header-navbar-menu-nav {
+                width: 80%;
+            }
+        }
+
+        .header-headline {
+            top: 55%;
+            padding: .5rem;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}

@@ -218,3 +218,41 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    .admin-main {
+        fieldset {
+            width: 90%;
+
+            .admin-main-error {
+                text-align: left;
+            }
+
+            .admin-main-form-gridcontainer {
+
+                section {
+                    font-size: 1.2rem;
+
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+
+                .admin-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

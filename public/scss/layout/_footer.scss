@@ -73,3 +73,26 @@ footer {
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    footer {
+        height: 100vh;
+
+        .footer-content {
+            width: 90%;
+            top: 50%;
+
+            .fab {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+}

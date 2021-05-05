@@ -186,3 +186,32 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    .edit-main {
+
+        .edit-main-user {
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            table {
+                font-size: .8rem;
+            }
+
+            a {
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+}

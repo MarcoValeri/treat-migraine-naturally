@@ -188,6 +188,25 @@ header {
     header .header-headline img {
       width: 60%; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  header .header-navbar .header-navbar-menu-toggle .header-navbar-btn .header-navbar-btn-login {
+    margin-top: 1rem; }
+  header .header-navbar .header-navbar-menu-nav {
+    width: 80%; }
+  header .header-headline {
+    top: 55%;
+    padding: .5rem; }
+    header .header-headline h1 {
+      font-size: 2rem; }
+    header .header-headline h2 {
+      font-size: 1.2rem; } }
+
 footer {
   position: relative;
   height: 30vh;
@@ -236,6 +255,21 @@ footer {
 @media (max-width: 320px) {
   footer {
     height: 50vh; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  footer {
+    height: 100vh; }
+    footer .footer-content {
+      width: 90%;
+      top: 50%; }
+      footer .footer-content .fab {
+        font-size: 1.7rem; } }
 
 .main-home-gridcontainer {
   height: auto;
@@ -488,6 +522,27 @@ footer {
   .main-home-gridcontainer .main-home-gridcontainer-container-five .main-home-gridcontainer-single-content-five {
     font-size: 1rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .main-home-gridcontainer .main-home-gridcontainer-container-one .main-home-gridcontainer-single-content-one {
+    font-size: .8rem;
+    padding: 1rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-three {
+    width: 80%; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-three .main-home-gridcontainer-single-content-three {
+      padding: 1rem; }
+      .main-home-gridcontainer .main-home-gridcontainer-container-three .main-home-gridcontainer-single-content-three .fab {
+        margin-top: .5rem; }
+  .main-home-gridcontainer .main-home-gridcontainer-container-five {
+    height: 100vh; }
+    .main-home-gridcontainer .main-home-gridcontainer-container-five .main-home-gridcontainer-single-content-five {
+      font-size: .8rem; } }
+
 .signup-main {
   width: 100%;
   height: auto;
@@ -670,6 +725,27 @@ footer {
       .signup-main fieldset .signup-main-form-gridcontainer section input {
         font-size: 1rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .signup-main fieldset legend {
+    font-size: 1.2rem; }
+  .signup-main fieldset .signup-main-error {
+    font-size: 1rem; }
+  .signup-main fieldset .signup-main-form-gridcontainer {
+    width: auto; }
+    .signup-main fieldset .signup-main-form-gridcontainer section {
+      font-size: 1rem;
+      padding: 0rem; }
+      .signup-main fieldset .signup-main-form-gridcontainer section input {
+        font-size: .8rem; }
+    .signup-main fieldset .signup-main-form-gridcontainer .signup-main-form-gridcontainer-submit input {
+      font-size: 1rem; } }
+
 .login-main {
   width: 80%;
   height: auto;
@@ -824,6 +900,29 @@ footer {
       .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit input {
         font-size: 1.2rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .login-main fieldset legend {
+    font-size: 1.5rem; }
+  .login-main fieldset .signup-main-confim {
+    padding: .5rem; }
+    .login-main fieldset .signup-main-confim p {
+      font-size: 1.2rem; }
+    .login-main fieldset .signup-main-confim button {
+      font-size: 1rem; }
+  .login-main fieldset .login-main-form-gridcontainer section {
+    font-size: 1rem;
+    padding: 0rem; }
+    .login-main fieldset .login-main-form-gridcontainer section input {
+      font-size: .8rem; }
+  .login-main fieldset .login-main-form-gridcontainer .login-main-form-gridcontainer-submit input {
+    font-size: 1rem; } }
+
 .logout-main {
   text-align: center;
   color: #B744B8; }
@@ -831,6 +930,18 @@ footer {
     font-size: 3rem; }
   .logout-main p {
     font-size: 1.5rem; }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .logout-main h2 {
+    font-size: 2.5rem; }
+  .logout-main p {
+    font-size: 1.2rem; } }
 
 .admin-main {
   width: 80%;
@@ -966,6 +1077,24 @@ footer {
         .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-submit input {
           font-size: 1.2rem;
           padding: .8rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .admin-main fieldset {
+    width: 90%; }
+    .admin-main fieldset .admin-main-error {
+      text-align: left; }
+    .admin-main fieldset .admin-main-form-gridcontainer section {
+      font-size: 1.2rem; }
+      .admin-main fieldset .admin-main-form-gridcontainer section input {
+        font-size: 1rem; }
+    .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-submit input {
+      font-size: 1rem; } }
 
 .admin-menu-main {
   width: 80%;
@@ -1185,6 +1314,29 @@ footer {
         .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit input {
           font-size: 1.2rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .add-main {
+    width: 100%; }
+    .add-main fieldset legend {
+      font-size: 1.5rem; }
+    .add-main fieldset .add-main-error {
+      text-align: left; }
+    .add-main fieldset .add-main-confim {
+      width: 80%;
+      height: 50vh; }
+    .add-main fieldset .add-main-form-gridcontainer section {
+      font-size: 1.2rem; }
+      .add-main fieldset .add-main-form-gridcontainer section input {
+        font-size: 1rem; }
+    .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit input {
+      font-size: 1.2rem; } }
+
 .users-main {
   width: 80%;
   height: auto;
@@ -1389,6 +1541,20 @@ footer {
   .edit-main .edit-main-user a {
     font-size: 1.5rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .edit-main .edit-main-user h2 {
+    font-size: 1.2rem; }
+  .edit-main .edit-main-user table {
+    font-size: .8rem; }
+  .edit-main .edit-main-user a {
+    font-size: 1.2rem; } }
+
 .contact-main {
   width: 80%;
   height: auto;
@@ -1537,6 +1703,25 @@ footer {
           .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-submit input {
             font-size: 1.2rem;
             padding: 1rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+  .contact-main fieldset .contact-main-error {
+    text-align: left; }
+  .contact-main fieldset .contact-main-form-gridcontainer section {
+    font-size: 1.2rem; }
+    .contact-main fieldset .contact-main-form-gridcontainer section input {
+      font-size: 1rem; }
+    .contact-main fieldset .contact-main-form-gridcontainer section textarea {
+      font-size: 1rem; }
+  .contact-main fieldset .contact-main-form-gridcontainer .contact-main-form-gridcontainer-submit input {
+    font-size: 1rem;
+    padding: .8rem; } }
 
 .menu-main {
   width: 80%;

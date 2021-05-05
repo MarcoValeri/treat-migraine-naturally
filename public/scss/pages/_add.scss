@@ -239,3 +239,49 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 320px
+*/
+@media (max-width: 320px) {
+
+    .add-main {
+        width: 100%;
+        fieldset {
+            legend {
+                font-size: 1.5rem;
+            }
+
+            .add-main-error {
+                text-align: left;
+            }
+
+            .add-main-confim {
+                width: 80%;
+                height: 50vh;
+            }
+
+            .add-main-form-gridcontainer {
+
+                section {
+                    font-size: 1.2rem;
+
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+
+                .add-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

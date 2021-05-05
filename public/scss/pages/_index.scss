@@ -423,3 +423,42 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    .main-home-gridcontainer {
+        
+        .main-home-gridcontainer-container-one {
+            .main-home-gridcontainer-single-content-one {
+                font-size: .8rem;
+                padding: 1rem;
+            }
+        }
+
+        .main-home-gridcontainer-container-three {
+            width: 80%;
+            .main-home-gridcontainer-single-content-three {
+                padding: 1rem;
+
+                .fab {
+                    margin-top: .5rem;
+                }
+            }
+        }
+
+        .main-home-gridcontainer-container-five {
+            height: 100vh;
+            .main-home-gridcontainer-single-content-five {
+                font-size: .8rem;
+            }
+        }
+
+    }
+
+}
