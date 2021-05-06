@@ -943,6 +943,18 @@ footer {
   .logout-main p {
     font-size: 1.2rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .logout-main h2 {
+    font-size: 2rem; }
+  .logout-main p {
+    font-size: 1rem; } }
+
 .admin-main {
   width: 80%;
   height: auto;
@@ -1096,6 +1108,28 @@ footer {
     .admin-main fieldset .admin-main-form-gridcontainer .admin-main-form-gridcontainer-submit input {
       font-size: 1rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .admin-main fieldset legend {
+    font-size: 1.5rem; }
+  .admin-main fieldset .admin-main-confim {
+    height: 50vh;
+    padding: .5rem; }
+    .admin-main fieldset .admin-main-confim p {
+      font-size: 1.2rem; }
+    .admin-main fieldset .admin-main-confim button {
+      font-size: 1rem; }
+  .admin-main fieldset .admin-main-form-gridcontainer section {
+    font-size: 1rem;
+    padding: 0; }
+    .admin-main fieldset .admin-main-form-gridcontainer section input {
+      font-size: .8rem; } }
+
 .admin-menu-main {
   width: 80%;
   height: auto;
@@ -1172,6 +1206,16 @@ footer {
 @media (max-width: 480px) {
   .admin-menu-main .admin-menu-main-gridcontainer .admin-menu-main-gridcontainer-title .admin-menu-main-gridcontainer-title-elastic {
     font-size: 3rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .admin-menu-main .admin-menu-main-gridcontainer .admin-menu-main-gridcontainer-title .admin-menu-main-gridcontainer-title-elastic {
+    font-size: 2rem; } }
 
 .add-main {
   width: 100%;
@@ -1336,6 +1380,33 @@ footer {
         font-size: 1rem; }
     .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit input {
       font-size: 1.2rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .add-main fieldset legend {
+    font-size: 1.2rem; }
+  .add-main fieldset .add-main-error {
+    font-size: 1rem; }
+  .add-main fieldset .add-main-confim {
+    height: 70vh; }
+    .add-main fieldset .add-main-confim p {
+      font-size: 1.2rem; }
+    .add-main fieldset .add-main-confim button {
+      font-size: .8rem; }
+  .add-main fieldset .add-main-form-gridcontainer {
+    width: auto; }
+    .add-main fieldset .add-main-form-gridcontainer section {
+      font-size: 1rem;
+      padding: 0rem; }
+      .add-main fieldset .add-main-form-gridcontainer section input {
+        font-size: .8rem; }
+    .add-main fieldset .add-main-form-gridcontainer .add-main-form-gridcontainer-submit input {
+      font-size: 1rem; } }
 
 .users-main {
   width: 80%;
@@ -1723,6 +1794,29 @@ footer {
     font-size: 1rem;
     padding: .8rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .contact-main fieldset legend {
+    font-size: 1.5rem; }
+  .contact-main fieldset .contact-main-confim {
+    padding: .5rem; }
+    .contact-main fieldset .contact-main-confim p {
+      font-size: 1.2rem; }
+    .contact-main fieldset .contact-main-confim button {
+      font-size: 1rem; }
+  .contact-main fieldset .contact-main-form-gridcontainer section {
+    font-size: 1rem;
+    padding: 0; }
+    .contact-main fieldset .contact-main-form-gridcontainer section input {
+      font-size: .8rem; }
+    .contact-main fieldset .contact-main-form-gridcontainer section textarea {
+      font-size: 1rem; } }
+
 .menu-main {
   width: 80%;
   height: auto;
@@ -1880,6 +1974,23 @@ footer {
         background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%); }
         .survey-main .survey-main-container .survey-main-container-btn-wrap:hover .survey-main-container-btn {
           color: #FFD400; }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .survey-main {
+    height: 100vh; }
+    .survey-main .survey-main-container {
+      top: 60%;
+      padding: 2rem; }
+      .survey-main .survey-main-container h2 {
+        font-size: 1.5rem; }
+      .survey-main .survey-main-container .survey-main-container-btn-wrap .survey-main-container-btn {
+        font-size: 1.2rem; } }
 
 .healthy-main-page-one {
   width: 90%;
@@ -2056,6 +2167,29 @@ footer {
   .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-next input {
     font-size: 1rem; } }
 
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .healthy-main-page-one fieldset legend {
+    font-size: 1.2rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-error {
+    font-size: 1rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-title h2 {
+    font-size: 2rem; }
+  .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer {
+    width: auto; }
+    .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer section {
+      font-size: 1rem;
+      padding: 0rem; }
+      .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer section input {
+        font-size: .8rem; }
+    .healthy-main-page-one fieldset .healthy-main-page-one-form-gridcontainer .healthy-main-page-one-form-gridcontainer-personal-next input {
+      font-size: 1rem; } }
+
 .healthy-main-page-two {
   width: 90%;
   height: auto;
@@ -2216,6 +2350,35 @@ footer {
     font-size: 1rem; }
   .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-next input {
     font-size: 1rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .healthy-main-page-two fieldset legend {
+    font-size: 1.2rem; }
+  .healthy-main-page-two fieldset .healthy-main-page-two-error {
+    font-size: 1rem; }
+  .healthy-main-page-two fieldset .healthy-main-page-two-title h2 {
+    font-size: 2rem; }
+  .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer {
+    width: auto; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer label {
+      font-size: 1rem;
+      padding: 0; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-checkbox h4 {
+      font-size: 1.5rem; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-details label {
+      font-size: 1rem; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-details textarea {
+      font-size: 1rem; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-back button {
+      font-size: 1rem; }
+    .healthy-main-page-two fieldset .healthy-main-page-two-form-gridcontainer .healthy-main-page-two-form-gridcontainer-next input {
+      font-size: 1rem; } }
 
 .healthy-main-page-three {
   width: 90%;
@@ -2405,6 +2568,34 @@ footer {
     .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-back button {
       font-size: 1rem; }
     .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-next input {
+      font-size: 1rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .healthy-main-page-three fieldset legend {
+    font-size: 1.2rem; }
+  .healthy-main-page-three fieldset .healthy-main-page-three-error {
+    font-size: 1rem; }
+  .healthy-main-page-three fieldset .healthy-main-page-three-title h2 {
+    font-size: 2rem; }
+  .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer {
+    width: auto; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer label {
+      font-size: 1rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-title h4 {
+      font-size: 1.5rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-illnesses label {
+      font-size: 1rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-illnesses textarea {
+      font-size: 1rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-medications label {
+      font-size: 1rem; }
+    .healthy-main-page-three fieldset .healthy-main-page-three-form-gridcontainer .healthy-main-page-three-form-gridcontainer-medications textarea {
       font-size: 1rem; } }
 
 .healthy-main-page-four {
@@ -2674,6 +2865,48 @@ footer {
     font-size: 1rem; }
   .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-next {
     font-size: 1rem; } }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+  .healthy-main-page-four fieldset legend {
+    font-size: 1.2rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-error {
+    font-size: 1rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-title h2 {
+    font-size: 2rem; }
+  .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer {
+    width: auto; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer label {
+      font-size: 1rem; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-title h4 {
+      font-size: 1.5rem; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-migraine select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-type select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-duration select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-stages select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-symptoms select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-medication select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-non-medical select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-triggers select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-lifestyle select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-alcohol select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-exercise select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-fitness select,
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-posture select {
+      font-size: 1rem; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-effects label {
+      font-size: 1rem; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-effects textarea {
+      font-size: 1rem; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-lifestyle h4 {
+      font-size: 1.5rem; }
+    .healthy-main-page-four fieldset .healthy-main-page-four-form-gridcontainer .healthy-main-page-four-form-gridcontainer-tobacco h4 {
+      font-size: 1.2rem; } }
 
 .thanks-page-main {
   text-align: center;

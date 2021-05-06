@@ -61,3 +61,32 @@
         }
     }
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    .survey-main {
+        height: 100vh;
+
+        .survey-main-container {
+            top: 60%;
+            padding: 2rem;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .survey-main-container-btn-wrap {
+                .survey-main-container-btn {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+}

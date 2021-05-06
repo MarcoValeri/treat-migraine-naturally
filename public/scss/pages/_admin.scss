@@ -256,3 +256,52 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    .admin-main {
+
+        fieldset {
+
+            legend {
+                font-size: 1.5rem;
+            }
+
+            .admin-main-confim {
+                height: 50vh;
+                padding: .5rem;
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+
+            }
+
+            .admin-main-form-gridcontainer {
+
+                section {
+                    font-size: 1rem;
+                    padding: 0;
+
+                    input {
+                        font-size: .8rem;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

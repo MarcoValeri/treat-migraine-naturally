@@ -467,3 +467,92 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    .healthy-main-page-four {
+
+        fieldset {
+
+            legend {
+                font-size: 1.2rem;
+            }
+
+            .healthy-main-page-four-error {
+                font-size: 1rem;
+            }
+
+            .healthy-main-page-four-title {
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
+            .healthy-main-page-four-form-gridcontainer {
+                width: auto;
+
+                label {
+                    font-size: 1rem;
+                }
+
+                .healthy-main-page-four-form-gridcontainer-title {
+                    h4 {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-migraine,
+                .healthy-main-page-four-form-gridcontainer-type,
+                .healthy-main-page-four-form-gridcontainer-duration,
+                .healthy-main-page-four-form-gridcontainer-stages,
+                .healthy-main-page-four-form-gridcontainer-symptoms,
+                .healthy-main-page-four-form-gridcontainer-medication,
+                .healthy-main-page-four-form-gridcontainer-non-medical,
+                .healthy-main-page-four-form-gridcontainer-triggers,
+                .healthy-main-page-four-form-gridcontainer-lifestyle,
+                .healthy-main-page-four-form-gridcontainer-alcohol,
+                .healthy-main-page-four-form-gridcontainer-exercise,
+                .healthy-main-page-four-form-gridcontainer-fitness,
+                .healthy-main-page-four-form-gridcontainer-posture {
+                    select {
+                        font-size: 1rem;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-effects {
+
+                    label {
+                        font-size: 1rem;
+                    }
+
+                    textarea {
+                        font-size: 1rem;
+                    }
+
+                }
+
+                .healthy-main-page-four-form-gridcontainer-lifestyle {
+                    h4 {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .healthy-main-page-four-form-gridcontainer-tobacco {
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

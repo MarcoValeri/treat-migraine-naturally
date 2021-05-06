@@ -285,3 +285,61 @@
     }
 
 }
+
+/*
+* Media Queries
+* for smartphone screens
+* not in landscape
+* max 240px
+*/
+@media (max-width: 240px) {
+
+    .add-main {
+
+        fieldset {
+
+            legend {
+                font-size: 1.2rem;
+            }
+
+            .add-main-error {
+                font-size: 1rem;
+            }
+
+            .add-main-confim {
+                height: 70vh;
+
+                p {
+                    font-size: 1.2rem;
+                }
+
+                button {
+                    font-size: .8rem;
+                }
+
+            }
+
+            .add-main-form-gridcontainer {
+                width: auto;
+
+                section {
+                    font-size: 1rem;
+                    padding: 0rem;
+
+                    input {
+                        font-size: .8rem;
+                    }
+                }
+
+                .add-main-form-gridcontainer-submit {
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+        }
+
+    }    
+
+}
