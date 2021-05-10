@@ -59,4 +59,19 @@
         header("Location: " . $location);
         exit;
     }
+
+    /*
+    * Create a function that allows to hightlight the navbar menu
+    * when the user is browsing on a proper page
+    * The function does it comparing two parameters
+    * @parameter String filePath
+    * @parameter String navMenuPath
+    * @prints String "header-navbar-heighlight" that call css class
+    * to add style
+    */
+    function highlightNavMenu($filePath, $navMenuPath) {
+        if ($filePath == $navMenuPath) {
+            echo "header-navbar-heighlight";
+        }
+    }
 ?>

@@ -20,6 +20,9 @@ header {
       header .header-navbar a:hover {
         text-decoration: underline;
         text-decoration-color: #B744B8; }
+    header .header-navbar .header-navbar-heighlight {
+      text-decoration: underline;
+      text-decoration-color: #B744B8; }
     header .header-navbar .header-navbar-admin a {
       color: #FFD400; }
     header .header-navbar .header-navbar-btn {
@@ -91,6 +94,9 @@ header {
         text-decoration: none;
         color: #fff;
         transition: color 0.3s ease; }
+      header .header-navbar .header-navbar-menu-toggle .header-navbar-heighlight {
+        text-decoration: underline;
+        text-decoration-color: #B744B8; }
       header .header-navbar .header-navbar-menu-toggle .header-navbar-admin a {
         color: #FFD400; }
       header .header-navbar .header-navbar-menu-toggle input {
@@ -550,7 +556,7 @@ footer {
   margin: 0rem auto 0rem auto;
   padding-top: 10rem;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("http://localhost/treat-migraine-naturally/public/images/acquatic-jungle.jpg");
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("https://titan.dcs.bbk.ac.uk/~mvaler03/treat-migraine-naturally/public/images/acquatic-jungle.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1136,7 +1142,7 @@ footer {
   min-height: 50vh;
   margin: auto;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("http://localhost/treat-migraine-naturally/public/images/brain.jpg");
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("https://titan.dcs.bbk.ac.uk/~mvaler03/treat-migraine-naturally/public/images/brain.jpg");
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -1414,7 +1420,7 @@ footer {
   min-height: 100vh;
   margin: auto;
   text-align: center;
-  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("http://localhost/treat-migraine-naturally/public/images/brain.jpg");
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(183, 68, 184, 0.8)), url("https://titan.dcs.bbk.ac.uk/~mvaler03/treat-migraine-naturally/public/images/brain.jpg");
   background-size: cover;
   background-position: top;
   position: relative; }

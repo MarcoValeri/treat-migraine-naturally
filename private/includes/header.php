@@ -6,7 +6,11 @@
     if (!isset($header_sub_title)) {
         $header_sub_title = '';
     }
+
+    //TEST
+    echo $_SERVER['SCRIPT_NAME'];
 ?>
+
 
 <header>
     <nav class="header-navbar">
@@ -16,12 +20,12 @@
             <span></span>
             <span></span>
             <ul class="header-navbar-menu-nav">
-                <li><a href="<?= url_for('/index.php') ?>">Home</a></li>
-                <li><a href="<?= url_for('/pages/sign-up.php'); ?>">Sign Up</a></li>
-                <li><a href="<?= url_for('/pages/login.php'); ?>">Login</a></li>
-                <li><a href="<?= url_for('/menu/menu.php'); ?>">Menu</a></li>
-                <li><a href="<?= url_for('/pages/about-us.php'); ?>">About Us</a></li>
-                <li><a href="<?= url_for('/pages/contact.php'); ?>">Contact</a></li>
+                <li><a class="<?php if (highlightNavMenu($_SERVER['SCRIPT_NAME'], "/treat-migraine-naturally/public/index.php")); ?>" href="<?= url_for('/index.php') ?>">Home</a></li>
+                <li><a class="<?php if (highlightNavMenu($_SERVER['SCRIPT_NAME'], "/treat-migraine-naturally/public/pages/sign-up.php")); ?>" href="<?= url_for('/pages/sign-up.php'); ?>">Sign Up</a></li>
+                <li><a class="<?php if (highlightNavMenu($_SERVER['SCRIPT_NAME'], "/treat-migraine-naturally/public/pages/login.php")); ?>" href="<?= url_for('/pages/login.php'); ?>">Login</a></li>
+                <li><a class="<?php if (highlightNavMenu($_SERVER['SCRIPT_NAME'], "/treat-migraine-naturally/public/menu/menu.php")); ?>" href="<?= url_for('/menu/menu.php'); ?>">Menu</a></li>
+                <li><a class="<?php if (highlightNavMenu($_SERVER['SCRIPT_NAME'], "/treat-migraine-naturally/public/pages/about-us.php")); ?>" href="<?= url_for('/pages/about-us.php'); ?>">About Us</a></li>
+                <li><a class="<?php if (highlightNavMenu($_SERVER['SCRIPT_NAME'], "/treat-migraine-naturally/public/pages/contact.php")); ?>" href="<?= url_for('/pages/contact.php'); ?>">Contact</a></li>
                 <li class="header-navbar-admin">
                     <?php
                         if (isset($_SESSION['admin']) && $_SESSION['admin'] === "1") {
