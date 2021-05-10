@@ -46,5 +46,13 @@
     */
     require_once('sessions.php');
     create_session();
+
+    /*
+    * Require cookies.php and related code
+    */
+    require_once('cookies.php');
+    setCookiePolicy("policy", "yes");
+    // $yesterday = time() - (24 * 60 * 60);
+    // setcookie("policy", "yes", $yesterday);
     
 ?>

@@ -7,8 +7,10 @@
         $header_sub_title = '';
     }
 
-    //TEST
-    echo $_SERVER['SCRIPT_NAME'];
+    /*
+    * Show cookie policy banner if the user have not accepted it
+    */
+    showCookiesBanner();
 ?>
 
 
