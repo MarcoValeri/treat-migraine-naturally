@@ -10,6 +10,12 @@
 
 
 <header>
+    <!--
+        Set cookie policy
+    -->
+    <?php
+        include(INCLUDE_PATH . '/cookie-policy.php');
+    ?>
     <nav class="header-navbar">
         <div class="header-navbar-menu-toggle">
             <input type="checkbox" />

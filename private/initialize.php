@@ -54,7 +54,7 @@
     * the banner will be displays on the footer
     */
     require_once('cookies.php');
-    setCookiePolicy("policy", "yes");
-    destroyCookies("policy");
+    // setCookiePolicy("policy", "yes");
+    // destroyCookies("policy");
     
 ?>
