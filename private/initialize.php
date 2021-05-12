@@ -49,10 +49,12 @@
 
     /*
     * Require cookies.php and related code
+    * I called function showCookiesBanner() so
+    * if the user has not accepted the cookie policy
+    * the banner will be displays on the footer
     */
     require_once('cookies.php');
     setCookiePolicy("policy", "yes");
-    // $yesterday = time() - (24 * 60 * 60);
-    // setcookie("policy", "yes", $yesterday);
+    destroyCookies("policy");
     
 ?>

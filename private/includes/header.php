@@ -6,11 +6,6 @@
     if (!isset($header_sub_title)) {
         $header_sub_title = '';
     }
-
-    /*
-    * Show cookie policy banner if the user have not accepted it
-    */
-    showCookiesBanner();
 ?>
 
 
