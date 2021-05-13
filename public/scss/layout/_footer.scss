@@ -37,6 +37,52 @@ footer {
             color: #ff0000;
             font-size: 1.5rem;
         }
+
+        .footer-cookie-policy-btn-wrap {
+            width: 6rem;
+            padding: 1rem;
+            background: linear-gradient(240deg, #B744B8 0%, #33032F 49%, #B744B8 80%, #B744B8 100%);
+            padding: 3px;
+            margin: .5rem auto .5rem auto;
+            border-radius: 10px;
+
+            animation: rainbow 3s linear infinite;
+
+            .footer-cookie-policy-btn {
+                background: #000;
+                color: #B744B8;
+                text-align: center;
+                font-size: 1rem;
+                padding: .5rem;
+            }
+
+            @keyframes rainbow {
+
+                to {
+                    background-position: 8rem;
+                }
+            
+            }
+
+            input {
+                color: $purple-primary;
+                font-size: .8rem;
+                background-color: #000;
+                border: none;
+            }
+
+            &:hover {
+                background: linear-gradient(240deg, #FFD400 0%, #000 49%, #FFD400 80%, #FFD400 100%);
+
+                .main-home-gridcontainer-single-btn {
+                    color: #FFD400;
+                }
+
+                input {
+                    color: #FFD400;
+                }
+            }
+        }
     }
 }
 

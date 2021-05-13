@@ -51,10 +51,10 @@
     * Require cookies.php and related code
     * I called function showCookiesBanner() so
     * if the user has not accepted the cookie policy
-    * the banner will be displays on the footer
+    * the banner will be displays on the header
+    * User should accesses to the cookie policy
+    * by a proper button on the footer
     */
     require_once('cookies.php');
-    // setCookiePolicy("policy", "yes");
-    // destroyCookies("policy");
     
 ?>
