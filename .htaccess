@@ -1,0 +1,8 @@
+# Set home page to https://treatmigrainenaturally.co.uk/
+DirectoryIndex ./public/index.php
+
+# Run PHP without filename extension
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
