@@ -16,6 +16,11 @@
         }
     }
 
+    // Create a function that prevent SQL injection
+    function db_escape($connection, $string) {
+        return mysqli_real_escape_string($connection, $string);
+    }
+
     // Create a function that checks if the web application is connects to the db
     // If there is not a connect the function returns an error message
     function confirm_db_connect() {
@@ -31,7 +36,13 @@
     function add_new_user($connection, $first_name, $last_name, $email, $password) {
 
         $query = "INSERT INTO users (first_name, last_name, email, password, admin) ";
-        $query .= "VALUE ('$first_name', '$last_name', '$email', '$password', '0')";
+        $query .= "VALUE (";
+        $query .= "'" . db_escape($connection, $first_name) . "',";
+        $query .= "'" . db_escape($connection, $last_name) . "',";
+        $query .= "'" . db_escape($connection, $email) . "',";
+        $query .= "'" . db_escape($connection, $password) . "',";
+        $query .= "'" . db_escape($connection, '0') . "'";
+        $query .= ")";
 
         if ($connection->query($query) === TRUE) {
             echo "New user created successfully";
