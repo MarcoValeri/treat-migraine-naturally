@@ -5,7 +5,7 @@ require_once('../../../private/initialize.php');
 
 // Called redirect_user(); that redirects to the login page 
 // an authorized user
-redirect_admin($_SESSION['email'], $_SESSION['admin'], url_for('/admin/admin.php'));
+redirect_admin($_SESSION['email'], $_SESSION['admin'], url_for('/admin/admin'));
 
 /*
 * Validation form for create new account
@@ -267,11 +267,11 @@ if ($valid_user && count($errors_output) === 0) {
 
     if (is_new_user($db, $email)) {
         add_new_user($db, $first_name, $last_name, $email, $password);
-        $redirect = url_for('/admin/users/users.php');
+        $redirect = url_for('/admin/users/users');
         $output = "<section class='add-main-confim'><p>New user has been added</p>";
         $output .= "<button><a href='${redirect}'>&laquo; Back to Users List</a></button></section>";
     } else {
-        $redirect = url_for('/admin/users/users.php');
+        $redirect = url_for('/admin/users/users');
         $output = "<section class='add-main-confim'><p>There is already an user registered with this email: " . $email;
         $output .= "<mark></br>" . $email . "</mark></p>";
         $output .= "<button><a href='${redirect}'>User's Menu</a></button></section>";
@@ -281,7 +281,7 @@ if ($valid_user && count($errors_output) === 0) {
 } else {
     $output = "
     <main>
-        <form id='form' class='add-main-form-gridcontainer' action='./add.php' method='post'>
+        <form id='form' class='add-main-form-gridcontainer' action='./add' method='post'>
             <section class='add-main-form-gridcontainer-first-name'>
                 <label for='first_name'>First Name *</label>
                 <input id='first_name' name='first_name' type='text' value='${first_name}' placeholder='First Name'>

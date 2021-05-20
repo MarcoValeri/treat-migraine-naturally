@@ -5,7 +5,7 @@ require_once('../../private/initialize.php');
 
 // Called redirect_user($value, $url); that redirects to the login page 
 // an authorized user
-redirect_user($_SESSION['email'], url_for('/pages/login.php'));
+redirect_user($_SESSION['email'], url_for('/pages/login'));
 
 /*
 * Validation form for healthy survey
@@ -622,10 +622,10 @@ if ($valid && count($errors_output) === 0) {
     $_SESSION['age'] = $age;
     $_SESSION['gender'] = $gender;
     $_SESSION['occupation'] = $occupation;
-    $redirect_next = './healthy-survey-page-2.php';
-    redirect_to('./healthy-survey-page-2.php');
+    $redirect_next = './healthy-survey-page-2';
+    redirect_to('./healthy-survey-page-2');
 } else {
-    $redirect_next = './healthy-survey-page-1.php';
+    $redirect_next = './healthy-survey-page-1';
 }
 
 

@@ -77,19 +77,19 @@ if (isset($_POST['submit'])) {
 if ($valid_user && count($errors_output) === 0) {
 
     if (check_user($db, $email, $password)) {
-        $redirect = url_for('menu/menu.php');
+        $redirect = url_for('menu/menu');
         $output = "<section class='signup-main-confim'><p>Hi " . $email . "</p>";
         $output .= "<button><a href='${redirect}'>Menu</a></button></section>";
         create_session_data(get_first_name($db, $email), get_last_name($db, $email), get_email($db, $email), get_admin_permission($db, $email));
     } else {
-        $redirect = url_for('pages/login.php');
+        $redirect = url_for('pages/login');
         $output = "<section class='signup-main-confim'><p>Email and password are not valid</p>";
         $output .= "<button><a href='${redirect}'>Login</a></button></section>";
     }
 
 } else {
     $output = "
-        <form class='login-main-form-gridcontainer' action='./login.php' method='post'>
+        <form class='login-main-form-gridcontainer' action='./login' method='post'>
             <section class='login-main-form-gridcontainer-email'>
                 <label for='email'>Email *</label>
                 <input id='email' name='email' type='email' value='' placeholder='Email'>

@@ -6,3 +6,6 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php
+
+# Redirect to a specific page error 404
+ErrorDocument 404 http://localhost/treat-migraine-naturally/public/errors/404.php

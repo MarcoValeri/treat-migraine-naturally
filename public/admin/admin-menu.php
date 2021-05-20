@@ -5,7 +5,7 @@ require_once('../../private/initialize.php');
 
 // Called redirect_user($value, $url); that redirects to the login page 
 // an authorized user
-redirect_admin($_SESSION['email'], $_SESSION['admin'], url_for('/admin/admin.php'));
+redirect_admin($_SESSION['email'], $_SESSION['admin'], url_for('/admin/admin'));
 
 // Define a variable that gives the title to the page
 $page_title = 'Admin Menu';
@@ -34,7 +34,7 @@ include(INCLUDE_PATH . '/header.php');
         </section>
         <section class="admin-menu-main-gridcontainer-one">
             <div class="admin-menu-main-gridcontainer-one-btn-wrap">
-                <a href="<?= url_for('/admin/users/users.php'); ?>">
+                <a href="<?= url_for('/admin/users/users'); ?>">
                     <div class="menu-main-gridcontainer-section-one-btn">
                         Users
                     </div>

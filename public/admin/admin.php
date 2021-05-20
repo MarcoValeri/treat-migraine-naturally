@@ -77,12 +77,12 @@ if (isset($_POST['submit'])) {
 if ($valid_user && count($errors_output) === 0) {
 
     if (check_admin($db, $email, $password)) {
-        $redirect = url_for('admin/admin-menu.php');
+        $redirect = url_for('admin/admin-menu');
         $output = "<section class='admin-main-confim'><p>Hi " . $email . "<p/>";
         $output .= "<button><a href='${redirect}'>Admin Menu</a></button></section>";
         create_session_data(get_first_name($db, $email), get_last_name($db, $email), get_email($db, $email), get_admin_permission($db, $email));
     } else {
-        $redirect = url_for('admin/admin.php');
+        $redirect = url_for('admin/admin');
         $output = "<section class='admin-main-confim'><p>Email and password are not valid</p>";
         $output .= "<button><a href='${redirect}'>Admin Login</a></button></section>";
     }

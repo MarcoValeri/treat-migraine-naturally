@@ -22,7 +22,7 @@ include(INCLUDE_PATH . '/header.php');
 <!-- Main -->
 <main class="main-home-gridcontainer">
     <section class="main-home-gridcontainer-container-one main-home-gridcontainer-single">
-        <img src="./images/migraine.jpg" alt="Migraine" /> <!-- Photo by Nik Shuliahin on Unsplash -->
+        <img src="http://localhost/treat-migraine-naturally/public/images/migraine.jpg" alt="Migraine" /> <!-- Photo by Nik Shuliahin on Unsplash -->
         <div class="main-home-gridcontainer-single-content-one">
             <p>
                 <a href="https://www.who.int/news-room/fact-sheets/detail/headache-disorders" target="_blank"><span class="first-letter">W</span>orld Health Organization</a> 
@@ -47,7 +47,7 @@ include(INCLUDE_PATH . '/header.php');
         </div>
     </section>
     <section class="main-home-gridcontainer-container-two main-home-gridcontainer-single">
-        <img src="./images/acquatic-jungle.jpg" alt="Aquatic Jungle" /> <!-- Photo by Alfred Schrock on Unsplash -->
+        <img src="http://localhost/treat-migraine-naturally/public/images/acquatic-jungle.jpg" alt="Aquatic Jungle" /> <!-- Photo by Alfred Schrock on Unsplash -->
         <div class="main-home-gridcontainer-single-content-two">
             <p>
                 <a href="<?= url_for('/pages/sign-up.php'); ?>">
@@ -76,7 +76,7 @@ include(INCLUDE_PATH . '/header.php');
         </div>
     </section>
     <section class="main-home-gridcontainer-container-three main-home-gridcontainer-single">
-        <img src="./images/moon.jpg" alt="Moon" /> <!-- Photo by Roberto H on Unsplash -->
+        <img src="http://localhost/treat-migraine-naturally/public/images/moon.jpg" alt="Moon" /> <!-- Photo by Roberto H on Unsplash -->
         <div class="main-home-gridcontainer-single-content-three">
             <p><span class="first-letter">F</span>ollow Treat Migraine Naturally on</p>
             <i class="fab fa-facebook-square"></i>
@@ -86,7 +86,7 @@ include(INCLUDE_PATH . '/header.php');
         </div>
     </section>
     <section class="main-home-gridcontainer-container-four main-home-gridcontainer-single">
-        <img src="./images/world.jpg" alt="World" /> <!-- Photo by NASA on Unsplash -->
+        <img src="http://localhost/treat-migraine-naturally/public/images/world.jpg" alt="World" /> <!-- Photo by NASA on Unsplash -->
         <div class="main-home-gridcontainer-single-content-four">
             <p>
                 <a href="<?= url_for('/pages/login.php'); ?>">
@@ -104,7 +104,7 @@ include(INCLUDE_PATH . '/header.php');
         </div>
     </section>
     <section class="main-home-gridcontainer-container-five main-home-gridcontainer-single">
-        <img src="./images/brain.jpg" alt="Brain" /> <!-- Photo by Gerd Altmann on Pixabay -->
+        <img src="http://localhost/treat-migraine-naturally/public/images/brain.jpg" alt="Brain" /> <!-- Photo by Gerd Altmann on Pixabay -->
         <div class="main-home-gridcontainer-single-content-five">
             <p>
                 <a href="<?= url_for('/pages/login.php'); ?>">

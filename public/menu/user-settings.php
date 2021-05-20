@@ -5,7 +5,7 @@ require_once('../../private/initialize.php');
 
 // Called redirect_user($value, $url); that redirects to the login page 
 // an authorized user
-redirect_user($_SESSION['email'], url_for('/pages/login.php'));
+redirect_user($_SESSION['email'], url_for('/pages/login'));
 
 // Define the $id by the url and gets the $user by the db
 // thanks to find_single_user(); function

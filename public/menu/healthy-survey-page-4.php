@@ -5,7 +5,7 @@ require_once('../../private/initialize.php');
 
 // Called redirect_user($value, $url); that redirects to the login page 
 // an authorized user
-redirect_user($_SESSION['email'], url_for('/pages/login.php'));
+redirect_user($_SESSION['email'], url_for('/pages/login'));
 
 /* DELETE BEFORE DEPLOY */
 /* DELETE BEFORE DEPLOY */
@@ -396,12 +396,12 @@ if ($valid && count($errors_output) === 0) {
     echo "Send email";
 
     // Redirect user to the thank you page
-    $redirect_next = './healthy-survey-page-thank-you.php'; 
-    redirect_to('./healthy-survey-page-thank-you.php');
+    $redirect_next = './healthy-survey-page-thank-you'; 
+    redirect_to('./healthy-survey-page-thank-you');
     
 
 } else {
-    $redirect_next = './healthy-survey-page-4.php';
+    $redirect_next = './healthy-survey-page-4';
 }
 
 
