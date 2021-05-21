@@ -58,12 +58,13 @@
     function edit_user($connection, $id, $first_name, $last_name, $email, $password, $admin) {
 
         $query = "UPDATE users SET ";
-        $query .= "first_name='$first_name',";
-        $query .= "last_name='$last_name',";
-        $query .= "email='$email',";
-        $query .= "password='$password',";
-        $query .= "admin='$admin' ";
-        $query .= "WHERE id='$id'";
+        $query .= "first_name='" . db_escape($connection, $first_name) . "',";
+        $query .= "last_name='" . db_escape($connection, $last_name) . "',";
+        $query .= "email='" . db_escape($connection, $email) . "',";
+        $query .= "password='" . db_escape($connection, $password) . "',";
+        $query .= "admin='" . db_escape($connection, $admin) . "'";
+        $query .= "WHERE id='" . db_escape($connection, $id) . "' ";
+        $query .= "LIMIT 1";
 
         if ($connection->query($query) === TRUE) {
             echo "User updated successfully";
@@ -78,7 +79,9 @@
     */
     function delete_user($connection, $id) {
 
-        $query = "DELETE FROM users WHERE id='$id'";
+        $query = "DELETE FROM users WHERE ";
+        $query .= "id='" . db_escape($connection, $id) . "' ";
+        $query .= "LIMIT 1";
 
         if ($connection->query($query) === TRUE) {
             echo "User deleted successfully";
@@ -101,7 +104,9 @@
     */
     function is_new_user($connection, $email) {
 
-        $query = "SELECT email FROM users WHERE email='$email'";
+        $query = "SELECT email FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -131,7 +136,11 @@
     */
     function check_user($connection, $email, $password) {
 
-        $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+        $query = "SELECT * FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "' ";
+        $query .= "AND ";
+        $query .= "password='" . db_escape($connection, $password) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -164,7 +173,11 @@
     */
     function check_admin($connection, $email, $password) {
 
-        $query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+        $query = "SELECT * FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "' ";
+        $query .= "AND ";
+        $query .= "password='" . db_escape($connection, $password) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -193,7 +206,9 @@
     */
     function get_first_name($connection, $email) {
 
-        $query = "SELECT * FROM users WHERE email='$email'";
+        $query = "SELECT * FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -214,7 +229,9 @@
     */
     function get_last_name($connection, $email) {
 
-        $query = "SELECT * FROM users WHERE email='$email'";
+        $query = "SELECT * FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -235,7 +252,9 @@
     */
     function get_email($connection, $email) {
 
-        $query = "SELECT * FROM users WHERE email='$email'";
+        $query = "SELECT * FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -256,7 +275,9 @@
     */
     function get_admin_permission($connection, $email) {
 
-        $query = "SELECT * FROM users WHERE email='$email'";
+        $query = "SELECT * FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -276,7 +297,9 @@
     */
     function get_id($connection, $email) {
 
-        $query = "SELECT * FROM users WHERE email='$email'";
+        $query = "SELECT * FROM users WHERE ";
+        $query .= "email='" . db_escape($connection, $email) . "'";
+
         $result = $connection->query($query);
 
         if ($result->num_rows > 0) {
@@ -311,6 +334,7 @@
     function find_single_user($connection, $id) {
 
         $query = "SELECT * FROM users WHERE id='" . $id . "'";
+
         $result = mysqli_query($connection, $query);
         $user = mysqli_fetch_assoc($result);
         return $user;
